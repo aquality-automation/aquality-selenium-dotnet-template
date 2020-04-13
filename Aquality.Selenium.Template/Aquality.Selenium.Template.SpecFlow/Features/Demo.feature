@@ -1,7 +1,7 @@
 ﻿Feature: Demo
 
 @demo
-Scenario: Add two numbers
+Scenario: Empty email validation is working on Contact Us page
 	Given Main page is opened
     When I open Contact us page
     Then Contact us page is opened

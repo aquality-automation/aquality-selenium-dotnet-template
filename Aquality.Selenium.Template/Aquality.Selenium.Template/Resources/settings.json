@@ -18,7 +18,12 @@
         "download.prompt_for_download": "false",
         "download.default_directory": "./downloads"
       },
-      "startArguments": []
+      "startArguments": [
+        "window-size=1920,1080",
+        "--no-sandbox",
+        "--disable-popup-blocking",
+        "--disable-gpu"
+      ]
     },
     "firefox": {
       "webDriverVersion": "Latest",

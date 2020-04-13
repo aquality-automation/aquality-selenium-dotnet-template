@@ -20,7 +20,7 @@ namespace Aquality.Selenium.Template.Glue.StepDefinitions
         [Given(@"Main page is opened")]
         public void GivenMainPageIsOpened()
         {
-            AqualityServices.Browser.GoTo("https://www.a1qa.com/"); // TODO: read from config
+            AqualityServices.Browser.GoTo(Configuration.Configuration.StartUrl);
         }
         
         [When(@"I open Contact us page")]

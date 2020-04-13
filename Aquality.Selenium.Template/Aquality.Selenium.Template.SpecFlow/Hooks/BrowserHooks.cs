@@ -4,7 +4,7 @@ using TechTalk.SpecFlow;
 namespace Aquality.Selenium.Template.Glue.Hooks
 {
     [Binding]
-    public sealed class BrowserHooks
+    public class BrowserHooks
     {
         [AfterScenario]
         public void CloseBrowser()

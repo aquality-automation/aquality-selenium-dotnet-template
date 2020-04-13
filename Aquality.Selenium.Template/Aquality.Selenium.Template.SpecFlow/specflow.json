@@ -1,0 +1,11 @@
+﻿{
+  "stepAssemblies": [
+    {
+      "assembly": "Aquality.Selenium.Template.SpecFlow"
+    }
+  ],
+  "runtime": {
+    "stopAtFirstError": true,
+    "missingOrPendingStepsOutcome": "Error"
+  }
+}
