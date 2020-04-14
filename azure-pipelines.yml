@@ -21,7 +21,7 @@ steps:
     extraProperties: |
       sonar.coverage.exclusions=**/**
 
-- script: dotnet build Aquality.Selenium/Aquality.Selenium.sln -c $(buildConfiguration)
+- script: dotnet build Aquality.Selenium.Template/Aquality.Selenium.Template.sln -c $(buildConfiguration)
   displayName: 'Build solution - $(buildConfiguration)'
 
 - task: SonarCloudAnalyze@1
