@@ -9,11 +9,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aquality.Selenium.Template"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21B3F61F-E039-492C-A959-73049136EB4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21B3F61F-E039-492C-A959-73049136EB4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21B3F61F-E039-492C-A959-73049136EB4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21B3F61F-E039-492C-A959-73049136EB4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84ADF59F-0C6C-4C35-BB35-D393571939D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84ADF59F-0C6C-4C35-BB35-D393571939D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84ADF59F-0C6C-4C35-BB35-D393571939D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84ADF59F-0C6C-4C35-BB35-D393571939D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

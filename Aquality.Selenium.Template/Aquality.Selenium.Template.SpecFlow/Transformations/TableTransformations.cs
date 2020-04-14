@@ -2,7 +2,7 @@
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
 
-namespace Aquality.Selenium.Template.Glue.Transformations
+namespace Aquality.Selenium.Template.SpecFlow.Transformations
 {
     [Binding]
     public class TableTransformations

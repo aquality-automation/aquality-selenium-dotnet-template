@@ -5,15 +5,19 @@ using Aquality.Selenium.Template.Models;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 
-namespace Aquality.Selenium.Template.Glue.StepDefinitions
+namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions
 {
     [Binding]
     public class DemoSteps
     {
+        private readonly MainPage mainPage;
+        private readonly TopBarMenu topBarMenu;
         private readonly ContactUsPage contactUsPage;
 
-        public DemoSteps(ContactUsPage contactUsPage)
+        public DemoSteps(MainPage mainPage, TopBarMenu topBarMenu, ContactUsPage contactUsPage)
         {
+            this.mainPage = mainPage;
+            this.topBarMenu = topBarMenu;
             this.contactUsPage = contactUsPage;
         }
 
@@ -26,9 +30,7 @@ namespace Aquality.Selenium.Template.Glue.StepDefinitions
         [When(@"I open Contact us page")]
         public void WhenIOpenContactUsPage()
         {
-            var mainPage = new MainPage();
             mainPage.AcceptCookies();
-            var topBarMenu = new TopBarMenu();
             topBarMenu.OpenHeaderMenu(TopBarMenu.Item.ContactUs);
         }
         
@@ -44,7 +46,6 @@ namespace Aquality.Selenium.Template.Glue.StepDefinitions
         [When(@"I accept Privacy and Cookies Policy")]
         public void WhenIAcceptPrivacyAndCookiesPolicy()
         {
-            var contactUsPage = new ContactUsPage();
             contactUsPage.CheckPrivacyAndCookies();
         }
         

@@ -5,6 +5,7 @@ pool:
   vmImage: 'windows-latest'
   
 variables:
+  buildConfiguration: 'Release'
   profile: 'azure'
   environment: 'stage'
 
@@ -20,8 +21,8 @@ steps:
     extraProperties: |
       sonar.coverage.exclusions=**/**
 
-- script: dotnet build Aquality.Selenium/Aquality.Selenium.sln
-  displayName: 'Build solution'
+- script: dotnet build Aquality.Selenium/Aquality.Selenium.sln -c $(buildConfiguration)
+  displayName: 'Build solution - $(buildConfiguration)'
 
 - task: SonarCloudAnalyze@1
   displayName: 'Run SonarCloud code analysis'
@@ -36,5 +37,5 @@ steps:
   inputs:
     command: 'test'
     projects: '**/Aquality.Selenium.Template.SpecFlow.csproj'
-    arguments: --no-build
+    arguments: -c $(buildConfiguration) --no-build
     publishTestResults: true
