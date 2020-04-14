@@ -1,5 +1,4 @@
 ﻿using Aquality.Selenium.Template.Utilities;
-using System;
 using TechTalk.SpecFlow;
 
 namespace Aquality.Selenium.Template.SpecFlow.Hooks
@@ -21,8 +20,7 @@ namespace Aquality.Selenium.Template.SpecFlow.Hooks
         {
             if (scenarioContext.ScenarioExecutionStatus != ScenarioExecutionStatus.OK)
             {
-                var screenshotName = $"{GetType().Name}_{DateTime.Now:yyyyMMdd_HHmmss}_{Guid.NewGuid().ToString("n").Substring(0, 5)}";
-                screenshotProvider.TakeScreenshot(screenshotName);
+                screenshotProvider.TakeScreenshot();
             }
         }
     }

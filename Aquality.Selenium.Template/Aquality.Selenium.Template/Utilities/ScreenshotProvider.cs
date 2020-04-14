@@ -8,12 +8,13 @@ namespace Aquality.Selenium.Template.Utilities
 {
     public class ScreenshotProvider
     {
-        public void TakeScreenshot(string name)
+        public void TakeScreenshot()
         {
+            var screenshotName = $"{GetType().Name}_{DateTime.Now:yyyyMMdd_HHmmss}_{Guid.NewGuid().ToString("n").Substring(0, 5)}";
             var image = GetImage();
             var directory = Path.Combine(Environment.CurrentDirectory, "screenshots");
             EnsureDirectoryExists(directory);
-            image.Save(Path.Combine(directory, name), ImageFormat.Png);
+            image.Save(Path.Combine(directory, screenshotName), ImageFormat.Png);
         }
 
         private Image GetImage()
