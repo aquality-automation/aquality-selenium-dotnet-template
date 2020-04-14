@@ -6,7 +6,7 @@ namespace Aquality.Selenium.Template.Glue.Hooks
     [Binding]
     public class BrowserHooks
     {
-        [AfterScenario]
+        [AfterScenario(Order = 1)]
         public void CloseBrowser()
         {
             AqualityServices.Browser.Quit();
