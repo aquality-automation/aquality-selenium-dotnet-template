@@ -49,9 +49,6 @@ namespace Aquality.Selenium.Template.Forms.Pages
             return this;
         }
 
-        public void ClickSend()
-        {
-            SendBtn.Click();
-        }
+        public void ClickSend() => SendBtn.Click();
     }
 }

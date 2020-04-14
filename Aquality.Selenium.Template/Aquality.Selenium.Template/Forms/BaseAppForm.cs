@@ -12,9 +12,6 @@ namespace Aquality.Selenium.Template.Forms
         {
         }
 
-        public void AcceptCookies()
-        {
-            AcceptCookiesBtn.Click();
-        }
+        public void AcceptCookies() => AcceptCookiesBtn.Click();
     }
 }
