@@ -8,7 +8,7 @@ namespace Aquality.Selenium.Template.Utilities
 {
     public class ScreenshotProvider
     {
-        public void PublishScreenshot(string name)
+        public void TakeScreenshot(string name)
         {
             var image = GetImage();
             var directory = Path.Combine(Environment.CurrentDirectory, "screenshots");
