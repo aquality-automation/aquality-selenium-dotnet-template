@@ -14,11 +14,11 @@ namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions
         private readonly TopBarMenu topBarMenu;
         private readonly ContactUsPage contactUsPage;
 
-        public DemoSteps(MainPage mainPage, TopBarMenu topBarMenu, ContactUsPage contactUsPage)
+        public DemoSteps()
         {
-            this.mainPage = mainPage;
-            this.topBarMenu = topBarMenu;
-            this.contactUsPage = contactUsPage;
+            mainPage = new MainPage();
+            topBarMenu = new TopBarMenu();
+            contactUsPage = new ContactUsPage();
         }
 
         [Given(@"Main page is opened")]
