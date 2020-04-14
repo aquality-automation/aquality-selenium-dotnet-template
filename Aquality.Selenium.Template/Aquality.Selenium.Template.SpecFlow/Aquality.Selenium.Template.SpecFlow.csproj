@@ -24,4 +24,10 @@
     <ProjectReference Include="..\Aquality.Selenium.Template\Aquality.Selenium.Template.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="specflow.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
