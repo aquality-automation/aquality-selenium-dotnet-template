@@ -1,8 +1,13 @@
 ﻿{
-  "stepAssemblies": [
+  "plugins": [
     {
-      "assembly": "Aquality.Selenium.Template.SpecFlow"
+      "name": "Allure",
+      "type": "Runtime"
     }
+  ],
+  "stepAssemblies": [
+    { "assembly": "Aquality.Selenium.Template.SpecFlow" },
+    { "assembly": "Allure.SpecFlowPlugin" }
   ],
   "runtime": {
     "stopAtFirstError": true,

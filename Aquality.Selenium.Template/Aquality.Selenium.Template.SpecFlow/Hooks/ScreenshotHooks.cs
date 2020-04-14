@@ -1,4 +1,5 @@
-﻿using Aquality.Selenium.Template.Utilities;
+﻿using Allure.Commons;
+using Aquality.Selenium.Template.Utilities;
 using TechTalk.SpecFlow;
 
 namespace Aquality.Selenium.Template.SpecFlow.Hooks
@@ -20,7 +21,8 @@ namespace Aquality.Selenium.Template.SpecFlow.Hooks
         {
             if (scenarioContext.ScenarioExecutionStatus != ScenarioExecutionStatus.OK)
             {
-                screenshotProvider.TakeScreenshot();
+                var pathToScreenshot = screenshotProvider.TakeScreenshot();
+                AllureLifecycle.Instance.AddAttachment(pathToScreenshot, "Screenshot");
             }
         }
     }
