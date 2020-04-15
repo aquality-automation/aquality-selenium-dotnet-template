@@ -7,14 +7,11 @@ namespace Aquality.Selenium.Template.Configuration
 {
     internal static class Environment
     {
-        private const string EnvironmentVariableKey = "environment";
-
         public static ISettingsFile CurrentEnvironment
         {
             get
             {
-                var defaultEnvName = AqualityServices.Get<ISettingsFile>().GetValue<string>(EnvironmentVariableKey);
-                var envName = EnvironmentConfiguration.GetVariable(EnvironmentVariableKey) ?? defaultEnvName; 
+                var envName = AqualityServices.Get<ISettingsFile>().GetValue<string>("environment");
                 var pathToConfigFile = $"Resources.Environment.{envName}.config.json";
                 return new JsonSettingsFile(pathToConfigFile, Assembly.GetCallingAssembly());
             }
