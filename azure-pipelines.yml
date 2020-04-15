@@ -8,7 +8,7 @@ variables:
   #MSBUILDSINGLELOADCONTEXT: '1'  # https://github.com/SpecFlowOSS/SpecFlow/issues/1912
   buildConfiguration: 'Release'
   profile: 'azure'
-  environment: 'stage'
+  environment: 'Stage'
 
 steps:
 - task: SonarCloudPrepare@1
@@ -30,8 +30,6 @@ steps:
     command: 'build'
     projects: Aquality.Selenium.Template/Aquality.Selenium.Template.sln
     arguments: -c $(buildConfiguration)
-#- script: dotnet build Aquality.Selenium.Template/Aquality.Selenium.Template.sln -c $(buildConfiguration)
-#  displayName: 'Build solution - $(buildConfiguration)'
 
 - task: SonarCloudAnalyze@1
   displayName: 'Run SonarCloud code analysis'
