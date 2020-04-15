@@ -5,7 +5,6 @@ pool:
   vmImage: 'windows-latest'
   
 variables:
-  #MSBUILDSINGLELOADCONTEXT: '1'  # https://github.com/SpecFlowOSS/SpecFlow/issues/1912
   buildConfiguration: 'Release'
   profile: 'azure'
   environment: 'Stage'
