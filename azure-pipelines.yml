@@ -5,7 +5,6 @@ pool:
   vmImage: 'windows-latest'
   
 variables:
-  MSBUILDSINGLELOADCONTEXT: '1'  # https://stackoverflow.com/questions/60755395/specflow-generatefeaturefilecodebehindtask-has-failed-unexpectedly
   buildConfiguration: 'Release'
   profile: 'azure'
   environment: 'stage'
