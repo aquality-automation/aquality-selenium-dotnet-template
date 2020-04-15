@@ -1,10 +1,4 @@
 ﻿{
-  "plugins": [
-    {
-      "name": "Allure",
-      "type": "Runtime"
-    }
-  ],
   "stepAssemblies": [
     { "assembly": "Aquality.Selenium.Template.SpecFlow" },
     { "assembly": "Allure.SpecFlowPlugin" }
