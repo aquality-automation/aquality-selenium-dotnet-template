@@ -43,11 +43,7 @@ namespace Aquality.Selenium.Template.Forms.Pages
             return this;
         }
 
-        public ContactUsPage CheckPrivacyAndCookies()
-        {
-            PrivacyChbx.Check();
-            return this;
-        }
+        public void CheckPrivacyAndCookies() => PrivacyChbx.Check();
 
         public void ClickSend() => SendBtn.Click();
     }

@@ -1,5 +1,7 @@
 ﻿using Allure.Commons;
+using Aquality.Selenium.Browsers;
 using Aquality.Selenium.Template.Utilities;
+using NUnit.Framework;
 using TechTalk.SpecFlow;
 
 namespace Aquality.Selenium.Template.SpecFlow.Hooks
@@ -19,9 +21,11 @@ namespace Aquality.Selenium.Template.SpecFlow.Hooks
         [AfterScenario(Order = 0)]
         public void TakeScreenshot()
         {
-            if (scenarioContext.ScenarioExecutionStatus != ScenarioExecutionStatus.OK)
+            if (scenarioContext.ScenarioExecutionStatus != ScenarioExecutionStatus.OK
+                && AqualityServices.IsBrowserStarted)
             {
                 var pathToScreenshot = screenshotProvider.TakeScreenshot();
+                TestContext.AddTestAttachment(pathToScreenshot);
                 AllureLifecycle.Instance.AddAttachment(pathToScreenshot, "Screenshot");
             }
         }
