@@ -27,7 +27,7 @@ Scenarios from feature files can be executed with IDE
 or with .NET Core CLI [```dotnet test```](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-test) where you can specify all necessary arguments.
 
 ### Reporting 
-Allure Framework is used as a reporting tool. Report data will be places in ```{Environment.CurrentDirectory}/allure-results/``` folder (you can change it in ```allureConfig.json``` file).
+Allure Framework is used as a reporting tool. Report data will be placed in ```{Environment.CurrentDirectory}/allure-results/``` folder (you can change it in ```allureConfig.json``` file).
 
 Run [allure CLI](https://docs.qameta.io/allure/#_commandline) command ```allure serve "{path_to_allure_results_directory}"``` to build and open report in web browser. To generate report in CI use corresponding plugin for your system.
 
