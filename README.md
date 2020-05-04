@@ -8,7 +8,7 @@ Template for [aquality-selenium-dotnet](https://github.com/aquality-automation/a
 - **Aquality.Selenium.Template** - project related part with PageObjects, models and utilities
   - **Configuration/**: classes that used to fetch project config from [Resources/Environment](https://github.com/aquality-automation/aquality-selenium-dotnet-template/blob/master/Aquality.Selenium.Template/Aquality.Selenium.Template/Resources/Environment) folder
   - **Forms/**: Page Objects
-  - **Models/**: classes that represent data models of the application under the test (POJO classes) 
+  - **Models/**: classes that represent data models of the application under the test
   - **Utilities/**: util classes
   - **Resources/**: resource files such as configurations and test data
 - **Aquality.Selenium.Template.SpecFlow** - SpecFlow implementation of the tests
