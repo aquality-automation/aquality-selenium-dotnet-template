@@ -58,6 +58,15 @@
         "elementScrollBehavior": 2
       }
     },
+    "edge": {
+      "webDriverVersion": "Latest",
+      "systemArchitecture": "X32",
+      "capabilities": {
+      },
+      "options": {
+      },
+      "startArguments": []
+    },
     "safari": {
       "options": {
         "safari.options.dataDir": "/Users/username/Downloads"
