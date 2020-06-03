@@ -3,6 +3,7 @@ using Aquality.Selenium.Browsers;
 using Aquality.Selenium.Template.Utilities;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
+using AqualityTracking.Integrations.Core;
 
 namespace Aquality.Selenium.Template.SpecFlow.Hooks
 {
@@ -27,6 +28,7 @@ namespace Aquality.Selenium.Template.SpecFlow.Hooks
                 var pathToScreenshot = screenshotProvider.TakeScreenshot();
                 TestContext.AddTestAttachment(pathToScreenshot);
                 AllureLifecycle.Instance.AddAttachment(pathToScreenshot, "Screenshot");
+                AqualityTrackingLifecycle.Instance.AddAttachment(pathToScreenshot);
             }
         }
     }

@@ -7,7 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Aquality.Selenium" Version="2.3.1" />
+    <PackageReference Include="Aquality.Selenium" Version="2.5.0" />
+    <PackageReference Include="AqualityTracking.SpecFlowPlugin" Version="1.0.1" />
     <PackageReference Include="nunit" Version="3.12.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.16.1">
       <PrivateAssets>all</PrivateAssets>
@@ -26,6 +27,9 @@
 
   <ItemGroup>
     <None Update="allureConfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\aqualityTracking.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="specflow.json">

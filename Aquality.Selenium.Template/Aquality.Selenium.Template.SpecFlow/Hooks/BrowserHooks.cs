@@ -1,5 +1,8 @@
 ﻿using Aquality.Selenium.Browsers;
+using NUnit.Framework;
 using TechTalk.SpecFlow;
+
+[assembly: Parallelizable(ParallelScope.Fixtures)]
 
 namespace Aquality.Selenium.Template.SpecFlow.Hooks
 {
