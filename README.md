@@ -8,7 +8,7 @@ Template for [aquality-selenium-dotnet](https://github.com/aquality-automation/a
 - **Aquality.Selenium.Template** - project related part with PageObjects, models and utilities
   - **Configuration/**: classes that used to fetch project config from [Resources/Environment](https://github.com/aquality-automation/aquality-selenium-dotnet-template/blob/master/Aquality.Selenium.Template/Aquality.Selenium.Template/Resources/Environment) folder
   - **Forms/**: Page Objects
-  - **Models/**: classes that represent data models of the application under the test (POJO classes) 
+  - **Models/**: classes that represent data models of the application under the test
   - **Utilities/**: util classes
   - **Resources/**: resource files such as configurations and test data
 - **Aquality.Selenium.Template.SpecFlow** - SpecFlow implementation of the tests
@@ -27,7 +27,7 @@ Scenarios from feature files can be executed with IDE
 or with .NET Core CLI [```dotnet test```](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-test) where you can specify all necessary arguments.
 
 ### Reporting 
-Allure Framework is used as a reporting tool. Report data will be places in ```{Environment.CurrentDirectory}/allure-results/``` folder (you can change it in ```allureConfig.json``` file).
+Allure Framework is used as a reporting tool. Report data will be placed in ```{Environment.CurrentDirectory}/allure-results/``` folder (you can change it in ```allureConfig.json``` file).
 
 Run [allure CLI](https://docs.qameta.io/allure/#_commandline) command ```allure serve "{path_to_allure_results_directory}"``` to build and open report in web browser. To generate report in CI use corresponding plugin for your system.
 
