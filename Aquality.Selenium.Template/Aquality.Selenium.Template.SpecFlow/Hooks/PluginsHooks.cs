@@ -1,5 +1,5 @@
 ﻿using Allure.Commons;
-using AqualityTracking.SpecFlowPlugin;
+using AqualityTracking.Integrations.Core;
 using NUnit.Framework;
 using System.Text.RegularExpressions;
 using TechTalk.SpecFlow;

@@ -2,8 +2,8 @@
 using Aquality.Selenium.Browsers;
 using Aquality.Selenium.Template.Utilities;
 using NUnit.Framework;
-using AqualityTracking.SpecFlowPlugin;
 using TechTalk.SpecFlow;
+using AqualityTracking.Integrations.Core;
 
 namespace Aquality.Selenium.Template.SpecFlow.Hooks
 {
