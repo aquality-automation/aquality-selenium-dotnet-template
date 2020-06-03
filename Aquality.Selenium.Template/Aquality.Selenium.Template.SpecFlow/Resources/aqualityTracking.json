@@ -1,0 +1,12 @@
+﻿{
+  "enabled": false,
+  "host": "{aquality_tracking_address}",
+  "token": "{api_token}",
+  "projectId": 0,
+  "executor": "{name_of_executor}",
+  "suiteName": "{name_of_test_suite}",
+  "buildName": "{name_of_ci_build}",
+  "environment": "{name_of_execution_environment}",
+  "ciBuild": "{link_to_ci_build}",
+  "debug": false
+}
