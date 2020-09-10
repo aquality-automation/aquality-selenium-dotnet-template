@@ -39,7 +39,7 @@ namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions
         [Then(@"Contact us page is opened")]
         public void ContactUsPageIsOpened()
         {
-            Assert.IsTrue(contactUsPage.IsDisplayed, "Contact us page is opened");
+            Assert.IsTrue(contactUsPage.State.WaitForDisplayed(), "Contact us page should be opened");
         }
 
         [Then(@"Notification about empty fields is present")]

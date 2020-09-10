@@ -22,8 +22,7 @@ namespace Aquality.Selenium.Template.SpecFlow.Hooks
         [AfterScenario(Order = 0)]
         public void TakeScreenshot()
         {
-            if (scenarioContext.ScenarioExecutionStatus != ScenarioExecutionStatus.OK
-                && AqualityServices.IsBrowserStarted)
+            if (AqualityServices.IsBrowserStarted)
             {
                 var pathToScreenshot = screenshotProvider.TakeScreenshot();
                 TestContext.AddTestAttachment(pathToScreenshot);
