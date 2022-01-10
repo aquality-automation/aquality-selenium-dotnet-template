@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Aquality.Selenium" Version="2.7.0" />
+    <PackageReference Include="Aquality.Selenium" Version="3.0.2" />
     <PackageReference Include="AqualityTracking.SpecFlowPlugin" Version="1.0.1" />
     <PackageReference Include="nunit" Version="3.12.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.17.0">
