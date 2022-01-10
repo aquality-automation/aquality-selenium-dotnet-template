@@ -5,17 +5,17 @@ namespace Aquality.Selenium.Template.Forms.Pages
 {
     public class ContactUsPage : BaseAppForm
     {
-        private ITextBox NameTxb => ElementFactory.GetTextBox(By.Id("name"), "Name");
-        private ITextBox CompanyTxb => ElementFactory.GetTextBox(By.Id("company"), "Company");
-        private ITextBox PhoneTxb => ElementFactory.GetTextBox(By.Id("phone"), "Phone");
-        private ITextBox CommentTxb => ElementFactory.GetTextBox(By.Id("message"), "Comment");
-        private ICheckBox PrivacyChbx => ElementFactory.GetCheckBox(By.Name("privacy"), "Privacy");
-        private IButton SendBtn => ElementFactory.GetButton(By.XPath("//input[@value='Send']"), "Send");
-        private ILabel EmailAlertLbl => ElementFactory.GetLabel(By.XPath("//span[@role='alert']//preceding-sibling::input[@id='email']"), "Email validating message");
+        private ITextBox NameTxb => ElementFactory.GetTextBox(By.Id("your-name"), "Name");
+        private ITextBox CompanyTxb => ElementFactory.GetTextBox(By.Id("your-company"), "Company");
+        private ITextBox PhoneTxb => ElementFactory.GetTextBox(By.Id("your-phone"), "Phone");
+        private ITextBox CommentTxb => ElementFactory.GetTextBox(By.Id("your-message"), "Project description");
+        private ICheckBox PrivacyChbx => ElementFactory.GetCheckBox(By.XPath("//input[@name='privacy']/following-sibling::span[1]"), "Privacy");
+        private IButton SendBtn => ElementFactory.GetButton(By.XPath("//div[@class='contactsForm__submit']//button"), "Send a message");
+        private ILabel EmailAlertLbl => ElementFactory.GetLabel(By.XPath("//div[contains(@class,'error')]//input[@id='your-email']"), "Email validating message", Core.Elements.ElementState.ExistsInAnyState);
 
         public bool IsEmailValidationMessagePresent => EmailAlertLbl.State.WaitForDisplayed();
 
-        public ContactUsPage() : base(By.Id("contact-us"), "Contact Us")
+        public ContactUsPage() : base(By.ClassName("contactsForm__wrapper"), "Contact Us")
         {
         }
 
