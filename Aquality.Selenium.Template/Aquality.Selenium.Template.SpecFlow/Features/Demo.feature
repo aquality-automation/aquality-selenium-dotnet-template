@@ -15,7 +15,7 @@ Scenario Outline: Empty email validation is working on Contact Us page
     And I accept Privacy and Cookies Policy
     And I click Send button
     Then Notification about empty fields is present
-    And Contact us page dump is difference
+    And Contact us page dump is different
 
     Examples: 
     | Name         |

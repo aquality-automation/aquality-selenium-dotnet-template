@@ -55,8 +55,8 @@ namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions
                 "Email validation message should be displayed");
         }
 
-        [Then(@"Contact us page dump is difference")]
-        public void ContactUsPageDumpIsDifference()
+        [Then(@"Contact us page dump is different")]
+        public void ContactUsPageDumpIsDifferent()
         {
             Assert.That(contactUsPage.Dump.Compare(), Is.GreaterThan(0), 
                 "The form dump should differ");
