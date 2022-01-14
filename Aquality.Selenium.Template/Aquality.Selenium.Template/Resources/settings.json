@@ -3,11 +3,11 @@
     "browserName": "chrome",
     "isRemote": false,
     "remoteConnectionUrl": "http://localhost:4444/wd/hub",
-    "isElementHighlightEnabled": false,
+    "isElementHighlightEnabled": true,
 
     "driverSettings": {
         "chrome": {
-            "webDriverVersion": "MatchingBrowser",
+            "webDriverVersion": "Latest",
             "capabilities": {
                 "enableVNC": true,
                 "unhandledPromptBehavior": "default"
@@ -20,7 +20,12 @@
                 "download.prompt_for_download": "false",
                 "download.default_directory": "./downloads"
             },
-            "startArguments": [],
+            "startArguments": [
+                "window-size=1920,1080",
+                "--no-sandbox",
+                "--disable-popup-blocking",
+                "--disable-gpu"
+            ],
             "pageLoadStrategy": "Normal"
         },
         "firefox": {
