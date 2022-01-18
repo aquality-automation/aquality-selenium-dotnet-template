@@ -1,0 +1,21 @@
+[ {
+  "uid" : "95200d2ae182482d",
+  "name" : "Empty email validation is working on Contact Us page (\"John Doe\")",
+  "time" : {
+    "start" : 1642518862975,
+    "stop" : 1642518879361,
+    "duration" : 16386
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3b5e831f5a338afd",
+  "name" : "Empty email validation is working on Contact Us page (\"Peter Parker\")",
+  "time" : {
+    "start" : 1642518879991,
+    "stop" : 1642518886567,
+    "duration" : 6576
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
