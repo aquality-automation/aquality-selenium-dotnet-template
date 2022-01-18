@@ -24,7 +24,7 @@ jobs:
     env:
       BUILD_CONFIGURATION: Release
       SOLUTION_NAME: Aquality.Selenium.Template/Aquality.Selenium.Template.sln
-      ALLURE_RESULTS: Aquality.Selenium.Template/Aquality.Selenium.Template.SpecFlow/bin/Release/net5.0/allure-results
+      ALLURE_RESULTS: Aquality.Selenium.Template/Aquality.Selenium.Template.SpecFlow/bin/Release/net6.0/allure-results
       ENVIRONMENT: ${{ github.event.inputs.environment == '' && 'Stage' ||  github.event.inputs.environment }}
       GH_PAGES_URL: https://aquality-automation.github.io/aquality-selenium-dotnet-template
     concurrency: test-${{ github.event.inputs.environment == '' && 'Stage' || github.event.inputs.environment }}
@@ -37,7 +37,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 5.0.x
+        dotnet-version: 6.0.x
         
     - name: Install Google Chrome
       run: |
@@ -87,4 +87,3 @@ jobs:
         state: ${{ steps.dotnet_test.outcome }}
         sha: ${{github.event.pull_request.head.sha || github.sha}}
         target_url: ${{ env.GH_PAGES_URL }}/${{github.run_number}}/
-          
