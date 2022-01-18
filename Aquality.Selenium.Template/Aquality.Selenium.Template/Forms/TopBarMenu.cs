@@ -8,7 +8,7 @@ namespace Aquality.Selenium.Template.Forms
     {
         private static readonly IDictionary<Item, string> menuItems = new Dictionary<Item, string>
         {
-            { Item.ContactUs, "//div[@id='primary-navigation']//li[contains(@class, 'contact-us menu')]//a" }
+            { Item.ContactUs, "//div[@class='header__contact']//a" }
         };
 
         public TopBarMenu() : base(By.Id("masthead"), "Header")

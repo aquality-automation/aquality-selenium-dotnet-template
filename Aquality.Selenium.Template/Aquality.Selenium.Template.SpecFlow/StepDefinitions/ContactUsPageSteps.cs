@@ -21,6 +21,12 @@ namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions
             contactUsPage.CheckPrivacyAndCookies();
         }
 
+        [When(@"I save Contact us page dump")]
+        public void ISaveContactUsPageDump()
+        {
+            contactUsPage.Dump.Save();
+        }
+
         [When(@"I fill contact form using following data:")]
         public void IFillContactFormUsingFollowingData(ContactUsInfo contactUsInfo)
         {
@@ -47,6 +53,13 @@ namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions
         {
             Assert.IsTrue(contactUsPage.IsEmailValidationMessagePresent,
                 "Email validation message should be displayed");
+        }
+
+        [Then(@"Contact us page dump is different")]
+        public void ContactUsPageDumpIsDifferent()
+        {
+            Assert.That(contactUsPage.Dump.Compare(), Is.GreaterThan(0), 
+                "The form dump should differ");
         }
     }
 }
