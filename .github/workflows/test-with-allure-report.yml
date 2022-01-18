@@ -43,10 +43,7 @@ jobs:
       run: |
         chmod +x ./scripts/InstallChrome.sh
         ./scripts/InstallChrome.sh
-        
-    - name: Restore dependencies
-      run: dotnet restore
-      
+              
     - name: Build
       run: dotnet build ${{ env.SOLUTION_NAME }} -c ${{ env.BUILD_CONFIGURATION }}
       
