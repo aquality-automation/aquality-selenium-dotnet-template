@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://aquality-automation.github.io/aquality-selenium-dotnet-template",
+  "buildOrder" : 5,
+  "buildName" : "GitHub Actions Run #1713358948",
+  "buildUrl" : "https://github.com/aquality-automation/aquality-selenium-dotnet-template/actions/runs/1713358948",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://aquality-automation.github.io/aquality-selenium-dotnet-template/5/"
+} ]
