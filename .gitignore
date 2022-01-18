@@ -37,6 +37,7 @@ msbuild.wrn
 .vs/
 
 Log/
+VisualDumps/
 
 # SpecFlow
 *.feature.cs
