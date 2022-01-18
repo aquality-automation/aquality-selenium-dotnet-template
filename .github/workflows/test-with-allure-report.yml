@@ -24,7 +24,7 @@ jobs:
     env:
       BUILD_CONFIGURATION: Release
       SOLUTION_NAME: Aquality.Selenium.Template/Aquality.Selenium.Template.sln
-      ALLURE_RESULTS: Aquality.Selenium.Template/Aquality.Selenium.Template.SpecFlow/bin/Release/netcoreapp3.1/allure-results
+      ALLURE_RESULTS: Aquality.Selenium.Template/Aquality.Selenium.Template.SpecFlow/bin/Release/net5.0/allure-results
       ENVIRONMENT: ${{ github.event.inputs.environment == '' && 'Stage' ||  github.event.inputs.environment }}
       GH_PAGES_URL: https://aquality-automation.github.io/aquality-selenium-dotnet-template
     concurrency: test-${{ github.event.inputs.environment == '' && 'Stage' || github.event.inputs.environment }}
