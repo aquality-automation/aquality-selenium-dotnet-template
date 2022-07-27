@@ -11,6 +11,7 @@ namespace Aquality.Selenium.Template.Forms
         protected BaseAppForm(By locator, string name) : base(locator, name)
         {
         }
+        public bool IsAcceptCookiesButtonDisplayed => AcceptCookiesBtn.State.IsDisplayed;
 
         public void AcceptCookies() => AcceptCookiesBtn.Click();
     }
