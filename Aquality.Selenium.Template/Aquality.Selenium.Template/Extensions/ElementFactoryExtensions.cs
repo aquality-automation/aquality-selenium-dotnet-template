@@ -1,9 +1,9 @@
 ﻿using Aquality.Selenium.Core.Elements;
 using Aquality.Selenium.Core.Elements.Interfaces;
+using Aquality.Selenium.Template.Elements;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
-using static Aquality.Selenium.Template.Elements.CustomElemвents;
 
 namespace Aquality.Selenium.Template.Extensions
 {

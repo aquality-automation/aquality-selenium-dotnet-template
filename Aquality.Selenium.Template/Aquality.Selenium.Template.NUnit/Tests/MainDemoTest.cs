@@ -10,17 +10,17 @@ namespace Aquality.Selenium.Template.NUnit.Tests
     public class MainDemoTest : BaseTest
     {
         private readonly MainPageSteps mainPageSteps = new MainPageSteps();
-        private readonly TestData testData = FileReader.ReadJsonData<TestData>(PathConstants.PathToTestData);
+        private readonly TestData testData = FileReader.ReadJsonData<TestData>(ResourceConstants.PathToTestData);
 
         [SetUp]
-        public void Setup()
+        public new void Setup()
         {
             GoToPage(testData.Url);
             SetScreenExpansionMaximize();
         }
 
         [TearDown]
-        public void AfterEach()
+        public new void AfterEach()
         {
             AqualityServices.Browser.Quit();
         }

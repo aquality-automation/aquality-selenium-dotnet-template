@@ -10,15 +10,19 @@ namespace Aquality.Selenium.Template.NUnit.Tests
         [Test(Description = "TC-0005 Check Custom Image Comparator")]
         public void TC0005_CheckCustomImageComparator()
         {
-            CustomImageComparator.Init();
+            var firstImage = Image.FromFile(ResourceConstants.FirstTestImage);
 
-            var firstImage = Image.FromFile(PathConstants.FirstTestImage);
+            var firstImageWidth = firstImage.Width;
 
-            var secondImage = Image.FromFile(PathConstants.SecondTestImage);
+            var firstImageHeight = firstImage.Height;
 
-            var compareResult = CustomImageComparator.Compare(firstImage, secondImage);
+            var secondImage = Image.FromFile(ResourceConstants.SecondTestImage);
 
-            Assert.AreEqual(compareResult, 0, "The images should be the same");
+            var customImageComparator = new CustomImageComparator(0.1f, firstImageWidth, firstImageHeight);
+
+            var differenceBetweenImages = customImageComparator.Compare(firstImage, secondImage);
+
+            Assert.AreEqual(0, differenceBetweenImages, "The images should be the same");
         }
     }
 }

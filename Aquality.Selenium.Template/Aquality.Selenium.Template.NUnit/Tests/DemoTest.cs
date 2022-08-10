@@ -9,16 +9,14 @@ namespace Aquality.Selenium.Template.NUnit.Tests
 {
     public class DemoTest : BaseTest
     {
-        private const string FullPageSizeJS = "return document.body.scrollHeight";
-
         private readonly TopBarMenuSteps topBarMenuSteps = new TopBarMenuSteps();
         private readonly MainPageSteps mainPageSteps = new MainPageSteps();
         private readonly ContactUsPageSteps contactUsFormSteps = new ContactUsPageSteps();
         private readonly FooterFormSteps footerFormSteps = new FooterFormSteps();
-        private readonly TestData testData = FileReader.ReadJsonData<TestData>(PathConstants.PathToTestData);
+        private readonly TestData testData = FileReader.ReadJsonData<TestData>(ResourceConstants.PathToTestData);
 
         [SetUp]
-        public void Setup()
+        public new void Setup()
         {
             GoToPage(testData.Url);
             SetScreenExpansionMaximize();
@@ -27,7 +25,7 @@ namespace Aquality.Selenium.Template.NUnit.Tests
         }
 
         [TearDown]
-        public void AfterEach()
+        public new void AfterEach()
         {
             AqualityServices.Browser.Quit();
         }
@@ -65,13 +63,13 @@ namespace Aquality.Selenium.Template.NUnit.Tests
         public void TC0004_CheckTheFooterFormIsCorrectWithVisualTesting()
         {
             topBarMenuSteps.TopBarMenuIsPresent();
-            var fullPageHeight = (int)(long)BrowserUtils.ExecuteScript(FullPageSizeJS);
-            BrowserUtils.ScrollWindowBy(0, fullPageHeight);
+            var fullPageHeight = topBarMenuSteps.GetFullPageHeight();
+            AqualityServices.Browser.ScrollWindowBy(0, fullPageHeight);
             footerFormSteps.FooterFormIsPresent();
             footerFormSteps.CheckVisualElementsPresent();
             //footerFormSteps.DumpSave(); // - this method is used locally, only to fill the image dump.
             var compareResult = footerFormSteps.DumpCompare();
-            Assert.AreEqual(compareResult, 0, "The footer form should contain the correct visual elements");
+            Assert.AreEqual(0, compareResult, "The footer form should contain the correct visual elements");
         }
     }
 }

@@ -14,14 +14,11 @@ namespace Aquality.Selenium.Template.NUnit.Steps
 {
     public class ContactUsPageSteps : BaseSteps
     {
-        private readonly ContactUsPage contactUsPage;
-        private readonly ContactUsInfo contactUsInfo;
-        const string TitleLabelText = "We are glad to hear from you!";
+        private readonly ContactUsPage contactUsPage = new ContactUsPage();
+        private readonly ContactUsInfo contactUsInfo = FileReader.ReadJsonData<ContactUsInfo>(ResourceConstants.PathToContactUserWithInvalidEmail);
 
         public ContactUsPageSteps()
         {
-            contactUsPage = new ContactUsPage();
-            contactUsInfo = FileReader.ReadJsonData<ContactUsInfo>(PathConstants.PathToContactUserWithInvalidEmail);
         }
 
         public void ContactUsPageIsPresent()
@@ -37,7 +34,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
             {
                 foreach(ContactUsTextFields name in Enum.GetValues(typeof(ContactUsTextFields)))
                 {
-                    Assert.IsTrue(contactUsPage.IsContatcUsTextBoxPresent(name), $"Text field {name} should be displayed");
+                    Assert.IsTrue(contactUsPage.IsContactUsTextBoxPresent(name), $"Text field {name} should be displayed");
                 }
                 Assert.IsTrue(contactUsPage.IsTermsCheckBoxExist, "Terms checkBox should be exist");
                 Assert.IsTrue(contactUsPage.IsTermsLabelPresent, "Terms label should be displayed");
@@ -49,7 +46,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
         public void CheckThanContactUsTitleIsCorrect()
         {
             LogAssertion();
-            Assert.AreEqual(contactUsPage.TitleLabelTextValue, TitleLabelText, "Title text should be same.");
+            Assert.AreEqual(contactUsPage.TitleLabelTextValue, TitleConstants.TitleLabelText, "Title text should be same.");
         }
 
         public void ClickSendAMessageButton()
@@ -74,7 +71,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
         public void SetValueForTheTextField(ContactUsTextFields textField, string value)
         {
             LogStep(nameof(SetValueForTheTextField) + $"Input user name - [{textField}]");
-            contactUsPage.SetValueForContatcUsTextBox(textField, value);
+            contactUsPage.SetValueForContactUsTextBox(textField, value);
         }
 
         public void SetDataForTheAllTextFields()
@@ -93,7 +90,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
             AqualityServices.ConditionalWait.WaitForTrue(() => {
                 return contactUsPage.IsWarningEmailMessagePresent == isChecked;
             },
-             TimeSpan.FromSeconds(ProjectConstants.Timeout), TimeSpan.FromSeconds(ProjectConstants.PollingInterval),
+             TimeSpan.FromSeconds(1), TimeSpan.FromSeconds(5),
                 $"Warning email message should be {expectedStatus}.");
         }
 

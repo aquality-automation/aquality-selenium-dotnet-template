@@ -24,7 +24,6 @@ namespace Aquality.Selenium.Template.Forms
 
         private IList<ILabel> HeadersTabElements => ElementFactory.GetNotEmptyElementList<ILabel>(By.XPath("(//nav/ul/li/button | //nav/ul/li/a)"), "Header elements");
 
-
         public TopBarMenu() : base(By.TagName("header"), "Header")
         {
         }

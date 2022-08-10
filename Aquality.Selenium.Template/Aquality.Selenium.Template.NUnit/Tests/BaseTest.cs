@@ -1,5 +1,6 @@
 ﻿using Aquality.Selenium.Browsers;
 using Aquality.Selenium.Core.Logging;
+using Aquality.Selenium.Template.Implementation;
 using Humanizer;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
@@ -20,6 +21,8 @@ namespace Aquality.Selenium.Template.NUnit.Tests
         public void Setup()
         {
             Logger.Info($"Start scenario [{ScenarioName}]");
+            var customStartUp = new CustomStartUp();
+            AqualityServices.SetStartup(customStartUp);
         }
 
         [TearDown]

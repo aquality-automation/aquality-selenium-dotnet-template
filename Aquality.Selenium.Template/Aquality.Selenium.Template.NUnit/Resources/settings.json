@@ -93,7 +93,8 @@
     "timeoutScript": 10,
     "timeoutPageLoad": 15,
     "timeoutPollingInterval": 300,
-    "timeoutCommand": 60
+    "timeoutCommand": 60,
+    "timeoutElementAppear": 15
   },
   "retry": {
     "number": 2,

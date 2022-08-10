@@ -6,11 +6,10 @@ namespace Aquality.Selenium.Template.NUnit.Steps
 {
     public class FooterFormSteps : BaseSteps
     {
-        private readonly FooterForm footerForm;
+        private readonly FooterForm footerForm = new FooterForm();
 
         public FooterFormSteps()
         {
-            footerForm = new FooterForm();
         }
 
         public void FooterFormIsPresent()

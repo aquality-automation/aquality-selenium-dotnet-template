@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Aquality.Selenium.Template.Constants;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 
@@ -6,13 +7,13 @@ namespace Aquality.Selenium.Template.Enums
 {
     public enum ContactUsTextFields
     {
-        [Description("Please fill in the required field.")]
+        [Description(ProjectConstants.RequiredFieldDescription)]
         Name,
-        [Description("Email address seems invalid.")]
+        [Description(ProjectConstants.EmailAddressInvalidDescription)]
         Email,
         Company,
         Phone,
-        [Description("Please fill in the required field.")]
+        [Description(ProjectConstants.RequiredFieldDescription)]
         ProjectDescription
     }
 
@@ -33,9 +34,7 @@ namespace Aquality.Selenium.Template.Enums
             {
                 throw new NotSupportedException($"Id for {textField} text field is not defined");
             }
-
             return TextFieldsId[textField];
         }
     }
-
 }
