@@ -31,7 +31,7 @@ namespace Aquality.Selenium.Template.Logging
         private void AddStepToAllure(string message)
         {
             var timeStamp = DateTime.Now.ToString("HH:mm:ss.fff");
-            AllureLifecycle.Instance.WrapInStep(() => { }, $"{timeStamp} - {message}");
+            AllureLifecycle.Instance.WrapInStep(() => {}, $"{timeStamp} - {message}");
         }
     }
 }
