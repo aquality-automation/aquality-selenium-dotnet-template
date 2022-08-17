@@ -18,7 +18,7 @@ namespace Aquality.Selenium.Template.SpecFlow.Hooks
             this.context = context;
         }
 
-        [BeforeTestRun]
+        [BeforeFeature]
         public static void RegisterCustomStartup()
         {
             AqualityServices.SetStartup(new CustomStartup());

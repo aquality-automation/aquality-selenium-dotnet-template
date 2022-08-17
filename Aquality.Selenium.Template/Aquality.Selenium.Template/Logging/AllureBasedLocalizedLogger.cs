@@ -19,7 +19,7 @@ namespace Aquality.Selenium.Template.Logging
         public new void InfoElementAction(string elementType, string elementName, string messageKey, params object[] args)
         {
             AddStepToAllure($"{elementType} '{elementName}' :: {localizationManager.GetLocalizedMessage(messageKey, args)}");
-            base.Info(elementType, elementName, messageKey, args);
+            base.InfoElementAction(elementType, elementName, messageKey, args);
         }
 
         public new void Info(string messageKey, params object[] args)
