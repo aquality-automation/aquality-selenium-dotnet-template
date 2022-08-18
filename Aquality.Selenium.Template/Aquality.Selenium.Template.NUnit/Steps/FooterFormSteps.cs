@@ -8,10 +8,6 @@ namespace Aquality.Selenium.Template.NUnit.Steps
     {
         private readonly FooterForm footerForm = new FooterForm();
 
-        public FooterFormSteps()
-        {
-        }
-
         public void FooterFormIsPresent()
         {
             LogAssertion();

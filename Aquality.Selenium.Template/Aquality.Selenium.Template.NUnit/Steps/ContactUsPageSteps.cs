@@ -1,25 +1,23 @@
 ﻿using NUnit.Framework;
 using System;
 using Aquality.Selenium.Browsers;
-using Aquality.Selenium.Template.Constants;
 using Aquality.Selenium.Template.Enums;
 using Aquality.Selenium.Template.Forms.Pages;
-using Aquality.Selenium.Template.Utilities;
 using Aquality.Selenium.Template.NUnit.Extensions;
 using Aquality.Selenium.Template.Models;
 using Aquality.Selenium.Template.Extensions;
 using Aquality.Selenium.Template.NUnit.Constants;
+using Aquality.Selenium.Core.Utilities;
+using System.Reflection;
+using Newtonsoft.Json;
+using Aquality.Selenium.Configurations;
 
 namespace Aquality.Selenium.Template.NUnit.Steps
 {
     public class ContactUsPageSteps : BaseSteps
     {
         private readonly ContactUsPage contactUsPage = new ContactUsPage();
-        private readonly ContactUsInfo contactUsInfo = FileReader.ReadJsonData<ContactUsInfo>(ResourceConstants.PathToContactUserWithInvalidEmail);
-
-        public ContactUsPageSteps()
-        {
-        }
+        private readonly ContactUsInfo contactUsInfo = JsonConvert.DeserializeObject<ContactUsInfo>(FileReader.GetTextFromEmbeddedResource(ResourceConstants.PathToContactUserWithInvalidEmail, Assembly.GetCallingAssembly()));
 
         public void ContactUsPageIsPresent()
         {
@@ -87,10 +85,8 @@ namespace Aquality.Selenium.Template.NUnit.Steps
         {
             LogAssertion(nameof(CheckThatWarningEmailMessageisPresentOrNot) + $"isChecked status - [{isChecked}]");
             var expectedStatus = isChecked ? "displayed" : "not displayed";
-            AqualityServices.ConditionalWait.WaitForTrue(() => {
-                return contactUsPage.IsWarningEmailMessagePresent == isChecked;
-            },
-             TimeSpan.FromSeconds(1), TimeSpan.FromSeconds(5),
+            AqualityServices.ConditionalWait.WaitForTrue(() => contactUsPage.IsWarningEmailMessagePresent == isChecked,
+             AqualityServices.Get<ITimeoutConfiguration>().Script, AqualityServices.Get<ITimeoutConfiguration>().PollingInterval,
                 $"Warning email message should be {expectedStatus}.");
         }
 

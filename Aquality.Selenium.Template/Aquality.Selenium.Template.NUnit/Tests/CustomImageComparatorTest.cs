@@ -7,8 +7,10 @@ namespace Aquality.Selenium.Template.NUnit.Tests
 {
     public class CustomImageComparatorTest : BaseTest
     {
-        [Test(Description = "TC-0005 Check Custom Image Comparator")]
-        public void TC0005_CheckCustomImageComparator()
+        const float TheThresholdValueOf10Percent = 0.1f;
+
+        [Test(Description = "TC-0005 Comparison of two given images")]
+        public void TC0005_ComparisonOfTwoGivenImages()
         {
             var firstImage = Image.FromFile(ResourceConstants.FirstTestImage);
 
@@ -18,11 +20,11 @@ namespace Aquality.Selenium.Template.NUnit.Tests
 
             var secondImage = Image.FromFile(ResourceConstants.SecondTestImage);
 
-            var customImageComparator = new CustomImageComparator(0.1f, firstImageWidth, firstImageHeight);
+            var customImageComparator = new CustomImageComparator(TheThresholdValueOf10Percent, firstImageWidth, firstImageHeight);
 
             var differenceBetweenImages = customImageComparator.Compare(firstImage, secondImage);
 
-            Assert.AreEqual(0, differenceBetweenImages, "The images should be the same");
+            Assert.AreNotEqual(0, differenceBetweenImages, "The images should not be the same");
         }
     }
 }

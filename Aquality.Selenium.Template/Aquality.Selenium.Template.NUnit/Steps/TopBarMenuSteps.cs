@@ -3,7 +3,6 @@ using Aquality.Selenium.Template.Forms;
 using Aquality.Selenium.Template.NUnit.Constants;
 using Aquality.Selenium.Template.NUnit.Extensions;
 using NUnit.Framework;
-using System.IO;
 
 namespace Aquality.Selenium.Template.NUnit.Steps
 {
@@ -13,10 +12,6 @@ namespace Aquality.Selenium.Template.NUnit.Steps
         private const string ServicesTabItem = "Services";
         private readonly string[] headerTabItems = { "Services", "Approach", "Portfolio", "Blog", "Company" };
         private readonly string[] servicesTitleElements = { "Full-cycle testing services", "Quality engineering", "Complete test coverage", "Systems & platforms" };
-
-        public TopBarMenuSteps()
-        {
-        }
 
         public void TopBarMenuIsPresent()
         {
@@ -59,8 +54,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
         public int GetFullPageHeight()
         {
             LogStep();
-            var jsScript = File.ReadAllText(ResourceConstants.PathToGetFullPageHeightJS);
-            var pageHeight = AqualityServices.Browser.Driver.ExecuteScript(jsScript);
+            var pageHeight = AqualityServices.Browser.ExecuteScriptFromFile<long>(ResourceConstants.PathToGetFullPageHeightJS);
             return (int)(long)pageHeight;
         }
     }

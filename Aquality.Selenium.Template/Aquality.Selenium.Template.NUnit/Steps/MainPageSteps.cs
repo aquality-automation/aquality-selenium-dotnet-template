@@ -1,18 +1,14 @@
 ﻿using Aquality.Selenium.Browsers;
+using Aquality.Selenium.Configurations;
 using Aquality.Selenium.Template.Forms.Pages;
 using Aquality.Selenium.Template.NUnit.Extensions;
 using NUnit.Framework;
-using System;
 
 namespace Aquality.Selenium.Template.NUnit.Steps
 {
     public class MainPageSteps : BaseSteps
     {
         private readonly MainPage mainPage = new MainPage();
-
-        public MainPageSteps()
-        {
-        }
 
         public void MainPageIsPresent()
         {
@@ -30,10 +26,8 @@ namespace Aquality.Selenium.Template.NUnit.Steps
         public void AcceptCookiesButtonIsNotDisplayed()
         {
             LogAssertion();
-            AqualityServices.ConditionalWait.WaitForTrue(() => {
-                return mainPage.IsAcceptCookiesButtonDisplayed;
-            },
-             TimeSpan.FromSeconds(1), TimeSpan.FromSeconds(5),
+            AqualityServices.ConditionalWait.WaitForTrue(() => mainPage.IsAcceptCookiesButtonDisplayed,
+             AqualityServices.Get<ITimeoutConfiguration>().Script, AqualityServices.Get<ITimeoutConfiguration>().PollingInterval,
                 "Accept cookies button should not be displayed");
         }
 

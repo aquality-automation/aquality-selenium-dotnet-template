@@ -1,8 +1,5 @@
 ﻿using Aquality.Selenium.Browsers;
-using Aquality.Selenium.Template.NUnit.Constants;
-using Aquality.Selenium.Template.NUnit.Models;
 using Aquality.Selenium.Template.NUnit.Steps;
-using Aquality.Selenium.Template.Utilities;
 using NUnit.Framework;
 
 namespace Aquality.Selenium.Template.NUnit.Tests
@@ -13,23 +10,15 @@ namespace Aquality.Selenium.Template.NUnit.Tests
         private readonly MainPageSteps mainPageSteps = new MainPageSteps();
         private readonly ContactUsPageSteps contactUsFormSteps = new ContactUsPageSteps();
         private readonly FooterFormSteps footerFormSteps = new FooterFormSteps();
-        private readonly TestData testData = FileReader.ReadJsonData<TestData>(ResourceConstants.PathToTestData);
 
         [SetUp]
         public new void Setup()
         {
-            GoToPage(testData.Url);
+            GoToPageStartPage();
             SetScreenExpansionMaximize();
             mainPageSteps.MainPageIsPresent();
             mainPageSteps.AcceptCookies();
         }
-
-        [TearDown]
-        public new void AfterEach()
-        {
-            AqualityServices.Browser.Quit();
-        }
-
 
         [Test(Description = "TC-0002 Check all navigation panel elements are present")]
         public void TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish()

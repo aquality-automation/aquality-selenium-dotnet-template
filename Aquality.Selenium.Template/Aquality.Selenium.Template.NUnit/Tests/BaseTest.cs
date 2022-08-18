@@ -17,12 +17,18 @@ namespace Aquality.Selenium.Template.NUnit.Tests
 
         private TestContext.ResultAdapter Result => TestContext.CurrentContext.Result;
 
+        [OneTimeSetUp]
+        public void OneTimeSetUp()
+        {
+            Logger.Info("Setup startup config");
+            var customStartUp = new CustomStartUp();
+            AqualityServices.SetStartup(customStartUp);
+        }
+
         [SetUp]
         public void Setup()
         {
             Logger.Info($"Start scenario [{ScenarioName}]");
-            var customStartUp = new CustomStartUp();
-            AqualityServices.SetStartup(customStartUp);
         }
 
         [TearDown]
@@ -31,14 +37,23 @@ namespace Aquality.Selenium.Template.NUnit.Tests
             LogScenarioResult();
         }
 
+        [TearDown]
+        public void CleanUp()
+        {
+            if (AqualityServices.IsBrowserStarted)
+            {
+                AqualityServices.Browser.Quit();
+            }
+        }
+
         public void SetScreenExpansionMaximize()
         {
             AqualityServices.Browser.Maximize();
         }
 
-        public void GoToPage(string url)
+        public void GoToPageStartPage()
         {
-            AqualityServices.Browser.GoTo(url);
+            AqualityServices.Browser.GoTo(Configuration.Configuration.StartUrl);
         }
 
         private void LogScenarioResult()
