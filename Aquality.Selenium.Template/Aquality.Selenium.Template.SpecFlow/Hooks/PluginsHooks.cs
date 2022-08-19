@@ -1,4 +1,6 @@
 ﻿using Allure.Commons;
+using Aquality.Selenium.Browsers;
+using Aquality.Selenium.Template.Browser;
 using AqualityTracking.Integrations.Core;
 using NUnit.Framework;
 using System.Text.RegularExpressions;
@@ -14,6 +16,12 @@ namespace Aquality.Selenium.Template.SpecFlow.Hooks
         public PluginsHooks(ScenarioContext context)
         {
             this.context = context;
+        }
+
+        [BeforeFeature]
+        public static void RegisterCustomStartup()
+        {
+            AqualityServices.SetStartup(new CustomStartup());
         }
 
         [AfterScenario(Order = -1)]
