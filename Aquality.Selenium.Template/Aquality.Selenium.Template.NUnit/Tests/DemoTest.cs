@@ -1,10 +1,9 @@
-﻿using Aquality.Selenium.Browsers;
-using Aquality.Selenium.Template.NUnit.Steps;
+﻿using Aquality.Selenium.Template.NUnit.Steps;
 using NUnit.Framework;
 
 namespace Aquality.Selenium.Template.NUnit.Tests
 {
-    public class DemoTest : BaseTest
+    public class DemoTest : BaseWebTest
     {
         private readonly TopBarMenuSteps topBarMenuSteps = new TopBarMenuSteps();
         private readonly MainPageSteps mainPageSteps = new MainPageSteps();
@@ -52,13 +51,11 @@ namespace Aquality.Selenium.Template.NUnit.Tests
         public void TC0004_CheckTheFooterFormIsCorrectWithVisualTesting()
         {
             topBarMenuSteps.TopBarMenuIsPresent();
-            var fullPageHeight = topBarMenuSteps.GetFullPageHeight();
-            AqualityServices.Browser.ScrollWindowBy(0, fullPageHeight);
+            mainPageSteps.ScrollToTheFooter();
             footerFormSteps.FooterFormIsPresent();
             footerFormSteps.CheckVisualElementsPresent();
-            //footerFormSteps.DumpSave(); // - this method is used locally, only to fill the image dump.
-            var compareResult = footerFormSteps.DumpCompare();
-            Assert.AreEqual(0, compareResult, "The footer form should contain the correct visual elements");
+            //footerFormSteps.SaveDump(); // - this method is used locally, only to fill the image dump.
+            footerFormSteps.CheckThatTheVisualElementsAreCorrect();
         }
     }
 }

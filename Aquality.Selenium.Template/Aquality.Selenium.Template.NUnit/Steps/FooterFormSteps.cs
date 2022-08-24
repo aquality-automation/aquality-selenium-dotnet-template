@@ -25,14 +25,17 @@ namespace Aquality.Selenium.Template.NUnit.Steps
             });
         }
 
-        public void DumpSave()
+        public void SaveDump()
         {
+            LogStep();
             footerForm.Dump.Save();
         }
 
-        public float DumpCompare()
+        public void CheckThatTheVisualElementsAreCorrect()
         {
-            return footerForm.Dump.Compare();
+            LogAssertion();
+            var compareVisualElements = footerForm.Dump.Compare();
+            Assert.AreEqual(0, compareVisualElements, "The footer form should contain the correct visual elements");
         }
     }
 }

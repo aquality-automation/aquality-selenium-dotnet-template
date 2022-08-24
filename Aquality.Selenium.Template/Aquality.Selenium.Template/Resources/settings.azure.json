@@ -123,7 +123,7 @@
         "timeoutPageLoad": 15,
         "timeoutPollingInterval": 300,
         "timeoutCommand": 60,
-       "timeoutElementAppear": 15
+        "timeoutElementAppear": 15
     },
     "retry": {
         "number": 2,

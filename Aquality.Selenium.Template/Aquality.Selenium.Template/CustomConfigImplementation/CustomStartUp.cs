@@ -5,7 +5,7 @@ using Aquality.Selenium.Core.Configurations;
 using Aquality.Selenium.Browsers;
 using Aquality.Selenium.Template.Interfaces;
 
-namespace Aquality.Selenium.Template.Implementation
+namespace Aquality.Selenium.Template.CustomConfigImplementation
 {
     public class CustomStartUp : BrowserStartup
     {

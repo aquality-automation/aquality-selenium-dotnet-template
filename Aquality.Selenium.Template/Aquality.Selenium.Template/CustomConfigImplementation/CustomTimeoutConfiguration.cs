@@ -3,7 +3,7 @@ using Aquality.Selenium.Template.Interfaces;
 using System;
 using TimeoutConfiguration = Aquality.Selenium.Configurations.TimeoutConfiguration;
 
-namespace Aquality.Selenium.Template.Implementation
+namespace Aquality.Selenium.Template.CustomConfigImplementation
 {
     internal class CustomTimeoutConfiguration : TimeoutConfiguration, ICustomTimeoutConfiguration
     {

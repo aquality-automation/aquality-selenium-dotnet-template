@@ -1,6 +1,6 @@
 ﻿using Aquality.Selenium.Browsers;
 using Aquality.Selenium.Core.Logging;
-using Aquality.Selenium.Template.Implementation;
+using Aquality.Selenium.Template.CustomConfigImplementation;
 using Humanizer;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
@@ -35,25 +35,6 @@ namespace Aquality.Selenium.Template.NUnit.Tests
         public virtual void AfterEach()
         {
             LogScenarioResult();
-        }
-
-        [TearDown]
-        public void CleanUp()
-        {
-            if (AqualityServices.IsBrowserStarted)
-            {
-                AqualityServices.Browser.Quit();
-            }
-        }
-
-        public void SetScreenExpansionMaximize()
-        {
-            AqualityServices.Browser.Maximize();
-        }
-
-        public void GoToPageStartPage()
-        {
-            AqualityServices.Browser.GoTo(Configuration.Configuration.StartUrl);
         }
 
         private void LogScenarioResult()

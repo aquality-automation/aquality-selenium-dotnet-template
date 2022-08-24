@@ -86,7 +86,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
             LogAssertion(nameof(CheckThatWarningEmailMessageisPresentOrNot) + $"isChecked status - [{isChecked}]");
             var expectedStatus = isChecked ? "displayed" : "not displayed";
             AqualityServices.ConditionalWait.WaitForTrue(() => contactUsPage.IsWarningEmailMessagePresent == isChecked,
-             AqualityServices.Get<ITimeoutConfiguration>().Script, AqualityServices.Get<ITimeoutConfiguration>().PollingInterval,
+            AqualityServices.Get<ITimeoutConfiguration>().Script, AqualityServices.Get<ITimeoutConfiguration>().PollingInterval,
                 $"Warning email message should be {expectedStatus}.");
         }
 

@@ -30,13 +30,16 @@
     <ProjectReference Include="..\Aquality.Selenium.Template\Aquality.Selenium.Template.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="Resources\ImagesForCustomImageComparator\first_test_image.jpg">
+    <None Update="Resources\ImagesForCustomImageComparator\actual_test_image.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\ImagesForCustomImageComparator\expected_correct_image.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Resources\ImagesForCustomImageComparator\second_test_image2.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Resources\ImagesForCustomImageComparator\second_test_image.jpg">
+    <None Update="Resources\ImagesForCustomImageComparator\expected_incorrect_image.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Resources\VisualDumps\Footer form\Footer contacts.png">

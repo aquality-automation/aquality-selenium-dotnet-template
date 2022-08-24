@@ -1,6 +1,7 @@
 ﻿using Aquality.Selenium.Browsers;
 using Aquality.Selenium.Configurations;
 using Aquality.Selenium.Template.Forms.Pages;
+using Aquality.Selenium.Template.NUnit.Constants;
 using Aquality.Selenium.Template.NUnit.Extensions;
 using NUnit.Framework;
 
@@ -16,7 +17,6 @@ namespace Aquality.Selenium.Template.NUnit.Steps
             mainPage.AssertIsPresent();
         }
 
-
         public void AcceptCookiesButtonIsDisplayed()
         {
             LogAssertion();
@@ -27,7 +27,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
         {
             LogAssertion();
             AqualityServices.ConditionalWait.WaitForTrue(() => mainPage.IsAcceptCookiesButtonDisplayed,
-             AqualityServices.Get<ITimeoutConfiguration>().Script, AqualityServices.Get<ITimeoutConfiguration>().PollingInterval,
+            AqualityServices.Get<ITimeoutConfiguration>().Script, AqualityServices.Get<ITimeoutConfiguration>().PollingInterval,
                 "Accept cookies button should not be displayed");
         }
 
@@ -35,6 +35,20 @@ namespace Aquality.Selenium.Template.NUnit.Steps
         {
             LogStep();
             mainPage.AcceptCookies();
+        }
+
+        public void ScrollToTheFooter()
+        {
+            LogStep();
+            var fullPageHeight = GetFullPageHeight();
+            AqualityServices.Browser.ScrollWindowBy(0, fullPageHeight);
+        }
+
+        public int GetFullPageHeight()
+        {
+            LogStep();
+            var pageHeight = AqualityServices.Browser.ExecuteScriptFromFile<long>(ResourceConstants.PathToGetFullPageHeightJS);
+            return (int)(long)pageHeight;
         }
     }
 }

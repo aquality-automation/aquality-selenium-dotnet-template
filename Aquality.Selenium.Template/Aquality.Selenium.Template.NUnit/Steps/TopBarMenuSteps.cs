@@ -1,6 +1,4 @@
-﻿using Aquality.Selenium.Browsers;
-using Aquality.Selenium.Template.Forms;
-using Aquality.Selenium.Template.NUnit.Constants;
+﻿using Aquality.Selenium.Template.Forms;
 using Aquality.Selenium.Template.NUnit.Extensions;
 using NUnit.Framework;
 
@@ -49,13 +47,6 @@ namespace Aquality.Selenium.Template.NUnit.Steps
             LogAssertion();
             var servicesTitlesElements = topBarMenu.GetTextFromServicesTitlesElements;
             CollectionAssert.AreEqual(servicesTitleElements, servicesTitlesElements, "Services title elements should be correct");
-        }
-
-        public int GetFullPageHeight()
-        {
-            LogStep();
-            var pageHeight = AqualityServices.Browser.ExecuteScriptFromFile<long>(ResourceConstants.PathToGetFullPageHeightJS);
-            return (int)(long)pageHeight;
         }
     }
 }

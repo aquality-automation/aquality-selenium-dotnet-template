@@ -1,30 +1,28 @@
 ﻿using Aquality.Selenium.Template.NUnit.Constants;
-using Aquality.Selenium.Template.Utilities;
+using Aquality.Selenium.Template.NUnit.Steps;
 using NUnit.Framework;
-using System.Drawing;
 
 namespace Aquality.Selenium.Template.NUnit.Tests
 {
     public class CustomImageComparatorTest : BaseTest
     {
-        const float TheThresholdValueOf10Percent = 0.1f;
+        const float CustomThresholdValue = 0.1f;
+        private readonly CustomImageComparatorSteps customImageComparatorSteps = new CustomImageComparatorSteps(CustomThresholdValue, ResourceConstants.ActualTestImage);
 
-        [Test(Description = "TC-0005 Comparison of two given images")]
-        public void TC0005_ComparisonOfTwoGivenImages()
+
+        [Test(Description = "TC-0005 Compare 2 images one of which is different")]
+        public void TC0005_Compare2ImagesOneOfWhichIsDifferent()
         {
-            var firstImage = Image.FromFile(ResourceConstants.FirstTestImage);
+            var expectedImage = customImageComparatorSteps.GetExpectedImageFromResourse(ResourceConstants.ExpectedIncorrectImage);
+            customImageComparatorSteps.CheckThatActualAndExpectedImagesAreNotTheSame(expectedImage);
+        }
 
-            var firstImageWidth = firstImage.Width;
 
-            var firstImageHeight = firstImage.Height;
-
-            var secondImage = Image.FromFile(ResourceConstants.SecondTestImage);
-
-            var customImageComparator = new CustomImageComparator(TheThresholdValueOf10Percent, firstImageWidth, firstImageHeight);
-
-            var differenceBetweenImages = customImageComparator.Compare(firstImage, secondImage);
-
-            Assert.AreNotEqual(0, differenceBetweenImages, "The images should not be the same");
+        [Test(Description = "TC-0006 Compare 2 images when both images are the same")]
+        public void TC0006_Compare2ImagesWhenBothImagesAreTheSame()
+        {
+            var expectedImage = customImageComparatorSteps.GetExpectedImageFromResourse(ResourceConstants.ExpectedCorrectImage);
+            customImageComparatorSteps.CheckThatActualAndExpectedImagesAreTheSame(expectedImage);
         }
     }
 }

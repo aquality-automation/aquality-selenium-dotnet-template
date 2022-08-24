@@ -1,12 +1,9 @@
-﻿using Aquality.Selenium.Browsers;
-using Aquality.Selenium.Template.NUnit.Constants;
-using Aquality.Selenium.Template.NUnit.Steps;
-using Aquality.Selenium.Template.Utilities;
+﻿using Aquality.Selenium.Template.NUnit.Steps;
 using NUnit.Framework;
 
 namespace Aquality.Selenium.Template.NUnit.Tests
 {
-    public class MainDemoTest : BaseTest
+    public class MainDemoTest : BaseWebTest
     {
         private readonly MainPageSteps mainPageSteps = new MainPageSteps();
 
@@ -15,12 +12,6 @@ namespace Aquality.Selenium.Template.NUnit.Tests
         {
             GoToPageStartPage();
             SetScreenExpansionMaximize();
-        }
-
-        [TearDown]
-        public new void AfterEach()
-        {
-            AqualityServices.Browser.Quit();
         }
 
         [Test(Description = "TC-0001 Check the cookie form")]

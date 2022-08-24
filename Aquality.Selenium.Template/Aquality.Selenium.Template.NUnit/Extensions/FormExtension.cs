@@ -12,7 +12,7 @@ namespace Aquality.Selenium.Template.NUnit.Extensions
 
         public static void AssertIsNotPresent(this Form form)
         {
-            Assert.IsTrue(form.State.WaitForNotDisplayed(), $"{form.Name} should be presented");
+            Assert.IsTrue(form.State.WaitForNotDisplayed(), $"{form.Name} should not be presented");
         }
     }
 }
