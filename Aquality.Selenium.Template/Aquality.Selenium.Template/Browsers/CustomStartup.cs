@@ -6,7 +6,7 @@ using Aquality.Selenium.Template.Logging;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
-namespace Aquality.Selenium.Template.Browser
+namespace Aquality.Selenium.Template.Browsers
 {
     public class CustomStartup : BrowserStartup
     {

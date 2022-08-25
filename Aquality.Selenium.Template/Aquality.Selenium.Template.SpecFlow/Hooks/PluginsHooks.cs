@@ -1,6 +1,6 @@
 ﻿using Allure.Commons;
 using Aquality.Selenium.Browsers;
-using Aquality.Selenium.Template.Browser;
+using Aquality.Selenium.Template.Browsers;
 using AqualityTracking.Integrations.Core;
 using NUnit.Framework;
 using System.Text.RegularExpressions;
