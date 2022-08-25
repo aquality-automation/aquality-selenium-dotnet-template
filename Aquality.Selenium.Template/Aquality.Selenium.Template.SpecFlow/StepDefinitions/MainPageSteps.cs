@@ -20,7 +20,7 @@ namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions
         [Given(@"Main page is opened")]
         public void MainPageIsOpened()
         {
-            AqualityServices.Browser.GoTo(Configuration.Configuration.StartUrl);
+            AqualityServices.Browser.GoTo(Configurations.Configuration.StartUrl);
         }
         
         [When(@"I open Contact us page")]
