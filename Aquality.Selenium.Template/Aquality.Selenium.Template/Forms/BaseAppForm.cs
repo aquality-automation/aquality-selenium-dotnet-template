@@ -6,12 +6,14 @@ namespace Aquality.Selenium.Template.Forms
 {
     public class BaseAppForm : Form
     {
-        private IButton AcceptCookiesBtn => ElementFactory.GetButton(By.ClassName("cookies__button"), "Accept cookies");
+        private IButton AcceptCookiesButton => ElementFactory.GetButton(By.ClassName("cookies__button"), "Accept cookies");
 
         protected BaseAppForm(By locator, string name) : base(locator, name)
         {
         }
 
-        public void AcceptCookies() => AcceptCookiesBtn.Click();
+        public bool IsAcceptCookiesButtonDisplayed => AcceptCookiesButton.State.IsDisplayed;
+
+        public void AcceptCookies() => AcceptCookiesButton.Click();
     }
 }
