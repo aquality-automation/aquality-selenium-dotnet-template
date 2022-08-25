@@ -3,7 +3,7 @@ using Aquality.Selenium.Core.Configurations;
 using Aquality.Selenium.Core.Utilities;
 using System.Reflection;
 
-namespace Aquality.Selenium.Template.Configuration
+namespace Aquality.Selenium.Template.Configurations
 {
     internal static class Environment
     {

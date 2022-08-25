@@ -1,4 +1,4 @@
-﻿namespace Aquality.Selenium.Template.Configuration
+﻿namespace Aquality.Selenium.Template.Configurations
 {
     public static class Configuration
     {
