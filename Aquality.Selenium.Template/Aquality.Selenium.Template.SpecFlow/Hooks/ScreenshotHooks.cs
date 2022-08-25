@@ -11,11 +11,9 @@ namespace Aquality.Selenium.Template.SpecFlow.Hooks
     public class ScreenshotHooks
     {
         private readonly ScreenshotProvider screenshotProvider;
-        private readonly ScenarioContext scenarioContext;
 
-        public ScreenshotHooks(ScenarioContext scenarioContext, ScreenshotProvider screenshotProvider)
+        public ScreenshotHooks(ScreenshotProvider screenshotProvider)
         {
-            this.scenarioContext = scenarioContext;
             this.screenshotProvider = screenshotProvider;
         }
 
