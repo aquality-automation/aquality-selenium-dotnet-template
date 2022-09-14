@@ -8,7 +8,7 @@ namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions.API.Common
     public class ResponseSteps
     {
         [Then(@"the status code of the '(.*response.*)' is '(\d*)'")]
-        public void StatusCodeOfResponseIs(RestResponse response, int statusCode)
+        public static void StatusCodeOfResponseIs(RestResponse response, int statusCode)
         {
             Assert.That((int)response.StatusCode, Is.EqualTo(statusCode), "Status code should match to expected");
         }

@@ -19,7 +19,7 @@ namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions.UI
         }
 
         [Given(@"Main page is opened")]
-        public void MainPageIsOpened()
+        public static void MainPageIsOpened()
         {
             AqualityServices.Browser.GoTo(Configuration.StartUrl);
         }

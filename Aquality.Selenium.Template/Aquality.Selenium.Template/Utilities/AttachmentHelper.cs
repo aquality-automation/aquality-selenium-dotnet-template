@@ -24,7 +24,7 @@ namespace Aquality.Selenium.Template.Utilities
             AllureLifecycle.Instance.AddAttachment(name, type, utfBytes, fileExtension);
             var filePath = name + fileExtension;
             File.WriteAllBytes(filePath, utfBytes);
-            AllureLifecycle.Instance.AddAttachment(filePath, name);
+            TestContext.AddTestAttachment(filePath);
             AqualityTrackingLifecycle.Instance.AddAttachment(filePath);
         }
 
