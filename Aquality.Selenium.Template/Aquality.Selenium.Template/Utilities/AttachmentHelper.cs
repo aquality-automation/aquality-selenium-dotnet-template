@@ -28,6 +28,11 @@ namespace Aquality.Selenium.Template.Utilities
             if (fileExtension == ".json" || fileExtension == ".xml")
             {
                 var filePathForAzurePreview = filePath + ".txt";
+                if (File.Exists(filePathForAzurePreview))
+                {
+                    File.Delete(filePathForAzurePreview);
+                }
+
                 File.Move(filePath, filePathForAzurePreview);
                 filePath = filePathForAzurePreview;
             }
