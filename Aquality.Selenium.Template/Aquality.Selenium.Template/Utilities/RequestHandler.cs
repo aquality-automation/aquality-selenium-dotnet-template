@@ -78,13 +78,14 @@ namespace Aquality.Selenium.Template.Utilities
         private static void AddResponseContentToReport(RestResponse response)
         {
             var contentType = "text/plain";
-            if (string.IsNullOrEmpty(response.Content))
+            var content = response.Content;
+            if (string.IsNullOrEmpty(content))
             {
-                AttachmentHelper.AddAttachment("Empty response content", contentType, response.Content);
+                AttachmentHelper.AddAttachment("Empty response content", contentType, content);
             }
             else if (string.IsNullOrEmpty(response.ContentType))
             {
-                AttachmentHelper.AddAttachment("Failed to parse the response content", contentType, response.Content);
+                AttachmentHelper.AddAttachment("Failed to parse the response content", contentType, content);
             }
             contentType = response.ContentType.ToLower();
             var extension = "";
@@ -97,13 +98,14 @@ namespace Aquality.Selenium.Template.Utilities
             {
                 contentType = "application/json";
                 extension = ".json";
+                content = JsonConvert.SerializeObject(JsonConvert.DeserializeObject(content), Formatting.Indented);
             }
             else if (contentType.Contains("xml"))
             {
                 contentType = "application/xml";
                 extension = ".xml";
             }
-            AttachmentHelper.AddAttachment("Formatted content", contentType, response.Content, extension);
+            AttachmentHelper.AddAttachment("Formatted content", contentType, content, extension);
         }
     }
 }
