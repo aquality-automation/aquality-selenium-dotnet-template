@@ -12,7 +12,10 @@ namespace Aquality.Selenium.Template.SpecFlow.Hooks
         [AfterScenario(Order = 1)]
         public void CloseBrowser()
         {
-            AqualityServices.Browser.Quit();
+            if (AqualityServices.IsBrowserStarted)
+            {
+                AqualityServices.Browser.Quit();
+            }            
         }
     }
 }

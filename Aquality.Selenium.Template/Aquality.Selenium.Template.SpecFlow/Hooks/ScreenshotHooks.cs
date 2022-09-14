@@ -23,9 +23,7 @@ namespace Aquality.Selenium.Template.SpecFlow.Hooks
             if (AqualityServices.IsBrowserStarted)
             {
                 var pathToScreenshot = screenshotProvider.TakeScreenshot();
-                TestContext.AddTestAttachment(pathToScreenshot);
-                AllureLifecycle.Instance.AddAttachment(pathToScreenshot, "Screenshot");
-                AqualityTrackingLifecycle.Instance.AddAttachment(pathToScreenshot);
+                AttachmentHelper.AddAttachment(pathToScreenshot, "Screenshot");
             }
         }
     }
