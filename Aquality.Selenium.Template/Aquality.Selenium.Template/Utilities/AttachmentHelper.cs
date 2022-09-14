@@ -25,7 +25,7 @@ namespace Aquality.Selenium.Template.Utilities
             var filePath = name + fileExtension;
             File.WriteAllBytes(filePath, utfBytes);
             AqualityTrackingLifecycle.Instance.AddAttachment(filePath);
-            if (fileExtension == ".json" || fileExtension == ".xml")
+            if (fileExtension == ".json" || fileExtension == ".xml" || fileExtension == ".html")
             {
                 var filePathForAzurePreview = filePath + ".txt";
                 if (File.Exists(filePathForAzurePreview))
