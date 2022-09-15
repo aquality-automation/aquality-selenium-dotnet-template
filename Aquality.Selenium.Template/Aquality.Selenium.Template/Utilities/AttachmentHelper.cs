@@ -2,6 +2,7 @@
 using AqualityTracking.Integrations.Core;
 using Newtonsoft.Json;
 using NUnit.Framework;
+using System;
 using System.IO;
 using System.Text;
 
@@ -22,7 +23,7 @@ namespace Aquality.Selenium.Template.Utilities
         {
             var utfBytes = Encoding.UTF8.GetBytes(content);
             AllureLifecycle.Instance.AddAttachment(name, type, utfBytes, fileExtension);
-            var filePath = name + fileExtension;
+            var filePath = $"{name}_{DateTime.Now:yyyyMMdd-HHmmss-ffff}{fileExtension}";
             File.WriteAllBytes(filePath, utfBytes);
             AqualityTrackingLifecycle.Instance.AddAttachment(filePath);
             if (fileExtension == ".json" || fileExtension == ".xml" || fileExtension == ".html")

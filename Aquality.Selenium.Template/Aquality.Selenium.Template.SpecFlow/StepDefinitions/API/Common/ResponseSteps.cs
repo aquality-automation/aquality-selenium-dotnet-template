@@ -5,7 +5,9 @@ using Newtonsoft.Json.Schema;
 using NUnit.Framework;
 using RestSharp;
 using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using TechTalk.SpecFlow;
 
 namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions.API.Common
@@ -13,35 +15,70 @@ namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions.API.Common
     [Binding]
     public class ResponseSteps
     {
+        private readonly ScenarioContext scenarioContext;
+
+        public ResponseSteps(ScenarioContext scenarioContext)
+        {
+            this.scenarioContext = scenarioContext;
+        }
+
         [Then(@"the status code of the '(.*response.*)' is '(\d*)'")]
         public static void StatusCodeOfResponseIs(RestResponse response, int statusCode)
         {
             Assert.That((int)response.StatusCode, Is.EqualTo(statusCode), "Status code should match to expected");
         }
 
+        [Then(@"the '(.*)' has the value saved as '(.*)' in the '(.*response.*)'")]
+        public void CheckFieldInResponse(string fieldName, string valueKey, RestResponse response)
+        {
+            CheckFieldInResponse(fieldName, scenarioContext.Get<object>(valueKey), response);
+        }
+
+        [Then(@"the '(.*)' is '(.*)' in the '(.*response.*)'")]
+        [Then(@"the '(.*)' is (\d*) in the '(.*response.*)'")]
+        public void CheckFieldInResponse(string fieldName, object expectedValue, RestResponse response)
+        {
+            var expectedAsString = expectedValue.ToString();
+            Assert.That(response.ExtractPath(fieldName), Is.EqualTo(expectedAsString), $"Field '{fieldName}' should have value [{expectedValue}] in the response");
+        }
+
         [Then(@"the '(.*response.*)' matches json schema '(.*)'")]
         public void AssertResponseIsValidSchema(RestResponse response, string schemaName)
         {
-            var schemaPath = GetSchemaPath(schemaName);
+            var schemaPath = Path.Combine(AppContext.BaseDirectory, "Resources", "JsonSchemas", $"{schemaName}.json");
             using (StreamReader file = File.OpenText(schemaPath))
             using (JsonTextReader reader = new JsonTextReader(file))
             {
-                JSchemaUrlResolver resolver = new JSchemaUrlResolver();
-
                 JSchema schema = JSchema.Load(reader, new JSchemaReaderSettings
                 {
-                    Resolver = resolver,
+                    Resolver = new JSchemaUrlResolver(),
                     BaseUri = new Uri(schemaPath)
                 });
-                var availablity = JToken.Parse(response.Content);
                 AttachmentHelper.AddAttachmentAsJson("json schema", schema);
-                Assert.That(availablity.IsValid(schema), Is.True, "Json schema should match to expected");
+                Assert.That(response.GetBodyAsJson().IsValid(schema), "Json schema should match to expected");
             }
         }
 
-        private static string GetSchemaPath(string fileName)
+
+        [When("I extract the '(.*)' from the '(.*response.*)' and save it as '(.*)'")]
+        public void ExtractAndSave(string path, RestResponse response, string contextKey)
         {
-            return Path.Combine(AppContext.BaseDirectory, "Resources", "JsonSchemas", $"{fileName}.json");
+            scenarioContext.Add(contextKey, response.ExtractPath(path));
+        }
+
+        [Then(@"the '(.*)' array has size less than or equal to (\d+) in the '(.*response.*)'")]
+        public void FieldArrayInResponseHasSizeLessThanOrEqualTo(string fieldName, int maxSize, RestResponse response)
+        {
+            var array = response.GetBodyAsJson().SelectToken(fieldName).ToObject<IReadOnlyList<object>>();
+            Assert.That(array, Has.Count.LessThanOrEqualTo(maxSize), $"'{fieldName}' array should have expected size");
+        }
+
+        [Then(@"the '(.*)' array is ordered ascending by '(.*)' in the '(.*response.*)'")]
+        public void FieldArrayInResponseHasSizeLessThanOrEqualTo(string path, string fieldName, RestResponse response)
+        {
+            var array = response.GetBodyAsJson().SelectToken(path).ToArray();
+            var sorted = array.OrderBy(jtoken => jtoken.SelectToken(fieldName));
+            CollectionAssert.AreEqual(sorted, array, $"'{path}' array should be ordered ascending by {fieldName}");
         }
     }
 }

@@ -105,7 +105,7 @@ namespace Aquality.Selenium.Template.Utilities
                 contentType = "application/xml";
                 extension = ".xml";
             }
-            AttachmentHelper.AddAttachment("Formatted content", contentType, content, extension);
+            AttachmentHelper.AddAttachment("Response content", contentType, content, extension);
         }
     }
 }

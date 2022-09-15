@@ -18,10 +18,14 @@ namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions.API.GitHub
 
 
         [When(@"I send GET '/([\w-/]+)' request to github and save the '(.*response.*)'")]
-        [When(@"I send GET request to github endpoint saved as '(context\..*)' and save the '(.*response.*)'")]
+        [When(@"I send GET request to github endpoint saved as '(.*)' and save the '(.*response.*)'")]
         public void SendGetRequestToGitHubAndSaveResponse(string endpoint, string contextKey)
         {
-            RestResponse response = requestHandler.Execute(new RestRequest(endpoint, Method.Get));
+            if (scenarioContext.ContainsKey(endpoint))
+            {
+                endpoint = scenarioContext.Get<string>(endpoint);
+            }
+            var response = requestHandler.Execute(new RestRequest(endpoint, Method.Get));
             scenarioContext.Add(contextKey, response);
         }
     }
