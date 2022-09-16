@@ -15,7 +15,7 @@ Scenario: GET user info
   Scenario: GET organization info
     When I send GET '/users/aquality-automation' request to github and save the 'response'
     Then the status code of the 'response' is '200'
-        And the 'response' matches json schema 'users/UserResponse'
+        And the 'response' matches json schema 'Users/UserResponse'
         And the 'login' is 'aquality-automation' in the 'response'
         And the 'type' is 'Organization' in the 'response'
         And the 'id' is 50261201 in the 'response'
@@ -29,5 +29,5 @@ Scenario: GET users info
     When I extract the '[0].url' from the 'users response' and save it as 'user URL'
       And I send GET request to github endpoint saved as 'user URL' and save the 'response'
     Then the status code of the 'response' is '200'
-      And the 'response' matches json schema 'users/UserResponse'
+      And the 'response' matches json schema 'Users/UserResponse'
       And the 'url' has the value saved as 'user URL' in the 'response'
