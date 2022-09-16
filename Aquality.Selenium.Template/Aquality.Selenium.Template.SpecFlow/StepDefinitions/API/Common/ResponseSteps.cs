@@ -36,14 +36,14 @@ namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions.API.Common
 
         [Then(@"the '(.*)' is '(.*)' in the '(.*response.*)'")]
         [Then(@"the '(.*)' is (\d*) in the '(.*response.*)'")]
-        public void CheckFieldInResponse(string fieldName, object expectedValue, RestResponse response)
+        public static void CheckFieldInResponse(string fieldName, object expectedValue, RestResponse response)
         {
             var expectedAsString = expectedValue.ToString();
             Assert.That(response.ExtractPath(fieldName), Is.EqualTo(expectedAsString), $"Field '{fieldName}' should have value [{expectedValue}] in the response");
         }
 
         [Then(@"the '(.*response.*)' matches json schema '(.*)'")]
-        public void AssertResponseIsValidSchema(RestResponse response, string schemaName)
+        public static void AssertResponseSchemaIsValid(RestResponse response, string schemaName)
         {
             var schemaPath = Path.Combine(AppContext.BaseDirectory, "Resources", "JsonSchemas", $"{schemaName}.json");
             using (StreamReader file = File.OpenText(schemaPath))
@@ -67,14 +67,14 @@ namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions.API.Common
         }
 
         [Then(@"the '(.*)' array has size less than or equal to (\d+) in the '(.*response.*)'")]
-        public void FieldArrayInResponseHasSizeLessThanOrEqualTo(string fieldName, int maxSize, RestResponse response)
+        public static void FieldArrayInResponseHasSizeLessThanOrEqualTo(string fieldName, int maxSize, RestResponse response)
         {
             var array = response.GetBodyAsJson().SelectToken(fieldName).ToObject<IReadOnlyList<object>>();
             Assert.That(array, Has.Count.LessThanOrEqualTo(maxSize), $"'{fieldName}' array should have expected size");
         }
 
         [Then(@"the '(.*)' array is ordered ascending by '(.*)' in the '(.*response.*)'")]
-        public void FieldArrayInResponseHasSizeLessThanOrEqualTo(string path, string fieldName, RestResponse response)
+        public static void FieldArrayInResponseIsSortedAscending(string path, string fieldName, RestResponse response)
         {
             var array = response.GetBodyAsJson().SelectToken(path).ToArray();
             var sorted = array.OrderBy(jtoken => jtoken.SelectToken(fieldName));
