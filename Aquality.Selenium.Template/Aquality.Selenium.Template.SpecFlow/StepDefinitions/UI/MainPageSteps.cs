@@ -4,7 +4,7 @@ using Aquality.Selenium.Template.Forms;
 using Aquality.Selenium.Template.Forms.Pages;
 using TechTalk.SpecFlow;
 
-namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions
+namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions.UI
 {
     [Binding]
     public class MainPageSteps
@@ -19,11 +19,11 @@ namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions
         }
 
         [Given(@"Main page is opened")]
-        public void MainPageIsOpened()
+        public static void MainPageIsOpened()
         {
             AqualityServices.Browser.GoTo(Configuration.StartUrl);
         }
-        
+
         [When(@"I open Contact us page")]
         public void IOpenContactUsPage()
         {
