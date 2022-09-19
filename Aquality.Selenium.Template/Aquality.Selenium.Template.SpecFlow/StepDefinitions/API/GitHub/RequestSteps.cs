@@ -17,8 +17,8 @@ namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions.API.GitHub
         }
 
 
-        [When(@"I send GET '/([\w-/]+)' request to github and save the '(.*response.*)'")]
-        [When(@"I send GET request to github endpoint saved as '(.*)' and save the '(.*response.*)'")]
+        [When(@"I send GET '/([\w-/]+)' request to github with saving the '(.*response.*)'")]
+        [When(@"I send GET request to github endpoint saved as '(.*)' with saving the '(.*response.*)'")]
         public void SendGetRequestToGitHubAndSaveResponse(string endpoint, string contextKey)
         {
             if (scenarioContext.ContainsKey(endpoint))

@@ -60,7 +60,7 @@ namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions.API.Common
         }
 
 
-        [When("I extract the '(.*)' from the '(.*response.*)' and save it as '(.*)'")]
+        [When("I extract the '(.*)' from the '(.*response.*)' with saving it as '(.*)'")]
         public void ExtractAndSave(string path, RestResponse response, string contextKey)
         {
             scenarioContext.Add(contextKey, response.ExtractPath(path));
