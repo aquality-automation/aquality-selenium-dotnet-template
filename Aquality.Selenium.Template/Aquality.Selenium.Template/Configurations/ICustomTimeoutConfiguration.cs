@@ -1,7 +1,7 @@
 ﻿using Aquality.Selenium.Configurations;
 using System;
 
-namespace Aquality.Selenium.Template.Interfaces
+namespace Aquality.Selenium.Template.Configurations
 {
     public interface ICustomTimeoutConfiguration : ITimeoutConfiguration
     {

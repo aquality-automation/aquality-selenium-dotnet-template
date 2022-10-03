@@ -1,8 +1,10 @@
 ﻿using Aquality.Selenium.Template.NUnit.Steps;
+using NUnit.Allure.Core;
 using NUnit.Framework;
 
 namespace Aquality.Selenium.Template.NUnit.Tests
 {
+    [AllureNUnit]
     public class MainDemoTest : BaseWebTest
     {
         private readonly MainPageSteps mainPageSteps = new MainPageSteps();
@@ -21,6 +23,7 @@ namespace Aquality.Selenium.Template.NUnit.Tests
             mainPageSteps.AcceptCookiesButtonIsDisplayed();
             mainPageSteps.AcceptCookies();
             mainPageSteps.AcceptCookiesButtonIsNotDisplayed();
+            mainPageSteps.ScrollToTheFooter();
         }
     }
 }

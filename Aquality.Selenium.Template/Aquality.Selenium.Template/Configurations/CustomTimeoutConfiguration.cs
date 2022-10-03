@@ -1,9 +1,8 @@
 ﻿using Aquality.Selenium.Core.Configurations;
-using Aquality.Selenium.Template.Interfaces;
 using System;
 using TimeoutConfiguration = Aquality.Selenium.Configurations.TimeoutConfiguration;
 
-namespace Aquality.Selenium.Template.CustomConfigImplementation
+namespace Aquality.Selenium.Template.Configurations
 {
     internal class CustomTimeoutConfiguration : TimeoutConfiguration, ICustomTimeoutConfiguration
     {

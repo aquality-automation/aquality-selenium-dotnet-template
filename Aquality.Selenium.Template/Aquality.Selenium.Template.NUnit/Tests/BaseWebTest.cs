@@ -1,10 +1,19 @@
-﻿using Aquality.Selenium.Browsers;
+﻿using Allure.Commons;
+using Aquality.Selenium.Browsers;
+using Aquality.Selenium.Template.Configurations;
 using NUnit.Framework;
 
 namespace Aquality.Selenium.Template.NUnit.Tests
 {
     public abstract class BaseWebTest : BaseTest
     {
+
+        [OneTimeSetUp]
+        public void OneTimeSet()
+        {
+            AllureLifecycle.Instance.CleanupResultDirectory();
+        }
+
         [TearDown]
         public void CleanUp()
         {
@@ -21,7 +30,7 @@ namespace Aquality.Selenium.Template.NUnit.Tests
 
         public void GoToPageStartPage()
         {
-            AqualityServices.Browser.GoTo(Configuration.Configuration.StartUrl);
+            AqualityServices.Browser.GoTo(Configuration.StartUrl);
         }
     }
 }

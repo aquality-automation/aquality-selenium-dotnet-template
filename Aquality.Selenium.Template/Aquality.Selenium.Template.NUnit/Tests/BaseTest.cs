@@ -1,6 +1,6 @@
 ﻿using Aquality.Selenium.Browsers;
 using Aquality.Selenium.Core.Logging;
-using Aquality.Selenium.Template.CustomConfigImplementation;
+using Aquality.Selenium.Template.Browsers;
 using Humanizer;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
@@ -21,8 +21,7 @@ namespace Aquality.Selenium.Template.NUnit.Tests
         public void OneTimeSetUp()
         {
             Logger.Info("Setup startup config");
-            var customStartUp = new CustomStartUp();
-            AqualityServices.SetStartup(customStartUp);
+            AqualityServices.SetStartup(new CustomStartup());
         }
 
         [SetUp]

@@ -1,7 +1,7 @@
 ﻿using Aquality.Selenium.Browsers;
 using Aquality.Selenium.Elements.Interfaces;
 using Aquality.Selenium.Forms;
-using Aquality.Selenium.Template.Interfaces;
+using Aquality.Selenium.Template.Configurations;
 using OpenQA.Selenium;
 using System.Collections.Generic;
 
