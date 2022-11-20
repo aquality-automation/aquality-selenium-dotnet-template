@@ -31,6 +31,9 @@
     <ProjectReference Include="..\Aquality.Selenium.Template\Aquality.Selenium.Template.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <None Update="allureConfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Resources\ImagesForCustomImageComparator\actual_test_image.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

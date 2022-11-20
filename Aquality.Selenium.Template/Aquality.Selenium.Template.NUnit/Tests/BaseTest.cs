@@ -1,4 +1,5 @@
-﻿using Aquality.Selenium.Browsers;
+﻿using Allure.Commons;
+using Aquality.Selenium.Browsers;
 using Aquality.Selenium.Core.Logging;
 using Aquality.Selenium.Template.Browsers;
 using Humanizer;
@@ -20,6 +21,8 @@ namespace Aquality.Selenium.Template.NUnit.Tests
         [OneTimeSetUp]
         public void OneTimeSetUp()
         {
+            Logger.Info("AllureLifecycle CleanupResultDirectory");
+            AllureLifecycle.Instance.CleanupResultDirectory();
             Logger.Info("Setup startup config");
             AqualityServices.SetStartup(new CustomStartup());
         }

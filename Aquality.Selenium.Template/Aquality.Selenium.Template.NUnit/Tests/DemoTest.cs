@@ -6,6 +6,7 @@ using NUnit.Framework;
 namespace Aquality.Selenium.Template.NUnit.Tests
 {
     [AllureNUnit]
+    [AllureSuite("Demo Tests")]
     public class DemoTest : BaseWebTest
     {
         private readonly TopBarMenuSteps topBarMenuSteps = new TopBarMenuSteps();
@@ -57,7 +58,7 @@ namespace Aquality.Selenium.Template.NUnit.Tests
             mainPageSteps.ScrollToTheFooter();
             footerFormSteps.FooterFormIsPresent();
             footerFormSteps.CheckVisualElementsPresent();
-            //footerFormSteps.SaveDump(); // - this method is used locally, only to fill the image dump.
+            footerFormSteps.SaveDump(); // - this method is used locally, only to fill the image dump.
             footerFormSteps.CheckThatTheVisualElementsAreCorrect();
         }
     }

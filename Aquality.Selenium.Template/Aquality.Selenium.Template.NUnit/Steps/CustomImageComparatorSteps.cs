@@ -1,10 +1,11 @@
 ﻿using NUnit.Framework;
 using Aquality.Selenium.Template.Utilities;
 using System.Drawing;
+using Aquality.Selenium.Template.CustomAttributes;
 
 namespace Aquality.Selenium.Template.NUnit.Steps
 {
-    public class CustomImageComparatorSteps : BaseSteps
+    public class CustomImageComparatorSteps
     {
         private readonly CustomImageComparator customImageComparator;
         private readonly Image modelOfImage;
@@ -17,22 +18,22 @@ namespace Aquality.Selenium.Template.NUnit.Steps
             customImageComparator = new CustomImageComparator(customThresholdValue, imageWidth, imageHeight);
         }
 
+        [LogStep(StepType.Step)]
         public Image GetExpectedImageFromResourse(string expectedImageResourse)
         {
-            LogStep();
             return Image.FromFile(expectedImageResourse);
         }
 
+        [LogStep(StepType.Assertion)]
         public void CheckThatActualAndExpectedImagesAreTheSame(Image expectedImage)
         {
-            LogAssertion();
             var differenceBetweenImages = customImageComparator.Compare(modelOfImage, expectedImage);
             Assert.AreEqual(0, differenceBetweenImages, "The images should be the same");
         }
 
+        [LogStep(StepType.Assertion)]
         public void CheckThatActualAndExpectedImagesAreNotTheSame(Image expectedImage)
         {
-            LogAssertion();
             var differenceBetweenImages = customImageComparator.Compare(modelOfImage, expectedImage);
             Assert.AreNotEqual(0, differenceBetweenImages, "The images should not be the same");
         }

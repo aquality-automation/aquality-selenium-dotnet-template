@@ -1,5 +1,6 @@
 ﻿using Aquality.Selenium.Browsers;
 using Aquality.Selenium.Configurations;
+using Aquality.Selenium.Template.CustomAttributes;
 using Aquality.Selenium.Template.Forms.Pages;
 using Aquality.Selenium.Template.NUnit.Constants;
 using Aquality.Selenium.Template.NUnit.Extensions;
@@ -7,46 +8,46 @@ using NUnit.Framework;
 
 namespace Aquality.Selenium.Template.NUnit.Steps
 {
-    public class MainPageSteps : BaseSteps
+    public class MainPageSteps
     {
         private readonly MainPage mainPage = new MainPage();
 
+        [LogStep(StepType.Assertion)]
         public void MainPageIsPresent()
         {
-            LogAssertion();
             mainPage.AssertIsPresent();
         }
 
+        [LogStep(StepType.Assertion)]
         public void AcceptCookiesButtonIsDisplayed()
         {
-            LogAssertion();
             Assert.IsTrue(mainPage.IsAcceptCookiesButtonDisplayed, "Accept cookies button should be displayed");
         }
 
+        [LogStep(StepType.Assertion)]
         public void AcceptCookiesButtonIsNotDisplayed()
         {
-            LogAssertion();
             AqualityServices.ConditionalWait.WaitForTrue(() => mainPage.IsAcceptCookiesButtonDisplayed,
             AqualityServices.Get<ITimeoutConfiguration>().Script, AqualityServices.Get<ITimeoutConfiguration>().PollingInterval,
                 "Accept cookies button should not be displayed");
         }
 
+        [LogStep(StepType.Step)]
         public void AcceptCookies()
         {
-            LogStep();
             mainPage.AcceptCookies();
         }
 
+        [LogStep(StepType.Step)]
         public void ScrollToTheFooter()
         {
-            LogStep();
             var fullPageHeight = GetFullPageHeight();
             AqualityServices.Browser.ScrollWindowBy(0, fullPageHeight);
         }
 
+        [LogStep(StepType.Step)]
         public int GetFullPageHeight()
         {
-            LogStep();
             var pageHeight = AqualityServices.Browser.ExecuteScriptFromFile<long>(ResourceConstants.PathToGetFullPageHeightJS);
             return (int)(long)pageHeight;
         }

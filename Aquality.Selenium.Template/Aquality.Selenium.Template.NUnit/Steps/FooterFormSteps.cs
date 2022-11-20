@@ -1,22 +1,23 @@
-﻿using Aquality.Selenium.Template.Forms;
+﻿using Aquality.Selenium.Template.CustomAttributes;
+using Aquality.Selenium.Template.Forms;
 using Aquality.Selenium.Template.NUnit.Extensions;
 using NUnit.Framework;
 
 namespace Aquality.Selenium.Template.NUnit.Steps
 {
-    public class FooterFormSteps : BaseSteps
+    public class FooterFormSteps
     {
         private readonly FooterForm footerForm = new FooterForm();
 
+        [LogStep(StepType.Assertion)]
         public void FooterFormIsPresent()
         {
-            LogAssertion();
             footerForm.AssertIsPresent();
         }
 
+        [LogStep(StepType.Assertion)]
         public void CheckVisualElementsPresent()
         {
-            LogAssertion();
             Assert.Multiple(() =>
             {
                 Assert.IsTrue(footerForm.IsLogoPresent, "Logo should be displayed");
@@ -25,15 +26,15 @@ namespace Aquality.Selenium.Template.NUnit.Steps
             });
         }
 
+        [LogStep(StepType.Step)]
         public void SaveDump()
         {
-            LogStep();
             footerForm.Dump.Save();
         }
 
+        [LogStep(StepType.Assertion)]
         public void CheckThatTheVisualElementsAreCorrect()
         {
-            LogAssertion();
             var compareVisualElements = footerForm.Dump.Compare();
             Assert.AreEqual(0, compareVisualElements, "The footer form should contain the correct visual elements");
         }

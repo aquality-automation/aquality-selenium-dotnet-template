@@ -11,23 +11,24 @@ using Aquality.Selenium.Core.Utilities;
 using System.Reflection;
 using Newtonsoft.Json;
 using Aquality.Selenium.Configurations;
+using Aquality.Selenium.Template.CustomAttributes;
 
 namespace Aquality.Selenium.Template.NUnit.Steps
 {
-    public class ContactUsPageSteps : BaseSteps
+    public class ContactUsPageSteps
     {
         private readonly ContactUsPage contactUsPage = new ContactUsPage();
         private readonly ContactUsInfo contactUsInfo = JsonConvert.DeserializeObject<ContactUsInfo>(FileReader.GetTextFromEmbeddedResource(ResourceConstants.PathToContactUserWithInvalidEmail, Assembly.GetCallingAssembly()));
 
+        [LogStep(StepType.Assertion)]
         public void ContactUsPageIsPresent()
         {
-            LogAssertion();
             contactUsPage.AssertIsPresent();
         }
 
+        [LogStep(StepType.Assertion)]
         public void CheckThatTheContactUsFormElementsAreDisplayed()
         {
-            LogAssertion();
             Assert.Multiple(() =>
             {
                 foreach(ContactUsTextFields name in Enum.GetValues(typeof(ContactUsTextFields)))
@@ -41,58 +42,58 @@ namespace Aquality.Selenium.Template.NUnit.Steps
             });
         }
 
+        [LogStep(StepType.Assertion)]
         public void CheckThanContactUsTitleIsCorrect()
         {
-            LogAssertion();
             Assert.AreEqual(contactUsPage.TitleLabelTextValue, TitleConstants.TitleLabelText, "Title text should be same.");
         }
 
+        [LogStep(StepType.Step)]
         public void ClickSendAMessageButton()
         {
-            LogStep();
             contactUsPage.ClickSend();
         }
 
+        [LogStep(StepType.Step)]
         public void CheckTermCheckBox()
         {
-            LogStep();
             contactUsPage.CheckTermsCheckBox();
         }
 
+        [LogStep(StepType.Step)]
         public void CheckTermCheckBoxIsCheckedOrNot(bool isChecked = false)
         {
-            LogStep(nameof(CheckTermCheckBoxIsCheckedOrNot) + $"isChecked status - [{isChecked}]");
             var expectedStatus = isChecked ? "checked" : "not checked";
             Assert.AreEqual(contactUsPage.IsTermsCheckBoxChecked, isChecked, $"Term CheckBox should be {expectedStatus}");
         }
 
+        [LogStep(StepType.Step)]
         public void SetValueForTheTextField(ContactUsTextFields textField, string value)
         {
-            LogStep(nameof(SetValueForTheTextField) + $"Input user name - [{textField}]");
             contactUsPage.SetValueForContactUsTextBox(textField, value);
         }
 
+        [LogStep(StepType.Step)]
         public void SetDataForTheAllTextFields()
         {
-            LogStep();
             SetValueForTheTextField(ContactUsTextFields.Name, contactUsInfo.Name);
             SetValueForTheTextField(ContactUsTextFields.Email, contactUsInfo.Email);
             SetValueForTheTextField(ContactUsTextFields.Company, contactUsInfo.Company);
             SetValueForTheTextField(ContactUsTextFields.ProjectDescription, contactUsInfo.Comment);
         }
 
+        [LogStep(StepType.Assertion)]
         public void CheckThatWarningEmailMessageisPresentOrNot(bool isChecked = false)
         {
-            LogAssertion(nameof(CheckThatWarningEmailMessageisPresentOrNot) + $"isChecked status - [{isChecked}]");
             var expectedStatus = isChecked ? "displayed" : "not displayed";
             AqualityServices.ConditionalWait.WaitForTrue(() => contactUsPage.IsWarningEmailMessagePresent == isChecked,
             AqualityServices.Get<ITimeoutConfiguration>().Script, AqualityServices.Get<ITimeoutConfiguration>().PollingInterval,
                 $"Warning email message should be {expectedStatus}.");
         }
 
+        [LogStep(StepType.Step)]
         public void CheckThatWarningEmailMessageIsCorrect()
         {
-            LogStep();
             Assert.AreEqual(contactUsPage.WarningEmailMessageTextValue, ContactUsTextFields.Email.GetEnumDescription(), "Warning email message should be correct.");
         }
     }

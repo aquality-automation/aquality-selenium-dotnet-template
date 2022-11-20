@@ -15,7 +15,9 @@ namespace Aquality.Selenium.Template.Browsers
         {
             settings = settings ?? GetSettings();
             base.ConfigureServices(services, applicationProvider, settings);
+            //The logic is related to Allure.If you don't plan to use Allure, delete the following code:
             services.AddSingleton<ILocalizedLogger, AllureBasedLocalizedLogger>();
+            //End of Allure Logic
             services.AddSingleton<ICustomTimeoutConfiguration, CustomTimeoutConfiguration>();
             return services;
         }

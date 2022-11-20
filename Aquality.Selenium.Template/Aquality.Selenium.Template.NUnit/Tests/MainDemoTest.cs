@@ -1,10 +1,12 @@
 ﻿using Aquality.Selenium.Template.NUnit.Steps;
+using NUnit.Allure.Attributes;
 using NUnit.Allure.Core;
 using NUnit.Framework;
 
 namespace Aquality.Selenium.Template.NUnit.Tests
 {
     [AllureNUnit]
+    [AllureSuite("Main Page Demo Test")]
     public class MainDemoTest : BaseWebTest
     {
         private readonly MainPageSteps mainPageSteps = new MainPageSteps();
