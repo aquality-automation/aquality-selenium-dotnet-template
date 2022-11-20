@@ -1,6 +1,5 @@
 ﻿{
   "stepAssemblies": [
-    { "assembly": "Aquality.Selenium.Template.SpecFlow" },
     { "assembly": "Allure.SpecFlowPlugin" },
     { "assembly": "AqualityTracking.SpecFlowPlugin" }
   ],

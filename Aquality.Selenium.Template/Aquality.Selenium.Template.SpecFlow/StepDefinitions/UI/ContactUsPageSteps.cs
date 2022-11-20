@@ -3,7 +3,7 @@ using Aquality.Selenium.Template.Models;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 
-namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions
+namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions.UI
 {
     [Binding]
     public class ContactUsPageSteps
@@ -58,7 +58,7 @@ namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions
         [Then(@"Contact us page dump is different")]
         public void ContactUsPageDumpIsDifferent()
         {
-            Assert.That(contactUsPage.Dump.Compare(), Is.GreaterThan(0), 
+            Assert.That(contactUsPage.Dump.Compare(), Is.GreaterThan(0),
                 "The form dump should differ");
         }
     }

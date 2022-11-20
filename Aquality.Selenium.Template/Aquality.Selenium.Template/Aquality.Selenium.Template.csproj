@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="C:\Users\a2.meleshko\.nuget\packages\aqualitytracking.integrations.core\1.0.1\contentFiles\any\netstandard2.0\Resources\aqualityTracking.Template.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Resources\Environment\Prod\config.json" />
     <None Remove="Resources\Environment\Stage\config.json" />
   </ItemGroup>
@@ -20,6 +24,9 @@
     <PackageReference Include="AspectInjector" Version="2.8.0" />
     <PackageReference Include="Humanizer" Version="2.14.1" />
     <PackageReference Include="NUnit.Allure" Version="1.2.1.1" />
+    <PackageReference Include="AqualityTracking.Integrations.Core" Version="1.0.1" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="RestSharp" Version="108.0.1" />
     <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
   </ItemGroup>
 
