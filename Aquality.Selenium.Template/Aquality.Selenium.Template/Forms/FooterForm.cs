@@ -27,9 +27,9 @@ namespace Aquality.Selenium.Template.Forms
 
         protected override IDictionary<string, IElement> ElementsForVisualization => new Dictionary<string, IElement>()
         {
-            {"Footer logo", LogoLabel },
-            {"Footer contacts", ContactsLabel },
-            {"Footer subscribe", SubscribeLabel },
+            {"FooterLogo", LogoLabel },
+            {"FooterContacts", ContactsLabel },
+            {"FooterSubscribe", SubscribeLabel },
         };
     }
 }
