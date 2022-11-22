@@ -1,0 +1,146 @@
+[
+  {
+    "Name": "Server",
+    "Value": "GitHub.com",
+    "Type": 2,
+    "Encode": false
+  },
+  {
+    "Name": "Date",
+    "Value": "Tue, 22 Nov 2022 20:19:10 GMT",
+    "Type": 2,
+    "Encode": false
+  },
+  {
+    "Name": "Cache-Control",
+    "Value": "public, max-age=60, s-maxage=60",
+    "Type": 2,
+    "Encode": false
+  },
+  {
+    "Name": "Vary",
+    "Value": "Accept",
+    "Type": 2,
+    "Encode": false
+  },
+  {
+    "Name": "Vary",
+    "Value": "Accept-Encoding",
+    "Type": 2,
+    "Encode": false
+  },
+  {
+    "Name": "Vary",
+    "Value": "Accept",
+    "Type": 2,
+    "Encode": false
+  },
+  {
+    "Name": "Vary",
+    "Value": "X-Requested-With",
+    "Type": 2,
+    "Encode": false
+  },
+  {
+    "Name": "ETag",
+    "Value": "W/\"62dbc34e77213fc54892f86ac7dda42e6b2ee910ea7825b5e1b786cf1b375b17\"",
+    "Type": 2,
+    "Encode": false
+  },
+  {
+    "Name": "X-GitHub-Media-Type",
+    "Value": "github.v3",
+    "Type": 2,
+    "Encode": false
+  },
+  {
+    "Name": "Access-Control-Expose-Headers",
+    "Value": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset",
+    "Type": 2,
+    "Encode": false
+  },
+  {
+    "Name": "Access-Control-Allow-Origin",
+    "Value": "*",
+    "Type": 2,
+    "Encode": false
+  },
+  {
+    "Name": "Strict-Transport-Security",
+    "Value": "max-age=31536000; includeSubdomains; preload",
+    "Type": 2,
+    "Encode": false
+  },
+  {
+    "Name": "X-Frame-Options",
+    "Value": "DENY",
+    "Type": 2,
+    "Encode": false
+  },
+  {
+    "Name": "X-Content-Type-Options",
+    "Value": "nosniff",
+    "Type": 2,
+    "Encode": false
+  },
+  {
+    "Name": "X-XSS-Protection",
+    "Value": "0",
+    "Type": 2,
+    "Encode": false
+  },
+  {
+    "Name": "Referrer-Policy",
+    "Value": "origin-when-cross-origin, strict-origin-when-cross-origin",
+    "Type": 2,
+    "Encode": false
+  },
+  {
+    "Name": "Content-Security-Policy",
+    "Value": "default-src 'none'",
+    "Type": 2,
+    "Encode": false
+  },
+  {
+    "Name": "X-RateLimit-Limit",
+    "Value": "60",
+    "Type": 2,
+    "Encode": false
+  },
+  {
+    "Name": "X-RateLimit-Remaining",
+    "Value": "55",
+    "Type": 2,
+    "Encode": false
+  },
+  {
+    "Name": "X-RateLimit-Reset",
+    "Value": "1669151949",
+    "Type": 2,
+    "Encode": false
+  },
+  {
+    "Name": "X-RateLimit-Resource",
+    "Value": "core",
+    "Type": 2,
+    "Encode": false
+  },
+  {
+    "Name": "X-RateLimit-Used",
+    "Value": "5",
+    "Type": 2,
+    "Encode": false
+  },
+  {
+    "Name": "Accept-Ranges",
+    "Value": "bytes",
+    "Type": 2,
+    "Encode": false
+  },
+  {
+    "Name": "X-GitHub-Request-Id",
+    "Value": "0442:70C0:1D052FC:3B6892C:637D2EBE",
+    "Type": 2,
+    "Encode": false
+  }
+]
