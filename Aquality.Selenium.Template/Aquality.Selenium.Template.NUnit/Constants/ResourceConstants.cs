@@ -1,11 +1,13 @@
-﻿namespace Aquality.Selenium.Template.NUnit.Constants
+﻿using System.IO;
+
+namespace Aquality.Selenium.Template.NUnit.Constants
 {
     public static class ResourceConstants
     {
-        public const string PathToContactUserWithInvalidEmail = @"Resources.TestData.ContactUserWithInvalidEmail.json";
-        public const string PathToGetFullPageHeightJS = @"Resources.JavaScripts.GetFullPageHeight.js";
-        public const string ActualTestImage = @"Resources\ImagesForCustomImageComparator\actual_test_image.jpg";
-        public const string ExpectedCorrectImage = @"Resources\ImagesForCustomImageComparator\expected_correct_image.jpg";
-        public const string ExpectedIncorrectImage = @"Resources\ImagesForCustomImageComparator\expected_incorrect_image.jpg";
+        public static string PathToContactUserWithInvalidEmail = @"Resources.TestData.ContactUserWithInvalidEmail.json";
+        public static string PathToGetFullPageHeightJS = @"Resources.JavaScripts.GetFullPageHeight.js";
+        public static string ActualTestImage => Path.Combine("Resources", "ImagesForCustomImageComparator", "actual_test_image.jpg");
+        public static string ExpectedCorrectImage = Path.Combine("Resources", "ImagesForCustomImageComparator", "expected_correct_image.jpg");
+        public static string ExpectedIncorrectImage = Path.Combine("Resources", "ImagesForCustomImageComparator", "expected_incorrect_image.jpg");
     }
 }

@@ -3,9 +3,11 @@ using System;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Aquality.Selenium.Template.Utilities
 {
+    [SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "<Pending>")]
     public class ScreenshotProvider
     {
         public string TakeScreenshot()

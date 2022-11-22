@@ -2,9 +2,11 @@
 using Aquality.Selenium.Template.Utilities;
 using System.Drawing;
 using Aquality.Selenium.Template.CustomAttributes;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Aquality.Selenium.Template.NUnit.Steps
 {
+    [SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "<Pending>")]
     public class CustomImageComparatorSteps
     {
         private readonly CustomImageComparator customImageComparator;
