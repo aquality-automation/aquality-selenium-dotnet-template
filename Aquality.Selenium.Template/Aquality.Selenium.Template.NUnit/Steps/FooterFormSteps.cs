@@ -1,5 +1,6 @@
 ﻿using Aquality.Selenium.Template.CustomAttributes;
 using Aquality.Selenium.Template.Forms;
+using Aquality.Selenium.Template.NUnit.Constants;
 using Aquality.Selenium.Template.NUnit.Extensions;
 using NUnit.Framework;
 
@@ -35,7 +36,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
         [LogStep(StepType.Assertion)]
         public void CheckThatTheVisualElementsAreCorrect()
         {
-            var compareVisualElements = footerForm.Dump.Compare();
+            var compareVisualElements = footerForm.Dump.Compare(ResourceConstants.FooterFormVisualDumpsPath);
             Assert.AreEqual(0, compareVisualElements, "The footer form should contain the correct visual elements");
         }
     }

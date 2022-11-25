@@ -9,5 +9,6 @@ namespace Aquality.Selenium.Template.NUnit.Constants
         public static string ActualTestImage => Path.Combine("Resources", "ImagesForCustomImageComparator", "ActualTestImage.jpg");
         public static string ExpectedCorrectImage => Path.Combine("Resources", "ImagesForCustomImageComparator", "ExpectedCorrectImage.jpg");
         public static string ExpectedIncorrectImage => Path.Combine("Resources", "ImagesForCustomImageComparator", "ExpectedIncorrectImage.jpg");
+        public static string FooterFormVisualDumpsPath => Path.Combine("Footer form");
     }
 }
