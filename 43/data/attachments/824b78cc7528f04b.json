@@ -1,0 +1,27 @@
+[
+  {
+    "Timestamp": "2022-11-25T09:20:43.902Z",
+    "Level": 4,
+    "Message": "https://www.a1qa.com/ 83:59 Uncaught SyntaxError: missing ) after argument list"
+  },
+  {
+    "Timestamp": "2022-11-25T09:20:43.903Z",
+    "Level": 4,
+    "Message": "https://www.a1qa.com/ 101:0 Uncaught SyntaxError: missing ) after argument list"
+  },
+  {
+    "Timestamp": "2022-11-25T09:20:45.171Z",
+    "Level": 4,
+    "Message": "https://mc.yandex.com/sync_cookie_image_decide?token=9833.O-lRE_EaI8qrkES_mYWMPRXN1e_EsxLCrnE_FjKUEnURKic3nq7I7fP4B4vR3Bja13FiXgM8HNnL3YCh6bGaFA%2C%2C.tuAjZrbSfT68uymRP-XmS4H2heo%2C - Failed to load resource: the server responded with a status of 400 ()"
+  },
+  {
+    "Timestamp": "2022-11-25T09:20:45.781Z",
+    "Level": 4,
+    "Message": "https://www.a1qa.com/contacts/ 87:59 Uncaught SyntaxError: missing ) after argument list"
+  },
+  {
+    "Timestamp": "2022-11-25T09:20:45.782Z",
+    "Level": 4,
+    "Message": "https://www.a1qa.com/contacts/ 105:0 Uncaught SyntaxError: missing ) after argument list"
+  }
+]
