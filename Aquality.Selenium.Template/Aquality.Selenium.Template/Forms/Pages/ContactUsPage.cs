@@ -7,16 +7,16 @@ namespace Aquality.Selenium.Template.Forms.Pages
 {
     public class ContactUsPage : BaseAppForm
     {
-        private ITextBox NameTextBox => ElementFactory.GetTextBox(By.Id("your-name"), "Name");
-        private ITextBox CompanyTextBox => ElementFactory.GetTextBox(By.Id("your-company"), "Company");
-        private ITextBox PhoneTextBox => ElementFactory.GetTextBox(By.Id("your-phone"), "Phone");
-        private ITextBox CommentTextBox => ElementFactory.GetTextBox(By.Id("your-message"), "Project description");
-        private ICheckBox PrivacyCheckBox => ElementFactory.GetCheckBox(By.XPath("//input[@name='privacy']/following-sibling::span[1]"), "Privacy");
-        private IButton SendButton => ElementFactory.GetButton(By.XPath("//div[contains(@class,'contactsForm__submit')]//button"), "Send a message");
-        private ILabel EmailAlertLabel => ElementFactory.GetLabel(By.XPath("//div[contains(@class,'error')]//input[@id='your-email']"), "Email validating message", Core.Elements.ElementState.ExistsInAnyState);
+        private static ITextBox NameTextBox => ElementFactory.GetTextBox(By.Id("your-name"), "Name");
+        private static ITextBox CompanyTextBox => ElementFactory.GetTextBox(By.Id("your-company"), "Company");
+        private static ITextBox PhoneTextBox => ElementFactory.GetTextBox(By.Id("your-phone"), "Phone");
+        private static ITextBox CommentTextBox => ElementFactory.GetTextBox(By.Id("your-message"), "Project description");
+        private static ICheckBox PrivacyCheckBox => ElementFactory.GetCheckBox(By.XPath("//input[@name='privacy']/following-sibling::span[1]"), "Privacy");
+        private static IButton SendButton => ElementFactory.GetButton(By.XPath("//div[contains(@class,'contactsForm__submit')]//button"), "Send a message");
+        private static ILabel EmailAlertLabel => ElementFactory.GetLabel(By.XPath("//div[contains(@class,'error')]//input[@id='your-email']"), "Email validating message", Core.Elements.ElementState.ExistsInAnyState);
         private ILabel TitleLabel => FormElement.FindChildElement<ILabel>(By.XPath("//h2[contains(@class,'blockTitle')]"), "Title");
         private ILabel TermsLabel => FormElement.FindChildElement<ILabel>(By.XPath("//label[contains(@class, 'checkbox')]"), "Terms");
-        private ITextBox ContactUsTextBox(ContactUsTextFields contactUsTextField) => ElementFactory.GetTextBox(By.Id($"{contactUsTextField.GetId()}"), contactUsTextField.ToString());
+        private static ITextBox ContactUsTextBox(ContactUsTextFields contactUsTextField) => ElementFactory.GetTextBox(By.Id($"{contactUsTextField.GetId()}"), contactUsTextField.ToString());
         private ILabel WarningEmailMessageLabel => ContactUsTextBox(ContactUsTextFields.Email).FindChildElement<ILabel>(By.XPath("/parent::*/div[contains(@class, 'input__error')]"), "Warning email message");
         private ICheckBox TermsCheckBox => FormElement.FindChildElement<ICheckBox>(By.XPath("//input[@type='checkbox']"), "Terms", null, ElementState.ExistsInAnyState);
 

@@ -39,7 +39,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
         }
 
         [LogStep(StepType.Step)]
-        public void ScrollToTheFooter()
+        public static void ScrollToTheFooter()
         {
             var fullPageHeight = GetFullPageHeight();
             AqualityServices.Browser.ScrollWindowBy(0, fullPageHeight);

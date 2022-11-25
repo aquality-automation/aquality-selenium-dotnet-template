@@ -25,7 +25,7 @@ namespace Aquality.Selenium.Template.NUnit.Tests
             mainPageSteps.AcceptCookiesButtonIsDisplayed();
             mainPageSteps.AcceptCookies();
             mainPageSteps.AcceptCookiesButtonIsNotDisplayed();
-            mainPageSteps.ScrollToTheFooter();
+            MainPageSteps.ScrollToTheFooter();
         }
     }
 }

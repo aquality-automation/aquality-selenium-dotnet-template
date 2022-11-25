@@ -10,13 +10,13 @@ namespace Aquality.Selenium.Template.NUnit.Tests
 {
     public abstract class BaseTest
     {
-        protected string ScenarioName
+        protected static string ScenarioName
             => TestContext.CurrentContext.Test.Properties.Get("Description")?.ToString()
             ?? TestContext.CurrentContext.Test.Name.Replace("_", string.Empty).Humanize();
 
         private static Logger Logger => Logger.Instance;
 
-        private TestContext.ResultAdapter Result => TestContext.CurrentContext.Result;
+        private static TestContext.ResultAdapter Result => TestContext.CurrentContext.Result;
         private readonly ScreenshotProvider screenshotProvider =  new ScreenshotProvider();
 
         [OneTimeSetUp]

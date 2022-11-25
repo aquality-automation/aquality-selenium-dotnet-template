@@ -55,10 +55,10 @@ namespace Aquality.Selenium.Template.NUnit.Tests
         public void TC0004_CheckTheFooterFormIsCorrectWithVisualTesting()
         {
             topBarMenuSteps.TopBarMenuIsPresent();
-            mainPageSteps.ScrollToTheFooter();
+            MainPageSteps.ScrollToTheFooter();
             footerFormSteps.FooterFormIsPresent();
             footerFormSteps.CheckVisualElementsPresent();
-            footerFormSteps.SaveDump(); // - this method is used locally, only to fill the image dump.
+            //footerFormSteps.SaveDump(); // - this method is used locally, only to fill the image dump.
             footerFormSteps.CheckThatTheVisualElementsAreCorrect();
         }
     }

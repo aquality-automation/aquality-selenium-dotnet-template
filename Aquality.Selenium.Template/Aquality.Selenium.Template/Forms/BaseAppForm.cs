@@ -6,7 +6,7 @@ namespace Aquality.Selenium.Template.Forms
 {
     public class BaseAppForm : Form
     {
-        private IButton AcceptCookiesButton => ElementFactory.GetButton(By.ClassName("cookies__button"), "Accept cookies");
+        private static IButton AcceptCookiesButton => ElementFactory.GetButton(By.ClassName("cookies__button"), "Accept cookies");
 
         protected BaseAppForm(By locator, string name) : base(locator, name)
         {

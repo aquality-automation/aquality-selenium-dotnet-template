@@ -10,12 +10,10 @@ namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions.UI
     public class MainPageSteps
     {
         private readonly MainPage mainPage;
-        private readonly TopBarMenu topBarMenu;
 
-        public MainPageSteps(MainPage mainPage, TopBarMenu topBarMenu)
+        public MainPageSteps(MainPage mainPage)
         {
             this.mainPage = mainPage;
-            this.topBarMenu = topBarMenu;
         }
 
         [Given(@"Main page is opened")]
@@ -28,7 +26,7 @@ namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions.UI
         public void IOpenContactUsPage()
         {
             mainPage.AcceptCookies();
-            topBarMenu.OpenHeaderMenu(TopBarMenu.Item.ContactUs);
+            TopBarMenu.OpenHeaderMenu(TopBarMenu.Item.ContactUs);
         }
     }
 }
