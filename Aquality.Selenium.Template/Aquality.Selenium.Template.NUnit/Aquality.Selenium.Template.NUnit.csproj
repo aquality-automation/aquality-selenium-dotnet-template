@@ -64,6 +64,18 @@
     <None Update="Resources\VisualDumps\Footer form\Footer subscribe.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Resources\VisualDumps\Footer form\FooterContacts.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\VisualDumps\Footer form\FooterLogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\VisualDumps\Footer form\FooterSubscribe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\VisualDumps\Footer form\" />
   </ItemGroup>
 
 </Project>
