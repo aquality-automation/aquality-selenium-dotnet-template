@@ -46,7 +46,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
         }
 
         [LogStep(StepType.Step)]
-        public int GetFullPageHeight()
+        public static int GetFullPageHeight()
         {
             var pageHeight = AqualityServices.Browser.ExecuteScriptFromFile<long>(ResourceConstants.PathToGetFullPageHeightJS);
             return (int)(long)pageHeight;

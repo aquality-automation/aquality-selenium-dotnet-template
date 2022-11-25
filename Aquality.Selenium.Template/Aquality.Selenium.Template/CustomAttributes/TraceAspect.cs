@@ -15,7 +15,7 @@ namespace Aquality.Selenium.Template.CustomAttributes
 
         [Advice(Kind.Around, Targets = Target.Method)]
         public object LogMethodEntry(
-            [Argument(Source.Method)] MethodBase methodBase,
+            [Argument(Source.Metadata)] MethodBase methodBase,
             [Argument(Source.Type)] Type classType,
             [Argument(Source.Arguments)] object[] arguments,
             [Argument(Source.Name)] string name,
@@ -61,7 +61,7 @@ namespace Aquality.Selenium.Template.CustomAttributes
             //End of Allure Logic
         }
 
-        private void LogStep(string stepInfo, string stepMethod, string stepType)
+        private static void LogStep(string stepInfo, string stepMethod, string stepType)
         {
             var shift = new string('#', 10);
             Logger.Info($"{shift} {stepType} {shift} {Environment.NewLine}{stepMethod}: {stepInfo}");

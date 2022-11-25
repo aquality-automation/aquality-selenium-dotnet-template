@@ -21,7 +21,7 @@ namespace Aquality.Selenium.Template.Utilities
             return path;
         }
 
-        private Image GetImage()
+        private static Image GetImage()
         {
             using (var stream = new MemoryStream(AqualityServices.Browser.GetScreenshot()))
             {

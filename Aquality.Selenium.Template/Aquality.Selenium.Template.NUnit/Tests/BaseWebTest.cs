@@ -19,13 +19,13 @@ namespace Aquality.Selenium.Template.NUnit.Tests
         }
 
         [AllureStep]
-        public void SetScreenExpansionMaximize()
+        public static void SetScreenExpansionMaximize()
         {
             AqualityServices.Browser.Maximize();
         }
 
         [AllureStep]
-        public void GoToPageStartPage()
+        public static void GoToPageStartPage()
         {
             AqualityServices.Browser.GoTo(Configuration.StartUrl);
         }

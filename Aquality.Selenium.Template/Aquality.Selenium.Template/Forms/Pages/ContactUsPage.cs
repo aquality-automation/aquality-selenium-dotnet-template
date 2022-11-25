@@ -20,11 +20,11 @@ namespace Aquality.Selenium.Template.Forms.Pages
         private ILabel WarningEmailMessageLabel => ContactUsTextBox(ContactUsTextFields.Email).FindChildElement<ILabel>(By.XPath("/parent::*/div[contains(@class, 'input__error')]"), "Warning email message");
         private ICheckBox TermsCheckBox => FormElement.FindChildElement<ICheckBox>(By.XPath("//input[@type='checkbox']"), "Terms", null, ElementState.ExistsInAnyState);
 
-        public bool IsEmailValidationMessagePresent => EmailAlertLabel.State.WaitForDisplayed();
-
         public ContactUsPage() : base(By.ClassName("contactsForm__wrapper"), "Contact Us")
         {
         }
+
+        public bool IsEmailValidationMessagePresent => EmailAlertLabel.State.WaitForDisplayed();
 
         public ContactUsPage SetName(string name)
         {

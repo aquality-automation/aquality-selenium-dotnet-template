@@ -21,7 +21,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
         }
 
         [LogStep(StepType.Step)]
-        public Image GetExpectedImageFromResourse(string expectedImageResourse)
+        public static Image GetExpectedImageFromResourse(string expectedImageResourse)
         {
             return Image.FromFile(expectedImageResourse);
         }

@@ -17,7 +17,7 @@ namespace Aquality.Selenium.Template.NUnit.Tests
         [Test(Description = "TC-0005 Compare 2 images one of which is different")]
         public void TC0005_Compare2ImagesOneOfWhichIsDifferent()
         {
-            var expectedImage = customImageComparatorSteps.GetExpectedImageFromResourse(ResourceConstants.ExpectedIncorrectImage);
+            var expectedImage = CustomImageComparatorSteps.GetExpectedImageFromResourse(ResourceConstants.ExpectedIncorrectImage);
             customImageComparatorSteps.CheckThatActualAndExpectedImagesAreNotTheSame(expectedImage);
         }
 
@@ -25,7 +25,7 @@ namespace Aquality.Selenium.Template.NUnit.Tests
         [Test(Description = "TC-0006 Compare 2 images when both images are the same")]
         public void TC0006_Compare2ImagesWhenBothImagesAreTheSame()
         {
-            var expectedImage = customImageComparatorSteps.GetExpectedImageFromResourse(ResourceConstants.ExpectedCorrectImage);
+            var expectedImage = CustomImageComparatorSteps.GetExpectedImageFromResourse(ResourceConstants.ExpectedCorrectImage);
             customImageComparatorSteps.CheckThatActualAndExpectedImagesAreTheSame(expectedImage);
         }
     }

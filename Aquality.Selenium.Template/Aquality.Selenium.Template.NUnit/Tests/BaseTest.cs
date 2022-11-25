@@ -1,5 +1,4 @@
-﻿using Allure.Commons;
-using Aquality.Selenium.Browsers;
+﻿using Aquality.Selenium.Browsers;
 using Aquality.Selenium.Core.Logging;
 using Aquality.Selenium.Template.Browsers;
 using Aquality.Selenium.Template.Utilities;
@@ -46,9 +45,7 @@ namespace Aquality.Selenium.Template.NUnit.Tests
             {
                 if (AqualityServices.IsBrowserStarted)
                 {
-                    var pathToScreenshot = screenshotProvider.TakeScreenshot();
-                    TestContext.AddTestAttachment(pathToScreenshot);
-                    AllureLifecycle.Instance.AddAttachment(pathToScreenshot, "Screenshot");
+                    AttachmentHelper.AddAttachment(screenshotProvider.TakeScreenshot(), "Screenshot");
                 }
                 Logger.Error(Result.Message);
             }
