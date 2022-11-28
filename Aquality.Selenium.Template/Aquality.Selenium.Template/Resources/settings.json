@@ -139,7 +139,7 @@
         "isEnabled": false
     },
     "visualization": {
-        "defaultThreshold": 0.09,
+        "defaultThreshold": 0.012,
         "comparisonWidth": 16,
         "comparisonHeight": 16,
         "pathToDumps": "Resources/VisualDumps/"
