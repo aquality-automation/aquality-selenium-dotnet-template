@@ -37,31 +37,10 @@
     <None Update="Resources\ImagesForCustomImageComparator\ActualTestImage.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Resources\ImagesForCustomImageComparator\actual_test_image.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="Resources\ImagesForCustomImageComparator\ExpectedCorrectImage.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Resources\ImagesForCustomImageComparator\ExpectedIncorrectImage.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Resources\ImagesForCustomImageComparator\expected_correct_image.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Resources\ImagesForCustomImageComparator\second_test_image2.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Resources\ImagesForCustomImageComparator\expected_incorrect_image.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Resources\VisualDumps\Footer form\Footer contacts.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Resources\VisualDumps\Footer form\Footer logo.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Resources\VisualDumps\Footer form\Footer subscribe.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Resources\VisualDumps\Footer form\FooterContacts.png">
