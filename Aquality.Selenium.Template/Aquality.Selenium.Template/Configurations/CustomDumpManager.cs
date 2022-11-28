@@ -68,6 +68,7 @@ namespace Aquality.Selenium.Template.Configurations
                 }
                 else
                 {
+                    Logger.Info($"imageFile -  heigth = [{Image.FromFile(imageFile.FullName).Height}; Width = [{Image.FromFile(imageFile.FullName).Width}]");
                     comparisonResult += existingElements[key].Visual.GetDifference(Image.FromFile(imageFile.FullName));
                     countOfUnproceededElements--;
                     countOfProceededElements++;
