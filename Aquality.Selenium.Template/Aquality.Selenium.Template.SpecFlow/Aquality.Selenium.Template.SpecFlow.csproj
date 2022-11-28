@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Aquality.Selenium" Version="4.9.0" />
     <PackageReference Include="AqualityTracking.SpecFlowPlugin" Version="1.0.1" />
     <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.14" />

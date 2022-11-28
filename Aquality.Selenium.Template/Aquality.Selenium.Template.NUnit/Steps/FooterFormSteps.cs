@@ -40,6 +40,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
         [LogStep(StepType.Assertion)]
         public void CheckThatTheVisualElementsAreCorrect()
         {
+            //TODO:Delete this code after correcting all errors.
             var dir = AqualityServices.Get<IVisualizationConfiguration>().PathToDumps;
             Logger.Info($"Directory - {dir}");
             DirectoryInfo d = new DirectoryInfo(dir);
