@@ -1,0 +1,11 @@
+{
+  "StatusCode": 200,
+  "StatusDesciption": "OK",
+  "Encoding": [],
+  "ErrorMessage": null,
+  "IsSuccessful": true,
+  "ResponseUri": "https://api.github.com/users/aquality-automation",
+  "ContentType": "application/json",
+  "ContentLength": null,
+  "ResponseStatus": 1
+}
