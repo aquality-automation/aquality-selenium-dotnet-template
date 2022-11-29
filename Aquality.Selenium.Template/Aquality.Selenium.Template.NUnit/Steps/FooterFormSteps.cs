@@ -13,6 +13,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
     {
         private static Logger Logger => Logger.Instance;
         private readonly FooterForm footerForm = new FooterForm();
+        const float ComparisonThreshold = 0.08f;
 
         [LogStep(StepType.Assertion)]
         public void FooterFormIsPresent()
@@ -51,7 +52,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
                 Logger.Info($"file info - [{item.FullName}]");
             }
             var compareVisualElements = footerForm.Dump.Compare();
-            Assert.AreEqual(0, compareVisualElements, "The footer form should contain the correct visual elements");
+            Assert.LessOrEqual(compareVisualElements, ComparisonThreshold, "The footer form should contain the correct visual elements");
         }
     }
 }
