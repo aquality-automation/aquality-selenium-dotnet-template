@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Dec 02 11:06:53 GMT 2022","Fri Dec 02 11:07:03 GMT 2022","10217","","","","","","Empty email validation is working on Contact Us page (""John Doe"")",""
+"passed","Fri Dec 02 11:06:53 GMT 2022","Fri Dec 02 11:06:53 GMT 2022","286","","","","","","GET user info",""
+"passed","Fri Dec 02 11:06:53 GMT 2022","Fri Dec 02 11:06:53 GMT 2022","578","","","","","","GET organization info",""
+"passed","Fri Dec 02 11:07:03 GMT 2022","Fri Dec 02 11:07:11 GMT 2022","8079","","","","","","Empty email validation is working on Contact Us page (""Peter Parker"")",""
+"passed","Fri Dec 02 11:06:53 GMT 2022","Fri Dec 02 11:06:54 GMT 2022","361","","","","","","GET users info",""
