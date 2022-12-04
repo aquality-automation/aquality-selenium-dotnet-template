@@ -54,7 +54,7 @@ jobs:
       
     - name: Copy NUnit allure result to the SpecFlow allure result
       if: always()
-      run: cp -r ${{ env.ALLURE_NUNIT_RESULTS }}/.  ${{ env.ALLURE_RESULTS }}
+      run: cp -r ${{ env.ALLURE_NUNIT_RESULTS }}/. ${{ env.ALLURE_RESULTS }}
     
     - name: Get Allure history
       uses: actions/checkout@v2
@@ -69,7 +69,7 @@ jobs:
       if: always()
       id: allure-report
       with:
-        allure_results: ${{ env.ALLURE_RESULTS }}
+        allure_results: ${{ env.ALLURE_NUNIT_RESULTS }}
         gh_pages: gh-pages
         allure_report: allure-report
         allure_history: allure-history
