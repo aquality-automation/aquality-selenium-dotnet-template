@@ -1,0 +1,27 @@
+2022-12-04 15:29:59 INFO - Start scenario [TC-0001 Check the cookie form]
+Connection refused [::ffff:127.0.0.1]:46303 (localhost:46303)
+Connection refused [::ffff:127.0.0.1]:46303 (localhost:46303)
+Connection refused [::ffff:127.0.0.1]:46303 (localhost:46303)
+Connection refused [::ffff:127.0.0.1]:46303 (localhost:46303)
+Connection refused [::ffff:127.0.0.1]:46303 (localhost:46303)
+Connection refused [::ffff:127.0.0.1]:46303 (localhost:46303)
+2022-12-04 15:30:00 INFO - Browser 'Chrome' ready...
+2022-12-04 15:30:00 INFO - Navigate to URL - 'https://www.a1qa.com/'
+2022-12-04 15:30:02 INFO - Maximizing browser window
+2022-12-04 15:30:02 INFO - ########## Assertion ########## 
+MainPageSteps: Main page is present
+2022-12-04 15:30:02 INFO - Label 'Main page' :: Waiting for element to be displayed
+2022-12-04 15:30:02 INFO - ########## Assertion ########## 
+MainPageSteps: Accept cookies button is displayed
+2022-12-04 15:30:02 INFO - ########## Step ########## 
+MainPageSteps: Accept cookies
+2022-12-04 15:30:02 INFO - Button 'Accept cookies' :: Clicking
+2022-12-04 15:30:03 INFO - ########## Assertion ########## 
+MainPageSteps: Accept cookies button is not displayed
+2022-12-04 15:30:03 INFO - ########## Step ########## 
+MainPageSteps: Scroll to the footer
+2022-12-04 15:30:03 INFO - ########## Step ########## 
+MainPageSteps: Get full page height
+2022-12-04 15:30:03 INFO - Closing browser
+2022-12-04 15:30:03 INFO - Scenario [TC-0001 Check the cookie form] result is Passed!
+2022-12-04 15:30:03 INFO - ====================================================================================================
