@@ -53,6 +53,7 @@ jobs:
       run: dotnet test --no-build ${{ env.SOLUTION_NAME }} -c ${{ env.BUILD_CONFIGURATION }}
       
     - name: Copy NUnit allure result to the SpecFlow allure result
+      if: always()
       run: cp -r ${{ env.ALLURE_NUNIT_RESULTS }}/.  ${{ env.ALLURE_RESULTS }}
     
     - name: Get Allure history
