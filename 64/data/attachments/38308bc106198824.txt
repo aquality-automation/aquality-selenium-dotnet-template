@@ -1,0 +1,7 @@
+2022-12-04 17:51:22 INFO - Start scenario [TC-0005 Compare 2 images one of which is different]
+2022-12-04 17:51:22 INFO - ########## Step ########## 
+CustomImageComparatorSteps: Get expected image from resourse method with parameters: Resources/ImagesForCustomImageComparator/ExpectedIncorrectImage.jpg
+2022-12-04 17:51:22 INFO - ########## Assertion ########## 
+CustomImageComparatorSteps: Check that actual and expected images are not the same method with parameters: System.Drawing.Bitmap
+2022-12-04 17:51:23 INFO - Scenario [TC-0005 Compare 2 images one of which is different] result is Passed!
+2022-12-04 17:51:23 INFO - ====================================================================================================

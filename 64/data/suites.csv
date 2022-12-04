@@ -1,0 +1,18 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Dec 04 17:51:42 GMT 2022","Sun Dec 04 17:51:46 GMT 2022","3694","","Main Page Demo Test","","MainDemoTest","TC0001_CheckTheCookieForm","TC0001_CheckTheCookieForm","TC-0001 Check the cookie form
+"
+"passed","Sun Dec 04 17:51:35 GMT 2022","Sun Dec 04 17:51:46 GMT 2022","10792","","","","","","Empty email validation is working on Contact Us page (""Peter Parker"")",""
+"passed","Sun Dec 04 17:51:30 GMT 2022","Sun Dec 04 17:51:37 GMT 2022","6716","","Demo Tests","","DemoTest","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC-0003 Check how the Contact Us form works with an incorrect email
+"
+"passed","Sun Dec 04 17:51:22 GMT 2022","Sun Dec 04 17:51:23 GMT 2022","906","","CustomImageComparatorTest","","CustomImageComparatorTest","TC0005_Compare2ImagesOneOfWhichIsDifferent","TC0005_Compare2ImagesOneOfWhichIsDifferent","TC-0005 Compare 2 images one of which is different
+"
+"passed","Sun Dec 04 17:51:23 GMT 2022","Sun Dec 04 17:51:23 GMT 2022","446","","CustomImageComparatorTest","","CustomImageComparatorTest","TC0006_Compare2ImagesWhenBothImagesAreTheSame","TC0006_Compare2ImagesWhenBothImagesAreTheSame","TC-0006 Compare 2 images when both images are the same
+"
+"passed","Sun Dec 04 17:51:21 GMT 2022","Sun Dec 04 17:51:22 GMT 2022","846","","","","","","GET organization info",""
+"passed","Sun Dec 04 17:51:22 GMT 2022","Sun Dec 04 17:51:22 GMT 2022","277","","","","","","GET user info",""
+"passed","Sun Dec 04 17:51:37 GMT 2022","Sun Dec 04 17:51:42 GMT 2022","4955","","Demo Tests","","DemoTest","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC-0004 Check the footer form is correct with visual testing
+"
+"passed","Sun Dec 04 17:51:23 GMT 2022","Sun Dec 04 17:51:30 GMT 2022","6909","","Demo Tests","","DemoTest","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC-0002 Check all navigation panel elements are present
+"
+"passed","Sun Dec 04 17:51:21 GMT 2022","Sun Dec 04 17:51:35 GMT 2022","13875","","","","","","Empty email validation is working on Contact Us page (""John Doe"")",""
+"passed","Sun Dec 04 17:51:22 GMT 2022","Sun Dec 04 17:51:23 GMT 2022","481","","","","","","GET users info",""
