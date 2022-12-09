@@ -1,0 +1,82 @@
+2022-12-09 12:23:46 INFO - Start scenario [TC-0003 Check how the Contact Us form works with an incorrect email]
+Connection refused [::ffff:127.0.0.1]:33265 (localhost:33265)
+Connection refused [::ffff:127.0.0.1]:33265 (localhost:33265)
+Connection refused [::ffff:127.0.0.1]:33265 (localhost:33265)
+Connection refused [::ffff:127.0.0.1]:33265 (localhost:33265)
+Connection refused [::ffff:127.0.0.1]:33265 (localhost:33265)
+Connection refused [::ffff:127.0.0.1]:33265 (localhost:33265)
+Connection refused [::ffff:127.0.0.1]:33265 (localhost:33265)
+Connection refused [::ffff:127.0.0.1]:33265 (localhost:33265)
+Connection refused [::ffff:127.0.0.1]:33265 (localhost:33265)
+Connection refused [::ffff:127.0.0.1]:33265 (localhost:33265)
+Connection refused [::ffff:127.0.0.1]:33265 (localhost:33265)
+Connection refused [::ffff:127.0.0.1]:33265 (localhost:33265)
+Connection refused [::ffff:127.0.0.1]:33265 (localhost:33265)
+Connection refused [::ffff:127.0.0.1]:33265 (localhost:33265)
+2022-12-09 12:23:46 INFO - Browser 'Chrome' ready...
+2022-12-09 12:23:46 INFO - Navigate to URL - 'https://www.a1qa.com/'
+2022-12-09 12:23:49 INFO - Maximizing browser window
+2022-12-09 12:23:49 INFO - ########## Assertion ########## 
+MainPageSteps: Main page is present
+2022-12-09 12:23:49 INFO - Label 'Main page' :: Waiting for element to be displayed
+2022-12-09 12:23:49 INFO - ########## Step ########## 
+MainPageSteps: Accept cookies
+2022-12-09 12:23:49 INFO - Button 'Accept cookies' :: Clicking
+2022-12-09 12:23:49 INFO - ########## Assertion ########## 
+TopBarMenuSteps: Top bar menu is present
+2022-12-09 12:23:49 INFO - Label 'Header' :: Waiting for element to be displayed
+2022-12-09 12:23:49 INFO - ########## Step ########## 
+TopBarMenuSteps: Click contact us
+2022-12-09 12:23:49 INFO - Button 'Contact Us' :: Clicking
+2022-12-09 12:23:50 INFO - ########## Assertion ########## 
+ContactUsPageSteps: Contact us page is present
+2022-12-09 12:23:50 INFO - Label 'Contact Us' :: Waiting for element to be displayed
+2022-12-09 12:23:50 INFO - ########## Assertion ########## 
+ContactUsPageSteps: Check that the contact us form elements are displayed
+2022-12-09 12:23:50 INFO - ########## Assertion ########## 
+ContactUsPageSteps: Check than contact us title is correct
+2022-12-09 12:23:50 INFO - Label 'Title' :: Getting text from element
+2022-12-09 12:23:51 INFO - Label 'Title' :: Element's text: [We are glad to hear from you!]
+2022-12-09 12:23:51 INFO - ########## Step ########## 
+ContactUsPageSteps: Set data for the all text fields
+2022-12-09 12:23:51 INFO - ########## Step ########## 
+ContactUsPageSteps: Set value for the text field method with parameters: Name-Just A User
+2022-12-09 12:23:51 INFO - Text Field 'Name' :: Clearing
+2022-12-09 12:23:51 INFO - Text Field 'Name' :: Typing 'Just A User'
+2022-12-09 12:23:51 INFO - ########## Step ########## 
+ContactUsPageSteps: Set value for the text field method with parameters: Email-examlpe@example
+2022-12-09 12:23:51 INFO - Text Field 'Email' :: Clearing
+2022-12-09 12:23:51 INFO - Text Field 'Email' :: Typing 'examlpe@example'
+2022-12-09 12:23:51 INFO - ########## Step ########## 
+ContactUsPageSteps: Set value for the text field method with parameters: Company-Some Company
+2022-12-09 12:23:51 INFO - Text Field 'Company' :: Clearing
+2022-12-09 12:23:51 INFO - Text Field 'Company' :: Typing 'Some Company'
+2022-12-09 12:23:51 INFO - ########## Step ########## 
+ContactUsPageSteps: Set value for the text field method with parameters: ProjectDescription-Some text for Description
+2022-12-09 12:23:51 INFO - Text Field 'ProjectDescription' :: Clearing
+2022-12-09 12:23:51 INFO - Text Field 'ProjectDescription' :: Typing 'Some text for Description'
+2022-12-09 12:23:51 INFO - ########## Step ########## 
+ContactUsPageSteps: Check term check box is checked or not method with parameters: False
+2022-12-09 12:23:51 INFO - CheckBox 'Terms' :: Getting state
+2022-12-09 12:23:51 INFO - CheckBox 'Terms' :: State: [False]
+2022-12-09 12:23:51 INFO - ########## Step ########## 
+ContactUsPageSteps: Check term check box
+2022-12-09 12:23:51 INFO - Label 'Terms' :: Clicking
+2022-12-09 12:23:51 INFO - ########## Step ########## 
+ContactUsPageSteps: Check term check box is checked or not method with parameters: True
+2022-12-09 12:23:51 INFO - CheckBox 'Terms' :: Getting state
+2022-12-09 12:23:51 INFO - CheckBox 'Terms' :: State: [True]
+2022-12-09 12:23:51 INFO - ########## Assertion ########## 
+ContactUsPageSteps: Check that warning email messageis present or not method with parameters: False
+2022-12-09 12:23:52 INFO - ########## Step ########## 
+ContactUsPageSteps: Click send a message button
+2022-12-09 12:23:52 INFO - Button 'Send a message' :: Clicking
+2022-12-09 12:23:52 INFO - ########## Assertion ########## 
+ContactUsPageSteps: Check that warning email messageis present or not method with parameters: True
+2022-12-09 12:23:52 INFO - ########## Step ########## 
+ContactUsPageSteps: Check that warning email message is correct
+2022-12-09 12:23:52 INFO - Label 'Warning email message' :: Getting text from element
+2022-12-09 12:23:52 INFO - Label 'Warning email message' :: Element's text: [Email address seems invalid.]
+2022-12-09 12:23:52 INFO - Closing browser
+2022-12-09 12:23:52 INFO - Scenario [TC-0003 Check how the Contact Us form works with an incorrect email] result is Passed!
+2022-12-09 12:23:52 INFO - ====================================================================================================

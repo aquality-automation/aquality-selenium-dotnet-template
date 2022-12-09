@@ -1,0 +1,18 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Dec 09 12:23:39 GMT 2022","Fri Dec 09 12:23:49 GMT 2022","9794","","","","","","Empty email validation is working on Contact Us page (""John Doe"")",""
+"passed","Fri Dec 09 12:23:50 GMT 2022","Fri Dec 09 12:23:57 GMT 2022","7271","","","","","","Empty email validation is working on Contact Us page (""Peter Parker"")",""
+"passed","Fri Dec 09 12:23:40 GMT 2022","Fri Dec 09 12:23:40 GMT 2022","138","","","","","","GET user info",""
+"passed","Fri Dec 09 12:23:56 GMT 2022","Fri Dec 09 12:23:59 GMT 2022","3060","","Main Page Demo Test","","MainDemoTest","TC0001_CheckTheCookieForm","TC0001_CheckTheCookieForm","TC-0001 Check the cookie form
+"
+"passed","Fri Dec 09 12:23:40 GMT 2022","Fri Dec 09 12:23:46 GMT 2022","5623","","Demo Tests","","DemoTest","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC-0002 Check all navigation panel elements are present
+"
+"passed","Fri Dec 09 12:23:39 GMT 2022","Fri Dec 09 12:23:40 GMT 2022","651","","","","","","GET organization info",""
+"passed","Fri Dec 09 12:23:39 GMT 2022","Fri Dec 09 12:23:40 GMT 2022","675","","CustomImageComparatorTest","","CustomImageComparatorTest","TC0005_Compare2ImagesOneOfWhichIsDifferent","TC0005_Compare2ImagesOneOfWhichIsDifferent","TC-0005 Compare 2 images one of which is different
+"
+"passed","Fri Dec 09 12:23:46 GMT 2022","Fri Dec 09 12:23:52 GMT 2022","5769","","Demo Tests","","DemoTest","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC-0003 Check how the Contact Us form works with an incorrect email
+"
+"passed","Fri Dec 09 12:23:40 GMT 2022","Fri Dec 09 12:23:40 GMT 2022","438","","CustomImageComparatorTest","","CustomImageComparatorTest","TC0006_Compare2ImagesWhenBothImagesAreTheSame","TC0006_Compare2ImagesWhenBothImagesAreTheSame","TC-0006 Compare 2 images when both images are the same
+"
+"passed","Fri Dec 09 12:23:52 GMT 2022","Fri Dec 09 12:23:56 GMT 2022","4017","","Demo Tests","","DemoTest","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC-0004 Check the footer form is correct with visual testing
+"
+"passed","Fri Dec 09 12:23:40 GMT 2022","Fri Dec 09 12:23:40 GMT 2022","284","","","","","","GET users info",""
