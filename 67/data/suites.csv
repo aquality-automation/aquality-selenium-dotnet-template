@@ -1,0 +1,18 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Dec 09 12:29:00 GMT 2022","Fri Dec 09 12:29:00 GMT 2022","314","","","","","","GET users info",""
+"passed","Fri Dec 09 12:29:09 GMT 2022","Fri Dec 09 12:29:16 GMT 2022","7167","","","","","","Empty email validation is working on Contact Us page (""Peter Parker"")",""
+"passed","Fri Dec 09 12:28:59 GMT 2022","Fri Dec 09 12:29:00 GMT 2022","175","","","","","","GET user info",""
+"passed","Fri Dec 09 12:29:16 GMT 2022","Fri Dec 09 12:29:18 GMT 2022","2847","","Main Page Demo Test","","MainDemoTest","TC0001_CheckTheCookieForm","TC0001_CheckTheCookieForm","TC-0001 Check the cookie form
+"
+"passed","Fri Dec 09 12:28:59 GMT 2022","Fri Dec 09 12:28:59 GMT 2022","728","","","","","","GET organization info",""
+"passed","Fri Dec 09 12:29:06 GMT 2022","Fri Dec 09 12:29:12 GMT 2022","5209","","Demo Tests","","DemoTest","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC-0003 Check how the Contact Us form works with an incorrect email
+"
+"passed","Fri Dec 09 12:28:59 GMT 2022","Fri Dec 09 12:29:08 GMT 2022","9737","","","","","","Empty email validation is working on Contact Us page (""John Doe"")",""
+"passed","Fri Dec 09 12:29:00 GMT 2022","Fri Dec 09 12:29:00 GMT 2022","331","","CustomImageComparatorTest","","CustomImageComparatorTest","TC0006_Compare2ImagesWhenBothImagesAreTheSame","TC0006_Compare2ImagesWhenBothImagesAreTheSame","TC-0006 Compare 2 images when both images are the same
+"
+"passed","Fri Dec 09 12:29:01 GMT 2022","Fri Dec 09 12:29:06 GMT 2022","5885","","Demo Tests","","DemoTest","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC-0002 Check all navigation panel elements are present
+"
+"passed","Fri Dec 09 12:29:12 GMT 2022","Fri Dec 09 12:29:16 GMT 2022","3889","","Demo Tests","","DemoTest","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC-0004 Check the footer form is correct with visual testing
+"
+"passed","Fri Dec 09 12:28:59 GMT 2022","Fri Dec 09 12:29:00 GMT 2022","957","","CustomImageComparatorTest","","CustomImageComparatorTest","TC0005_Compare2ImagesOneOfWhichIsDifferent","TC0005_Compare2ImagesOneOfWhichIsDifferent","TC-0005 Compare 2 images one of which is different
+"

@@ -1,0 +1,7 @@
+2022-12-09 12:29:00 INFO - Start scenario [TC-0006 Compare 2 images when both images are the same]
+2022-12-09 12:29:00 INFO - ########## Step ########## 
+CustomImageComparatorSteps: Get expected image from resourse method with parameters: Resources/ImagesForVisualTesting/ExpectedCorrectImage.jpg
+2022-12-09 12:29:00 INFO - ########## Assertion ########## 
+CustomImageComparatorSteps: Check that actual and expected images are the same method with parameters: System.Drawing.Bitmap
+2022-12-09 12:29:00 INFO - Scenario [TC-0006 Compare 2 images when both images are the same] result is Passed!
+2022-12-09 12:29:00 INFO - ====================================================================================================
