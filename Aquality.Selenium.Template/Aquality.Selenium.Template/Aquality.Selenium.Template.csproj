@@ -5,12 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="C:\Users\a2.meleshko\.nuget\packages\aqualitytracking.integrations.core\1.0.1\contentFiles\any\netstandard2.0\Resources\aqualityTracking.Template.json" />
-    <Content Remove="C:\Users\m.pyshnik\.nuget\packages\allure.commons\3.5.0.73\contentFiles\any\netstandard2.0\allureConfig.Template.json" />
-    <Content Remove="C:\Users\m.pyshnik\.nuget\packages\aqualitytracking.integrations.core\1.0.1\contentFiles\any\netstandard2.0\Resources\aqualityTracking.Template.json" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Remove="Resources\Environment\Prod\config.json" />
     <None Remove="Resources\Environment\Stage\config.json" />
   </ItemGroup>
