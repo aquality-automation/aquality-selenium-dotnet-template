@@ -25,6 +25,7 @@ jobs:
       BUILD_CONFIGURATION: Release
       SOLUTION_NAME: Aquality.Selenium.Template/Aquality.Selenium.Template.sln
       ALLURE_RESULTS: Aquality.Selenium.Template/Aquality.Selenium.Template.SpecFlow/bin/Release/net6.0/allure-results
+      ALLURE_NUNIT_RESULTS: Aquality.Selenium.Template/Aquality.Selenium.Template.NUnit/bin/Release/net6.0/allure-results
       ENVIRONMENT: ${{ github.event.inputs.environment == '' && 'Stage' ||  github.event.inputs.environment }}
       GH_PAGES_URL: https://aquality-automation.github.io/aquality-selenium-dotnet-template
     concurrency: test-${{ github.event.inputs.environment == '' && 'Stage' || github.event.inputs.environment }}
@@ -50,6 +51,10 @@ jobs:
     - name: Test
       id: dotnet_test
       run: dotnet test --no-build ${{ env.SOLUTION_NAME }} -c ${{ env.BUILD_CONFIGURATION }}
+      
+    - name: Copy NUnit allure result to the SpecFlow allure result
+      if: always()
+      run: cp -r ${{ env.ALLURE_NUNIT_RESULTS }}/. ${{ env.ALLURE_RESULTS }}
     
     - name: Get Allure history
       uses: actions/checkout@v2
