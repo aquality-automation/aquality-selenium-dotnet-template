@@ -1,6 +1,5 @@
 ﻿using Aquality.Selenium.Template.Utilities;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Schema;
 using NUnit.Framework;
 using RestSharp;

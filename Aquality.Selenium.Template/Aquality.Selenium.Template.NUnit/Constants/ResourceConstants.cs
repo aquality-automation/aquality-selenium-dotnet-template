@@ -6,8 +6,8 @@ namespace Aquality.Selenium.Template.NUnit.Constants
     {
         public static string PathToContactUserWithInvalidEmail => @"Resources.TestData.ContactUserWithInvalidEmail.json";
         public static string PathToGetFullPageHeightJS => @"Resources.JavaScripts.GetFullPageHeight.js";
-        public static string ActualTestImage => Path.Combine("Resources", "ImagesForCustomImageComparator", "ActualTestImage.jpg");
-        public static string ExpectedCorrectImage => Path.Combine("Resources", "ImagesForCustomImageComparator", "ExpectedCorrectImage.jpg");
-        public static string ExpectedIncorrectImage => Path.Combine("Resources", "ImagesForCustomImageComparator", "ExpectedIncorrectImage.jpg");
+        public static string ActualTestImage => Path.Combine("Resources", "ImagesForVisualTesting", "ActualTestImage.jpg");
+        public static string ExpectedCorrectImage => Path.Combine("Resources", "ImagesForVisualTesting", "ExpectedCorrectImage.jpg");
+        public static string ExpectedIncorrectImage => Path.Combine("Resources", "ImagesForVisualTesting", "ExpectedIncorrectImage.jpg");
     }
 }

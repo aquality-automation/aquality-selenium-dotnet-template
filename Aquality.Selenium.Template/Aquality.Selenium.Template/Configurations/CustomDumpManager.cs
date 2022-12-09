@@ -10,9 +10,12 @@ using System.Drawing;
 using System.Globalization;
 using System.IO;
 using Aquality.Selenium.Core.Logging;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Aquality.Selenium.Template.Configurations
 {
+    [SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "<Pending>")]
+    //This сlass will be removed after the aquality-selenium-dotnet framework is updated
     public class CustomDumpManager<T> : IDumpManager where T : IElement
     {
         private Logger Logger => Logger.Instance;
