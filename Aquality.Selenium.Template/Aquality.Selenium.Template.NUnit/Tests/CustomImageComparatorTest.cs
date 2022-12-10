@@ -10,7 +10,7 @@ namespace Aquality.Selenium.Template.NUnit.Tests
     [AllureSuite("CustomImageComparatorTest")]
     public class CustomImageComparatorTest : BaseTest
     {
-        const float CustomThresholdValue = 0.1f;
+        private const float CustomThresholdValue = 0.1f;
         private readonly CustomImageComparatorSteps customImageComparatorSteps = new CustomImageComparatorSteps(CustomThresholdValue, ResourceConstants.ActualTestImage);
 
 

@@ -4,6 +4,7 @@ using Aquality.Selenium.Elements.Interfaces;
 using Aquality.Selenium.Forms;
 using Aquality.Selenium.Template.Configurations;
 using OpenQA.Selenium;
+using System;
 using System.Collections.Generic;
 
 namespace Aquality.Selenium.Template.Forms
@@ -16,15 +17,17 @@ namespace Aquality.Selenium.Template.Forms
 
         private ILabel SubscribeLabel => FormElement.FindChildElement<ILabel>(By.XPath("//div[contains(@class,'footer__subscribe')]"), "Subscribe");
 
+        private static readonly TimeSpan ElementPresenceTimeout = AqualityServices.Get<ICustomTimeoutConfiguration>().ElementAppear;
+
         public FooterForm() : base(By.TagName("footer"), "Footer form")
         {
         }
 
-        public bool IsLogoPresent => LogoLabel.State.WaitForDisplayed(AqualityServices.Get<ICustomTimeoutConfiguration>().ElementAppear);
+        public bool IsLogoPresent => LogoLabel.State.WaitForDisplayed(ElementPresenceTimeout);
 
-        public bool IsContactsPresent => ContactsLabel.State.WaitForDisplayed(AqualityServices.Get<ICustomTimeoutConfiguration>().ElementAppear);
+        public bool IsContactsPresent => ContactsLabel.State.WaitForDisplayed(ElementPresenceTimeout);
 
-        public bool IsSubscribePresent => SubscribeLabel.State.WaitForDisplayed(AqualityServices.Get<ICustomTimeoutConfiguration>().ElementAppear);
+        public bool IsSubscribePresent => SubscribeLabel.State.WaitForDisplayed(ElementPresenceTimeout);
 
         protected override IDictionary<string, IElement> ElementsForVisualization => new Dictionary<string, IElement>()
         {

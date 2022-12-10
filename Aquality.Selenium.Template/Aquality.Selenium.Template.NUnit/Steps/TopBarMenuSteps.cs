@@ -9,8 +9,8 @@ namespace Aquality.Selenium.Template.NUnit.Steps
     {
         private readonly TopBarMenu topBarMenu = new TopBarMenu();
         private const string ServicesTabItem = "Services";
-        private readonly string[] headerTabItems = { "Services", "Approach", "Portfolio", "Blog", "Company" };
-        private readonly string[] servicesTitleElements = { "Full-cycle testing services", "Quality engineering", "Complete test coverage", "Systems & platforms" };
+        private static string[] HeaderTabItems = { "Services", "Approach", "Portfolio", "Blog", "Company" };
+        private static string[] ServicesTitleElements = { "Full-cycle testing services", "Quality engineering", "Complete test coverage", "Systems & platforms" };
 
         [LogStep(StepType.Assertion)]
         public void TopBarMenuIsPresent()
@@ -27,14 +27,14 @@ namespace Aquality.Selenium.Template.NUnit.Steps
         [LogStep(StepType.Assertion)]
         public void ContactUsButtonIsPresent()
         {
-            Assert.IsTrue(topBarMenu.IsContactUsButtonExist);
+            Assert.IsTrue(topBarMenu.IsContactUsButtonExist, "Contact Us button should be present");
         }
 
         [LogStep(StepType.Assertion)]
         public void CheckThatNavigationElementsAreCorrect()
         {
             var headerNavigationElements = topBarMenu.GetTextForHeaderNavigationElements;
-            CollectionAssert.AreEquivalent(headerTabItems, headerNavigationElements, "Header navigation elements should be correct");
+            CollectionAssert.AreEquivalent(HeaderTabItems, headerNavigationElements, "Header navigation elements should be correct");
         }
 
         [LogStep(StepType.Step)]
@@ -47,7 +47,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
         public void CheckThatServicesTitlesAreDispalayedAndCorrect()
         {
             var servicesTitlesElements = topBarMenu.GetTextFromServicesTitlesElements;
-            CollectionAssert.AreEqual(servicesTitleElements, servicesTitlesElements, "Services title elements should be correct");
+            CollectionAssert.AreEqual(ServicesTitleElements, servicesTitlesElements, "Services title elements should be correct");
         }
     }
 }
