@@ -1,0 +1,59 @@
+2022-12-10 10:07:50 INFO - Start scenario [TC-0004 Check the footer form is correct with visual testing]
+Connection refused [::ffff:127.0.0.1]:40267 (localhost:40267)
+Connection refused [::ffff:127.0.0.1]:40267 (localhost:40267)
+Connection refused [::ffff:127.0.0.1]:40267 (localhost:40267)
+Connection refused [::ffff:127.0.0.1]:40267 (localhost:40267)
+Connection refused [::ffff:127.0.0.1]:40267 (localhost:40267)
+Connection refused [::ffff:127.0.0.1]:40267 (localhost:40267)
+2022-12-10 10:07:51 INFO - Browser 'Chrome' ready...
+2022-12-10 10:07:51 INFO - Navigate to URL - 'https://www.a1qa.com/'
+2022-12-10 10:07:53 INFO - Maximizing browser window
+2022-12-10 10:07:53 INFO - ########## Assertion ########## 
+MainPageSteps: Main page is present
+2022-12-10 10:07:53 INFO - Label 'Main page' :: Waiting for element to be displayed
+2022-12-10 10:07:53 INFO - ########## Step ########## 
+MainPageSteps: Accept cookies
+2022-12-10 10:07:53 INFO - Button 'Accept cookies' :: Clicking
+2022-12-10 10:07:53 INFO - ########## Assertion ########## 
+TopBarMenuSteps: Top bar menu is present
+2022-12-10 10:07:53 INFO - Label 'Header' :: Waiting for element to be displayed
+2022-12-10 10:07:53 INFO - ########## Step ########## 
+MainPageSteps: Scroll to the footer
+2022-12-10 10:07:53 INFO - ########## Step ########## 
+MainPageSteps: Get full page height
+2022-12-10 10:07:53 INFO - ########## Assertion ########## 
+FooterFormSteps: Footer form is present
+2022-12-10 10:07:53 INFO - Label 'Footer form' :: Waiting for element to be displayed
+2022-12-10 10:07:53 INFO - ########## Assertion ########## 
+FooterFormSteps: Check visual elements present
+2022-12-10 10:07:53 INFO - Label 'Logo' :: Waiting for element to be displayed
+2022-12-10 10:07:53 INFO - Label 'Contacts' :: Waiting for element to be displayed
+2022-12-10 10:07:53 INFO - Label 'Subscribe' :: Waiting for element to be displayed
+2022-12-10 10:07:53 INFO - ########## Assertion ########## 
+FooterFormSteps: Check that the visual elements are correct
+2022-12-10 10:07:53 INFO - GetDumpDirectory STEP1 - [get the maximum length of the name among the form elements for the dump]
+2022-12-10 10:07:53 INFO - GetDumpDirectory STEP2 - [get array of subfolders in dump name]
+2022-12-10 10:07:53 INFO - GetDumpDirectory STEP3 - [get invalid characters that can not be in folder name]
+2022-12-10 10:07:53 INFO - GetDumpDirectory STEP4 - [create new dump name without invalid chars for each subfolder]
+2022-12-10 10:07:53 INFO - GetDumpDirectory STEP5 - [create full dump path]
+2022-12-10 10:07:53 INFO - GetDumpDirectory STEP6 - [cut off the excess length and log warn message]
+2022-12-10 10:07:53 INFO - Comparing elements of the form to dump [Footer form]
+2022-12-10 10:07:53 INFO - imageFile -  heigth = [159; Width = [468]
+2022-12-10 10:07:53 INFO - Label 'Subscribe' :: Getting image of element
+2022-12-10 10:07:54 INFO - Label 'Subscribe' :: Element's image size: [{Width=468, Height=159}]
+2022-12-10 10:07:54 INFO - Label 'Subscribe' :: Comparing element's image to image of size [{Width=468, Height=159}]
+2022-12-10 10:07:54 INFO - Label 'Subscribe' :: The difference between the current and the given images is [3.91 %]
+2022-12-10 10:07:54 INFO - imageFile -  heigth = [159; Width = [600]
+2022-12-10 10:07:54 INFO - Label 'Contacts' :: Getting image of element
+2022-12-10 10:07:54 INFO - Label 'Contacts' :: Element's image size: [{Width=600, Height=159}]
+2022-12-10 10:07:54 INFO - Label 'Contacts' :: Comparing element's image to image of size [{Width=600, Height=159}]
+2022-12-10 10:07:54 INFO - Label 'Contacts' :: The difference between the current and the given images is [15.62 %]
+2022-12-10 10:07:54 INFO - imageFile -  heigth = [159; Width = [48]
+2022-12-10 10:07:54 INFO - Label 'Logo' :: Getting image of element
+2022-12-10 10:07:54 INFO - Label 'Logo' :: Element's image size: [{Width=48, Height=159}]
+2022-12-10 10:07:54 INFO - Label 'Logo' :: Comparing element's image to image of size [{Width=48, Height=159}]
+2022-12-10 10:07:54 INFO - Label 'Logo' :: The difference between the current and the given images is [0.00 %]
+2022-12-10 10:07:54 INFO - The difference between the current form and the given dump is [6.51 %]
+2022-12-10 10:07:54 INFO - Closing browser
+2022-12-10 10:07:54 INFO - Scenario [TC-0004 Check the footer form is correct with visual testing] result is Passed!
+2022-12-10 10:07:54 INFO - ====================================================================================================

@@ -1,0 +1,18 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Dec 10 10:07:39 GMT 2022","Sat Dec 10 10:07:40 GMT 2022","663","","CustomImageComparatorTest","","CustomImageComparatorTest","TC0006_Compare2ImagesWhenBothImagesAreTheSame","TC0006_Compare2ImagesWhenBothImagesAreTheSame","TC-0006 Compare 2 images when both images are the same
+"
+"passed","Sat Dec 10 10:07:38 GMT 2022","Sat Dec 10 10:07:39 GMT 2022","895","","","","","","GET organization info",""
+"passed","Sat Dec 10 10:07:39 GMT 2022","Sat Dec 10 10:07:40 GMT 2022","294","","","","","","GET users info",""
+"passed","Sat Dec 10 10:07:45 GMT 2022","Sat Dec 10 10:07:50 GMT 2022","5211","","Demo Tests","","DemoTest","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC-0003 Check how the Contact Us form works with an incorrect email
+"
+"passed","Sat Dec 10 10:07:39 GMT 2022","Sat Dec 10 10:07:39 GMT 2022","237","","","","","","GET user info",""
+"passed","Sat Dec 10 10:07:38 GMT 2022","Sat Dec 10 10:07:49 GMT 2022","10603","","","","","","Empty email validation is working on Contact Us page (""John Doe"")",""
+"passed","Sat Dec 10 10:07:40 GMT 2022","Sat Dec 10 10:07:45 GMT 2022","5567","","Demo Tests","","DemoTest","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC-0002 Check all navigation panel elements are present
+"
+"passed","Sat Dec 10 10:07:54 GMT 2022","Sat Dec 10 10:07:57 GMT 2022","2768","","Main Page Demo Test","","MainDemoTest","TC0001_CheckTheCookieForm","TC0001_CheckTheCookieForm","TC-0001 Check the cookie form
+"
+"passed","Sat Dec 10 10:07:38 GMT 2022","Sat Dec 10 10:07:39 GMT 2022","471","","CustomImageComparatorTest","","CustomImageComparatorTest","TC0005_Compare2ImagesOneOfWhichIsDifferent","TC0005_Compare2ImagesOneOfWhichIsDifferent","TC-0005 Compare 2 images one of which is different
+"
+"passed","Sat Dec 10 10:07:49 GMT 2022","Sat Dec 10 10:07:57 GMT 2022","7779","","","","","","Empty email validation is working on Contact Us page (""Peter Parker"")",""
+"passed","Sat Dec 10 10:07:50 GMT 2022","Sat Dec 10 10:07:54 GMT 2022","3723","","Demo Tests","","DemoTest","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC-0004 Check the footer form is correct with visual testing
+"
