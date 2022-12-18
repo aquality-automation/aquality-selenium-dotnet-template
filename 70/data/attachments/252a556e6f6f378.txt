@@ -1,0 +1,45 @@
+2022-12-18 18:38:08 INFO - Start scenario [TC-0002 Check all navigation panel elements are present]
+Connection refused (localhost:33443)
+2022-12-18 18:38:09 INFO - Browser 'Chrome' ready...
+2022-12-18 18:38:09 INFO - Navigate to URL - 'https://www.a1qa.com/'
+2022-12-18 18:38:11 INFO - Maximizing browser window
+2022-12-18 18:38:12 INFO - ########## Assertion ########## 
+MainPageSteps: Main page is present
+2022-12-18 18:38:12 INFO - Label 'Main page' :: Waiting for element to be displayed
+2022-12-18 18:38:12 INFO - ########## Step ########## 
+MainPageSteps: Accept cookies
+2022-12-18 18:38:12 INFO - Button 'Accept cookies' :: Clicking
+2022-12-18 18:38:12 INFO - ########## Assertion ########## 
+TopBarMenuSteps: Top bar menu is present
+2022-12-18 18:38:12 INFO - Label 'Header' :: Waiting for element to be displayed
+2022-12-18 18:38:12 INFO - ########## Assertion ########## 
+TopBarMenuSteps: Contact us button is present
+2022-12-18 18:38:12 INFO - ########## Assertion ########## 
+TopBarMenuSteps: Check that navigation elements are correct
+2022-12-18 18:38:12 INFO - Label 'element 1' :: Getting text from element
+2022-12-18 18:38:13 INFO - Label 'element 1' :: Element's text: [Services]
+2022-12-18 18:38:13 INFO - Label 'element 2' :: Getting text from element
+2022-12-18 18:38:13 INFO - Label 'element 2' :: Element's text: [Approach]
+2022-12-18 18:38:13 INFO - Label 'element 3' :: Getting text from element
+2022-12-18 18:38:13 INFO - Label 'element 3' :: Element's text: [Portfolio]
+2022-12-18 18:38:13 INFO - Label 'element 4' :: Getting text from element
+2022-12-18 18:38:13 INFO - Label 'element 4' :: Element's text: [Blog]
+2022-12-18 18:38:13 INFO - Label 'element 5' :: Getting text from element
+2022-12-18 18:38:13 INFO - Label 'element 5' :: Element's text: [Company]
+2022-12-18 18:38:13 INFO - ########## Step ########## 
+TopBarMenuSteps: Move to the services navigation tab
+2022-12-18 18:38:13 INFO - Button 'Services' :: Moving mouse to element
+2022-12-18 18:38:13 INFO - Button 'Services' :: Scrolling via JavaScript
+2022-12-18 18:38:13 INFO - ########## Assertion ########## 
+TopBarMenuSteps: Check that services titles are dispalayed and correct
+2022-12-18 18:38:13 INFO - Label 'Service titles 1' :: Getting text from element
+2022-12-18 18:38:14 INFO - Label 'Service titles 1' :: Element's text: [Full-cycle testing services]
+2022-12-18 18:38:14 INFO - Label 'Service titles 2' :: Getting text from element
+2022-12-18 18:38:14 INFO - Label 'Service titles 2' :: Element's text: [Quality engineering]
+2022-12-18 18:38:14 INFO - Label 'Service titles 3' :: Getting text from element
+2022-12-18 18:38:14 INFO - Label 'Service titles 3' :: Element's text: [Complete test coverage]
+2022-12-18 18:38:14 INFO - Label 'Service titles 4' :: Getting text from element
+2022-12-18 18:38:14 INFO - Label 'Service titles 4' :: Element's text: [Systems & platforms]
+2022-12-18 18:38:14 INFO - Closing browser
+2022-12-18 18:38:14 INFO - Scenario [TC-0002 Check all navigation panel elements are present] result is Passed!
+2022-12-18 18:38:14 INFO - ====================================================================================================

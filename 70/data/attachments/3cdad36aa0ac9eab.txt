@@ -1,0 +1,40 @@
+2022-12-18 18:38:20 INFO - Start scenario [TC-0004 Check the footer form is correct with visual testing]
+Connection refused (localhost:43063)
+Connection refused (localhost:43063)
+Connection refused (localhost:43063)
+Connection refused (localhost:43063)
+Connection refused (localhost:43063)
+Connection refused (localhost:43063)
+Connection refused (localhost:43063)
+Connection refused (localhost:43063)
+2022-12-18 18:38:20 INFO - Browser 'Chrome' ready...
+2022-12-18 18:38:20 INFO - Navigate to URL - 'https://www.a1qa.com/'
+2022-12-18 18:38:22 INFO - Maximizing browser window
+2022-12-18 18:38:22 INFO - ########## Assertion ########## 
+MainPageSteps: Main page is present
+2022-12-18 18:38:22 INFO - Label 'Main page' :: Waiting for element to be displayed
+2022-12-18 18:38:22 INFO - ########## Step ########## 
+MainPageSteps: Accept cookies
+2022-12-18 18:38:22 INFO - Button 'Accept cookies' :: Clicking
+2022-12-18 18:38:22 INFO - ########## Assertion ########## 
+TopBarMenuSteps: Top bar menu is present
+2022-12-18 18:38:22 INFO - Label 'Header' :: Waiting for element to be displayed
+2022-12-18 18:38:22 INFO - ########## Step ########## 
+MainPageSteps: Scroll to the footer
+2022-12-18 18:38:22 INFO - ########## Step ########## 
+MainPageSteps: Get full page height
+2022-12-18 18:38:22 INFO - ########## Assertion ########## 
+FooterFormSteps: Footer form is present
+2022-12-18 18:38:22 INFO - Label 'Footer form' :: Waiting for element to be displayed
+2022-12-18 18:38:22 INFO - ########## Assertion ########## 
+FooterFormSteps: Check visual elements present
+2022-12-18 18:38:22 INFO - Label 'Logo' :: Waiting for element to be displayed
+2022-12-18 18:38:22 INFO - Label 'Contacts' :: Waiting for element to be displayed
+2022-12-18 18:38:22 INFO - Label 'Subscribe' :: Waiting for element to be displayed
+2022-12-18 18:38:22 INFO - ########## Assertion ########## 
+FooterFormSteps: Check that the visual elements are correct
+2022-12-18 18:38:22 INFO - Closing browser
+2022-12-18 18:38:22 INFO - Scenario [TC-0004 Check the footer form is correct with visual testing] result is Failed!
+2022-12-18 18:38:22 ERROR - System.TypeInitializationException : The type initializer for 'Aquality.Selenium.Core.Visualization.ImageFormat' threw an exception.
+  ----> System.PlatformNotSupportedException : System.Drawing.Common is not supported on this platform.
+2022-12-18 18:38:22 INFO - ====================================================================================================
