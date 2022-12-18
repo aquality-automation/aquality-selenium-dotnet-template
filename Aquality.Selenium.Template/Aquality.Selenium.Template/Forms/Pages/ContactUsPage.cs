@@ -2,8 +2,6 @@
 using OpenQA.Selenium;
 using Aquality.Selenium.Template.Enums;
 using Aquality.Selenium.Core.Elements;
-using Aquality.Selenium.Core.Visualization;
-using Aquality.Selenium.Template.Configurations;
 
 namespace Aquality.Selenium.Template.Forms.Pages
 {
@@ -25,8 +23,6 @@ namespace Aquality.Selenium.Template.Forms.Pages
         public ContactUsPage() : base(By.ClassName("contactsForm__wrapper"), "Contact Us")
         {
         }
-
-        public override IDumpManager Dump => new CustomDumpManager<IElement>(ElementsForVisualization, Name, VisualizationConfiguration, LocalizedLogger);
 
         public bool IsEmailValidationMessagePresent => EmailAlertLabel.State.WaitForDisplayed();
 

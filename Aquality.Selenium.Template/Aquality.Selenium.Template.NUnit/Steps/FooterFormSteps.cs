@@ -1,5 +1,4 @@
-﻿using Aquality.Selenium.Core.Logging;
-using Aquality.Selenium.Template.CustomAttributes;
+﻿using Aquality.Selenium.Template.CustomAttributes;
 using Aquality.Selenium.Template.Forms;
 using Aquality.Selenium.Template.NUnit.Extensions;
 using NUnit.Framework;
@@ -8,7 +7,6 @@ namespace Aquality.Selenium.Template.NUnit.Steps
 {
     public class FooterFormSteps
     {
-        private static Logger Logger => Logger.Instance;
         private readonly FooterForm footerForm = new FooterForm();
         const float ComparisonThreshold = 0.08f;
 

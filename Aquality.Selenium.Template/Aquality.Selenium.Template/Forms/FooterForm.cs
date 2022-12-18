@@ -1,5 +1,4 @@
 ﻿using Aquality.Selenium.Browsers;
-using Aquality.Selenium.Core.Visualization;
 using Aquality.Selenium.Elements.Interfaces;
 using Aquality.Selenium.Forms;
 using Aquality.Selenium.Template.Configurations;
@@ -35,7 +34,5 @@ namespace Aquality.Selenium.Template.Forms
             {"FooterContacts", ContactsLabel },
             {"FooterSubscribe", SubscribeLabel },
         };
-
-        public override IDumpManager Dump => new CustomDumpManager<IElement>(ElementsForVisualization, Name, VisualizationConfiguration, LocalizedLogger);
     }
 }
