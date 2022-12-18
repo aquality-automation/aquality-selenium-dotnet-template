@@ -1,0 +1,18 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Dec 18 19:34:23 GMT 2022","Sun Dec 18 19:34:26 GMT 2022","3867","","Main Page Demo Test","","MainDemoTest","TC0001_CheckTheCookieForm","TC0001_CheckTheCookieForm","TC-0001 Check the cookie form
+"
+"passed","Sun Dec 18 19:34:07 GMT 2022","Sun Dec 18 19:34:08 GMT 2022","553","","CustomImageComparatorTest","","CustomImageComparatorTest","TC0006_Compare2ImagesWhenBothImagesAreTheSame","TC0006_Compare2ImagesWhenBothImagesAreTheSame","TC-0006 Compare 2 images when both images are the same
+"
+"passed","Sun Dec 18 19:34:19 GMT 2022","Sun Dec 18 19:34:23 GMT 2022","3809","","Demo Tests","","DemoTest","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC-0004 Check the footer form is correct with visual testing
+"
+"passed","Sun Dec 18 19:34:14 GMT 2022","Sun Dec 18 19:34:19 GMT 2022","4868","","Demo Tests","","DemoTest","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC-0003 Check how the Contact Us form works with an incorrect email
+"
+"passed","Sun Dec 18 19:34:08 GMT 2022","Sun Dec 18 19:34:14 GMT 2022","5910","","Demo Tests","","DemoTest","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC-0002 Check all navigation panel elements are present
+"
+"passed","Sun Dec 18 19:34:19 GMT 2022","Sun Dec 18 19:34:26 GMT 2022","7086","","","","","","Empty email validation is working on Contact Us page (""Peter Parker"")",""
+"passed","Sun Dec 18 19:34:08 GMT 2022","Sun Dec 18 19:34:08 GMT 2022","191","","","","","","GET user info",""
+"passed","Sun Dec 18 19:34:07 GMT 2022","Sun Dec 18 19:34:18 GMT 2022","10985","","","","","","Empty email validation is working on Contact Us page (""John Doe"")",""
+"passed","Sun Dec 18 19:34:07 GMT 2022","Sun Dec 18 19:34:07 GMT 2022","449","","CustomImageComparatorTest","","CustomImageComparatorTest","TC0005_Compare2ImagesOneOfWhichIsDifferent","TC0005_Compare2ImagesOneOfWhichIsDifferent","TC-0005 Compare 2 images one of which is different
+"
+"passed","Sun Dec 18 19:34:07 GMT 2022","Sun Dec 18 19:34:08 GMT 2022","814","","","","","","GET organization info",""
+"passed","Sun Dec 18 19:34:08 GMT 2022","Sun Dec 18 19:34:08 GMT 2022","335","","","","","","GET users info",""
