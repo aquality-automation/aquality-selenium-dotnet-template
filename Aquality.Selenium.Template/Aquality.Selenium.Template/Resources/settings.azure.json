@@ -117,12 +117,13 @@
         }
     },
     "timeouts": {
-        "timeoutImplicit": 0,
+       "timeoutImplicit": 0,
         "timeoutCondition": 30,
         "timeoutScript": 10,
         "timeoutPageLoad": 15,
         "timeoutPollingInterval": 300,
-        "timeoutCommand": 60
+        "timeoutCommand": 60,
+        "timeoutElementAppear": 15
     },
     "retry": {
         "number": 2,
@@ -139,6 +140,6 @@
         "defaultThreshold": 0.012,
         "comparisonWidth": 16,
         "comparisonHeight": 16,
-        "pathToDumps": "../../../Resources/VisualDumps/"
+        "pathToDumps": "Resources/VisualDumps/"
     }
 }

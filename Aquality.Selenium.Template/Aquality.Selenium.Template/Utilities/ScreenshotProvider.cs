@@ -3,9 +3,11 @@ using System;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Aquality.Selenium.Template.Utilities
 {
+    [SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "<Pending>")]
     public class ScreenshotProvider
     {
         public string TakeScreenshot()
@@ -19,7 +21,7 @@ namespace Aquality.Selenium.Template.Utilities
             return path;
         }
 
-        private Image GetImage()
+        private static Image GetImage()
         {
             using (var stream = new MemoryStream(AqualityServices.Browser.GetScreenshot()))
             {
