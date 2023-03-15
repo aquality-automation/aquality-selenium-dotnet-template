@@ -1,13 +1,11 @@
 ﻿using Aquality.Selenium.Browsers;
+using Aquality.Selenium.Core.Visualization;
+using SkiaSharp;
 using System;
-using System.Drawing;
-using System.Drawing.Imaging;
 using System.IO;
-using System.Diagnostics.CodeAnalysis;
 
 namespace Aquality.Selenium.Template.Utilities
 {
-    [SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "<Pending>")]
     public class ScreenshotProvider
     {
         public string TakeScreenshot()
@@ -17,16 +15,14 @@ namespace Aquality.Selenium.Template.Utilities
             EnsureDirectoryExists(directory);
             var screenshotName = $"{GetType().Name}_{DateTime.Now:yyyyMMdd_HHmmss}_{Guid.NewGuid().ToString("n").Substring(0, 5)}.png";
             var path = Path.Combine(directory, screenshotName);
-            image.Save(path, ImageFormat.Png);
+            image.Save(path, SKEncodedImageFormat.Png);
             return path;
         }
 
-        private static Image GetImage()
+        private static SKImage GetImage()
         {
-            using (var stream = new MemoryStream(AqualityServices.Browser.GetScreenshot()))
-            {
-                return Image.FromStream(stream);
-            }
+            using var stream = new MemoryStream(AqualityServices.Browser.GetScreenshot());
+            return SKImage.FromEncodedData(stream);
         }
 
         private static void EnsureDirectoryExists(string directory)
