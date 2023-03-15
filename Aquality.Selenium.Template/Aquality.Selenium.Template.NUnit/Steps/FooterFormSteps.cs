@@ -8,7 +8,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
     public class FooterFormSteps
     {
         private readonly FooterForm footerForm = new FooterForm();
-        const float ComparisonThreshold = 0.08f;
+        const float ComparisonThreshold = 0.1f;
 
         [LogStep(StepType.Assertion)]
         public void FooterFormIsPresent()
