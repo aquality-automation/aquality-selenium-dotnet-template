@@ -1,0 +1,39 @@
+2023-03-15 13:58:44 INFO - Start scenario [TC-0004 Check the footer form is correct with visual testing]
+Connection refused (localhost:35665)
+Connection refused (localhost:35665)
+Connection refused (localhost:35665)
+Connection refused (localhost:35665)
+Connection refused (localhost:35665)
+Connection refused (localhost:35665)
+2023-03-15 13:58:45 INFO - Browser 'Chrome' ready...
+2023-03-15 13:58:45 INFO - Navigate to URL - 'https://www.a1qa.com/'
+2023-03-15 13:58:46 INFO - Maximizing browser window
+2023-03-15 13:58:47 INFO - ########## Assertion ########## 
+MainPageSteps: Main page is present
+2023-03-15 13:58:47 INFO - Label 'Main page' :: Waiting for element to be displayed
+2023-03-15 13:58:47 INFO - ########## Step ########## 
+MainPageSteps: Accept cookies
+2023-03-15 13:58:47 INFO - Button 'Accept cookies' :: Clicking
+2023-03-15 13:58:47 INFO - ########## Assertion ########## 
+TopBarMenuSteps: Top bar menu is present
+2023-03-15 13:58:47 INFO - Label 'Header' :: Waiting for element to be displayed
+2023-03-15 13:58:47 INFO - ########## Step ########## 
+MainPageSteps: Scroll to the footer
+2023-03-15 13:58:47 INFO - ########## Step ########## 
+MainPageSteps: Get full page height
+2023-03-15 13:58:47 INFO - ########## Assertion ########## 
+FooterFormSteps: Footer form is present
+2023-03-15 13:58:47 INFO - Label 'Footer form' :: Waiting for element to be displayed
+2023-03-15 13:58:47 INFO - ########## Assertion ########## 
+FooterFormSteps: Check visual elements present
+2023-03-15 13:58:47 INFO - Label 'Logo' :: Waiting for element to be displayed
+2023-03-15 13:58:47 INFO - Label 'Contacts' :: Waiting for element to be displayed
+2023-03-15 13:58:47 INFO - Label 'Subscribe' :: Waiting for element to be displayed
+2023-03-15 13:58:47 INFO - ########## Assertion ########## 
+FooterFormSteps: Check that the visual elements are correct
+2023-03-15 13:58:47 INFO - Comparing elements of the form to dump [Footer form]
+2023-03-15 13:58:47 INFO - Closing browser
+2023-03-15 13:58:47 INFO - Scenario [TC-0004 Check the footer form is correct with visual testing] result is Failed!
+2023-03-15 13:58:47 ERROR - System.TypeInitializationException : The type initializer for 'SkiaSharp.SKData' threw an exception.
+  ----> System.DllNotFoundException : Unable to load shared library 'libSkiaSharp' or one of its dependencies. In order to help diagnose loading problems, consider setting the LD_DEBUG environment variable: liblibSkiaSharp: cannot open shared object file: No such file or directory
+2023-03-15 13:58:47 INFO - ====================================================================================================

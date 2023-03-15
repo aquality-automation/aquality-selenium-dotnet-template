@@ -1,0 +1,14 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Mar 15 13:58:47 GMT 2023","Wed Mar 15 13:58:50 GMT 2023","2816","","Main Page Demo Test","","MainDemoTest","TC0001_CheckTheCookieForm","TC0001_CheckTheCookieForm","TC-0001 Check the cookie form
+"
+"passed","Wed Mar 15 13:58:32 GMT 2023","Wed Mar 15 13:58:38 GMT 2023","6672","","Demo Tests","","DemoTest","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC-0002 Check all navigation panel elements are present
+"
+"passed","Wed Mar 15 13:58:32 GMT 2023","Wed Mar 15 13:58:32 GMT 2023","172","","","","","","GET user info",""
+"passed","Wed Mar 15 13:58:38 GMT 2023","Wed Mar 15 13:58:44 GMT 2023","5884","","Demo Tests","","DemoTest","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC-0003 Check how the Contact Us form works with an incorrect email
+"
+"passed","Wed Mar 15 13:58:32 GMT 2023","Wed Mar 15 13:58:32 GMT 2023","285","","","","","","GET users info",""
+"passed","Wed Mar 15 13:58:31 GMT 2023","Wed Mar 15 13:58:32 GMT 2023","601","","","","","","GET organization info",""
+"broken","Wed Mar 15 13:58:31 GMT 2023","Wed Mar 15 13:58:41 GMT 2023","10172","","","","","","Empty email validation is working on Contact Us page (""John Doe"")",""
+"broken","Wed Mar 15 13:58:42 GMT 2023","Wed Mar 15 13:59:12 GMT 2023","30930","","","","","","Empty email validation is working on Contact Us page (""Peter Parker"")",""
+"failed","Wed Mar 15 13:58:44 GMT 2023","Wed Mar 15 13:58:47 GMT 2023","3117","","Demo Tests","","DemoTest","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC-0004 Check the footer form is correct with visual testing
+"
