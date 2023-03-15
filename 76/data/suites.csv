@@ -1,0 +1,18 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Mar 15 14:11:58 GMT 2023","Wed Mar 15 14:11:58 GMT 2023","583","","CustomImageComparatorTest","","CustomImageComparatorTest","TC0006_Compare2ImagesWhenBothImagesAreTheSame","TC0006_Compare2ImagesWhenBothImagesAreTheSame","TC-0006 Compare 2 images when both images are the same
+"
+"passed","Wed Mar 15 14:11:58 GMT 2023","Wed Mar 15 14:12:05 GMT 2023","6795","","Demo Tests","","DemoTest","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC-0002 Check all navigation panel elements are present
+"
+"passed","Wed Mar 15 14:11:57 GMT 2023","Wed Mar 15 14:11:58 GMT 2023","761","","","","","","GET organization info",""
+"passed","Wed Mar 15 14:11:58 GMT 2023","Wed Mar 15 14:11:58 GMT 2023","103","","","","","","GET user info",""
+"passed","Wed Mar 15 14:11:57 GMT 2023","Wed Mar 15 14:11:58 GMT 2023","647","","CustomImageComparatorTest","","CustomImageComparatorTest","TC0005_Compare2ImagesOneOfWhichIsDifferent","TC0005_Compare2ImagesOneOfWhichIsDifferent","TC-0005 Compare 2 images one of which is different
+"
+"passed","Wed Mar 15 14:11:57 GMT 2023","Wed Mar 15 14:12:09 GMT 2023","12715","","","","","","Empty email validation is working on Contact Us page (""John Doe"")",""
+"passed","Wed Mar 15 14:12:05 GMT 2023","Wed Mar 15 14:12:11 GMT 2023","6031","","Demo Tests","","DemoTest","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC-0003 Check how the Contact Us form works with an incorrect email
+"
+"passed","Wed Mar 15 14:11:58 GMT 2023","Wed Mar 15 14:11:58 GMT 2023","285","","","","","","GET users info",""
+"passed","Wed Mar 15 14:12:10 GMT 2023","Wed Mar 15 14:12:20 GMT 2023","9310","","","","","","Empty email validation is working on Contact Us page (""Peter Parker"")",""
+"passed","Wed Mar 15 14:12:11 GMT 2023","Wed Mar 15 14:12:16 GMT 2023","4473","","Demo Tests","","DemoTest","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC-0004 Check the footer form is correct with visual testing
+"
+"passed","Wed Mar 15 14:12:16 GMT 2023","Wed Mar 15 14:12:19 GMT 2023","3179","","Main Page Demo Test","","MainDemoTest","TC0001_CheckTheCookieForm","TC0001_CheckTheCookieForm","TC-0001 Check the cookie form
+"

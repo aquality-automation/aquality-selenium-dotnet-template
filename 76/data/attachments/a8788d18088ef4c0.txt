@@ -1,0 +1,24 @@
+2023-03-15 14:12:16 INFO - Start scenario [TC-0001 Check the cookie form]
+Connection refused (localhost:42471)
+Connection refused (localhost:42471)
+Connection refused (localhost:42471)
+2023-03-15 14:12:16 INFO - Browser 'Chrome' ready...
+2023-03-15 14:12:16 INFO - Navigate to URL - 'https://www.a1qa.com/'
+2023-03-15 14:12:18 INFO - Maximizing browser window
+2023-03-15 14:12:18 INFO - ########## Assertion ########## 
+MainPageSteps: Main page is present
+2023-03-15 14:12:18 INFO - Label 'Main page' :: Waiting for element to be displayed
+2023-03-15 14:12:18 INFO - ########## Assertion ########## 
+MainPageSteps: Accept cookies button is displayed
+2023-03-15 14:12:18 INFO - ########## Step ########## 
+MainPageSteps: Accept cookies
+2023-03-15 14:12:18 INFO - Button 'Accept cookies' :: Clicking
+2023-03-15 14:12:19 INFO - ########## Assertion ########## 
+MainPageSteps: Accept cookies button is not displayed
+2023-03-15 14:12:19 INFO - ########## Step ########## 
+MainPageSteps: Scroll to the footer
+2023-03-15 14:12:19 INFO - ########## Step ########## 
+MainPageSteps: Get full page height
+2023-03-15 14:12:19 INFO - Closing browser
+2023-03-15 14:12:19 INFO - Scenario [TC-0001 Check the cookie form] result is Passed!
+2023-03-15 14:12:19 INFO - ====================================================================================================
