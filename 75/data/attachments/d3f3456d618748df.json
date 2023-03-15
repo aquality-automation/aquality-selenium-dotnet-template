@@ -1,0 +1,22 @@
+[
+  {
+    "Timestamp": "2023-03-15T14:07:00.84Z",
+    "Level": 4,
+    "Message": "https://www.a1qa.com/ 83:59 Uncaught SyntaxError: missing ) after argument list"
+  },
+  {
+    "Timestamp": "2023-03-15T14:07:00.841Z",
+    "Level": 4,
+    "Message": "https://www.a1qa.com/ 101:0 Uncaught SyntaxError: missing ) after argument list"
+  },
+  {
+    "Timestamp": "2023-03-15T14:07:03.587Z",
+    "Level": 4,
+    "Message": "https://www.a1qa.com/contacts/ 87:59 Uncaught SyntaxError: missing ) after argument list"
+  },
+  {
+    "Timestamp": "2023-03-15T14:07:03.587Z",
+    "Level": 4,
+    "Message": "https://www.a1qa.com/contacts/ 105:0 Uncaught SyntaxError: missing ) after argument list"
+  }
+]

@@ -1,0 +1,66 @@
+2023-03-15 14:07:11 INFO - Start scenario [TC-0004 Check the footer form is correct with visual testing]
+Connection refused (localhost:34473)
+Connection refused (localhost:34473)
+Connection refused (localhost:34473)
+Connection refused (localhost:34473)
+Connection refused (localhost:34473)
+Connection refused (localhost:34473)
+Connection refused (localhost:34473)
+Connection refused (localhost:34473)
+Connection refused (localhost:34473)
+Connection refused (localhost:34473)
+Connection refused (localhost:34473)
+Connection refused (localhost:34473)
+Connection refused (localhost:34473)
+Connection refused (localhost:34473)
+Connection refused (localhost:34473)
+Connection refused (localhost:34473)
+Connection refused (localhost:34473)
+Connection refused (localhost:34473)
+2023-03-15 14:07:11 INFO - Browser 'Chrome' ready...
+2023-03-15 14:07:11 INFO - Navigate to URL - 'https://www.a1qa.com/'
+2023-03-15 14:07:13 INFO - Maximizing browser window
+2023-03-15 14:07:13 INFO - ########## Assertion ########## 
+MainPageSteps: Main page is present
+2023-03-15 14:07:13 INFO - Label 'Main page' :: Waiting for element to be displayed
+2023-03-15 14:07:13 INFO - ########## Step ########## 
+MainPageSteps: Accept cookies
+2023-03-15 14:07:13 INFO - Button 'Accept cookies' :: Clicking
+2023-03-15 14:07:13 INFO - ########## Assertion ########## 
+TopBarMenuSteps: Top bar menu is present
+2023-03-15 14:07:13 INFO - Label 'Header' :: Waiting for element to be displayed
+2023-03-15 14:07:14 INFO - ########## Step ########## 
+MainPageSteps: Scroll to the footer
+2023-03-15 14:07:14 INFO - ########## Step ########## 
+MainPageSteps: Get full page height
+2023-03-15 14:07:14 INFO - ########## Assertion ########## 
+FooterFormSteps: Footer form is present
+2023-03-15 14:07:14 INFO - Label 'Footer form' :: Waiting for element to be displayed
+2023-03-15 14:07:14 INFO - ########## Assertion ########## 
+FooterFormSteps: Check visual elements present
+2023-03-15 14:07:14 INFO - Label 'Logo' :: Waiting for element to be displayed
+2023-03-15 14:07:14 INFO - Label 'Contacts' :: Waiting for element to be displayed
+2023-03-15 14:07:14 INFO - Label 'Subscribe' :: Waiting for element to be displayed
+2023-03-15 14:07:14 INFO - ########## Assertion ########## 
+FooterFormSteps: Check that the visual elements are correct
+2023-03-15 14:07:14 INFO - Comparing elements of the form to dump [Footer form]
+2023-03-15 14:07:14 INFO - Label 'Contacts' :: Getting image of element
+2023-03-15 14:07:14 INFO - Label 'Contacts' :: Element's image size: [{Width=600, Height=159}]
+2023-03-15 14:07:14 INFO - Label 'Contacts' :: Comparing element's image to image of size [{Width=600, Height=159}]
+2023-03-15 14:07:14 INFO - Label 'Contacts' :: The difference between the current and the given images is [25.78 %]
+2023-03-15 14:07:14 INFO - Label 'Subscribe' :: Getting image of element
+2023-03-15 14:07:14 INFO - Label 'Subscribe' :: Element's image size: [{Width=468, Height=159}]
+2023-03-15 14:07:14 INFO - Label 'Subscribe' :: Comparing element's image to image of size [{Width=468, Height=159}]
+2023-03-15 14:07:14 INFO - Label 'Subscribe' :: The difference between the current and the given images is [3.52 %]
+2023-03-15 14:07:14 INFO - Label 'Logo' :: Getting image of element
+2023-03-15 14:07:14 INFO - Label 'Logo' :: Element's image size: [{Width=48, Height=159}]
+2023-03-15 14:07:14 INFO - Label 'Logo' :: Comparing element's image to image of size [{Width=48, Height=159}]
+2023-03-15 14:07:14 INFO - Label 'Logo' :: The difference between the current and the given images is [0.00 %]
+2023-03-15 14:07:14 INFO - The difference between the current form and the given dump is [9.77 %]
+2023-03-15 14:07:14 INFO - Closing browser
+2023-03-15 14:07:14 INFO - Scenario [TC-0004 Check the footer form is correct with visual testing] result is Failed!
+2023-03-15 14:07:14 ERROR -   The footer form should contain the correct visual elements
+  Expected: less than or equal to 0.0799999982f
+  But was:  0.09765625f
+
+2023-03-15 14:07:14 INFO - ====================================================================================================
