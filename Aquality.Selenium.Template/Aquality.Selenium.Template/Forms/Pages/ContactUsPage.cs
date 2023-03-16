@@ -13,7 +13,7 @@ namespace Aquality.Selenium.Template.Forms.Pages
         private ITextBox CommentTextBox => ElementFactory.GetTextBox(By.Id("your-message"), "Project description");
         private ICheckBox PrivacyCheckBox => ElementFactory.GetCheckBox(By.XPath("//input[@name='privacy']/following-sibling::span[1]"), "Privacy");
         private IButton SendButton => ElementFactory.GetButton(By.XPath("//div[contains(@class,'contactsForm__submit')]//button"), "Send a message");
-        private ILabel EmailAlertLabel => ElementFactory.GetLabel(By.XPath("//div[contains(@class,'error')]//input[@id='your-email']"), "Email validating message", Core.Elements.ElementState.ExistsInAnyState);
+        private ILabel EmailAlertLabel => ElementFactory.GetLabel(By.XPath("//div[contains(@class,'error')]//input[@id='your-email']"), "Email validating message", ElementState.ExistsInAnyState);
         private ILabel TitleLabel => FormElement.FindChildElement<ILabel>(By.XPath("//h2[contains(@class,'blockTitle')]"), "Title");
         private ILabel TermsLabel => FormElement.FindChildElement<ILabel>(By.XPath("//label[contains(@class, 'checkbox')]"), "Terms");
         private ITextBox ContactUsTextBox(ContactUsTextFields contactUsTextField) => ElementFactory.GetTextBox(By.Id($"{contactUsTextField.GetId()}"), contactUsTextField.ToString());

@@ -1,6 +1,6 @@
 ﻿using Aquality.Selenium.Core.Configurations;
 using Aquality.Selenium.Core.Visualization;
-using System.Drawing;
+using SkiaSharp;
 
 namespace Aquality.Selenium.Template.Utilities
 {
@@ -14,7 +14,7 @@ namespace Aquality.Selenium.Template.Utilities
             imageComparator = new ImageComparator(visualizationConfiguration);
         }
 
-        public float Compare(Image firstImage, Image secondImage, float? threshold = null)
+        public float Compare(SKImage firstImage, SKImage secondImage, float? threshold = null)
         {
             return imageComparator.PercentageDifference(firstImage, secondImage, threshold);
         }
