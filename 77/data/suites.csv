@@ -1,0 +1,18 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Mar 16 08:10:00 GMT 2023","Thu Mar 16 08:10:05 GMT 2023","5181","","Demo Tests","","DemoTest","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC-0003 Check how the Contact Us form works with an incorrect email
+"
+"passed","Thu Mar 16 08:09:53 GMT 2023","Thu Mar 16 08:09:53 GMT 2023","608","","","","","","GET organization info",""
+"passed","Thu Mar 16 08:10:09 GMT 2023","Thu Mar 16 08:10:14 GMT 2023","4866","","Main Page Demo Test","","MainDemoTest","TC0001_CheckTheCookieForm","TC0001_CheckTheCookieForm","TC-0001 Check the cookie form
+"
+"passed","Thu Mar 16 08:09:53 GMT 2023","Thu Mar 16 08:09:53 GMT 2023","230","","","","","","GET users info",""
+"passed","Thu Mar 16 08:09:53 GMT 2023","Thu Mar 16 08:09:53 GMT 2023","506","","CustomImageComparatorTest","","CustomImageComparatorTest","TC0005_Compare2ImagesOneOfWhichIsDifferent","TC0005_Compare2ImagesOneOfWhichIsDifferent","TC-0005 Compare 2 images one of which is different
+"
+"passed","Thu Mar 16 08:10:05 GMT 2023","Thu Mar 16 08:10:09 GMT 2023","4014","","Demo Tests","","DemoTest","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC-0004 Check the footer form is correct with visual testing
+"
+"passed","Thu Mar 16 08:09:53 GMT 2023","Thu Mar 16 08:09:53 GMT 2023","88","","","","","","GET user info",""
+"passed","Thu Mar 16 08:09:54 GMT 2023","Thu Mar 16 08:10:00 GMT 2023","5802","","Demo Tests","","DemoTest","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC-0002 Check all navigation panel elements are present
+"
+"passed","Thu Mar 16 08:09:53 GMT 2023","Thu Mar 16 08:10:04 GMT 2023","11501","","","","","","Empty email validation is working on Contact Us page (""John Doe"")",""
+"passed","Thu Mar 16 08:09:53 GMT 2023","Thu Mar 16 08:09:54 GMT 2023","375","","CustomImageComparatorTest","","CustomImageComparatorTest","TC0006_Compare2ImagesWhenBothImagesAreTheSame","TC0006_Compare2ImagesWhenBothImagesAreTheSame","TC-0006 Compare 2 images when both images are the same
+"
+"passed","Thu Mar 16 08:10:05 GMT 2023","Thu Mar 16 08:10:12 GMT 2023","7440","","","","","","Empty email validation is working on Contact Us page (""Peter Parker"")",""
