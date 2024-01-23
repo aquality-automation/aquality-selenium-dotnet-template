@@ -20,7 +20,7 @@
     <PackageReference Include="AspectInjector" Version="2.8.2" />
     <PackageReference Include="Humanizer" Version="2.14.1" />
     <PackageReference Include="AqualityTracking.Integrations.Core" Version="1.0.1" />
-    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit" Version="4.0.1" />
     <PackageReference Include="RestSharp" Version="110.2.0" />
     <PackageReference Include="SkiaSharp.NativeAssets.Linux" Version="2.88.7" />
   </ItemGroup>

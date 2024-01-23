@@ -20,13 +20,13 @@ namespace Aquality.Selenium.Template.Utilities
         }
     }
 
-    internal class VisualizationConfiguration : IVisualizationConfiguration
+    internal class VisualizationConfiguration(float defaultThreshold, int comparisonWidth, int comparisonHeight) : IVisualizationConfiguration
     {
-        public float DefaultThreshold { get; }
+        public float DefaultThreshold { get; } = defaultThreshold;
 
-        public int ComparisonWidth { get; }
+        public int ComparisonWidth { get; } = comparisonWidth;
 
-        public int ComparisonHeight { get; }
+        public int ComparisonHeight { get; } = comparisonHeight;
 
         /// <summary>
         /// This field is not implemented. This field is needed to compare Image Dumps.
@@ -42,12 +42,5 @@ namespace Aquality.Selenium.Template.Utilities
         /// This field is not implemented. This field is needed to compare Image Dumps.
         /// </summary>
         public int MaxFullFileNameLength => throw new System.NotImplementedException();
-
-        public VisualizationConfiguration(float defaultThreshold, int comparisonWidth, int comparisonHeight)
-        {
-            DefaultThreshold = defaultThreshold;
-            ComparisonWidth = comparisonWidth;
-            ComparisonHeight = comparisonHeight;
-        }
     }
 }

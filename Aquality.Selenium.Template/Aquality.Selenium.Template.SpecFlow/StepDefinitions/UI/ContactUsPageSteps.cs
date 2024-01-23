@@ -6,14 +6,9 @@ using TechTalk.SpecFlow;
 namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions.UI
 {
     [Binding]
-    public class ContactUsPageSteps
+    public class ContactUsPageSteps(ContactUsPage contactUsPage)
     {
-        private readonly ContactUsPage contactUsPage;
-
-        public ContactUsPageSteps(ContactUsPage contactUsPage)
-        {
-            this.contactUsPage = contactUsPage;
-        }
+        private readonly ContactUsPage contactUsPage = contactUsPage;
 
         [When(@"I accept Privacy and Cookies Policy")]
         public void IAcceptPrivacyAndCookiesPolicy()
@@ -45,13 +40,13 @@ namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions.UI
         [Then(@"Contact us page is opened")]
         public void ContactUsPageIsOpened()
         {
-            Assert.IsTrue(contactUsPage.State.WaitForDisplayed(), "Contact us page should be opened");
+            Assert.That(contactUsPage.State.WaitForDisplayed(), "Contact us page should be opened");
         }
 
         [Then(@"Notification about empty fields is present")]
         public void ThenNotificationAboutEmptyFieldsIsPresent()
         {
-            Assert.IsTrue(contactUsPage.IsEmailValidationMessagePresent,
+            Assert.That(contactUsPage.IsEmailValidationMessagePresent,
                 "Email validation message should be displayed");
         }
 

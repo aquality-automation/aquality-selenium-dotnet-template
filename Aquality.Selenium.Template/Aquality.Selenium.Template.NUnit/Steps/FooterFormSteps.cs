@@ -7,7 +7,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
 {
     public class FooterFormSteps
     {
-        private readonly FooterForm footerForm = new FooterForm();
+        private readonly FooterForm footerForm = new();
         const float ComparisonThreshold = 0.1f;
 
         [LogStep(StepType.Assertion)]
@@ -21,9 +21,9 @@ namespace Aquality.Selenium.Template.NUnit.Steps
         {
             Assert.Multiple(() =>
             {
-                Assert.IsTrue(footerForm.IsLogoPresent, "Logo should be displayed");
-                Assert.IsTrue(footerForm.IsContactsPresent, "Contacts section should be displayed");
-                Assert.IsTrue(footerForm.IsSubscribePresent, "Subscribe section should be displayed");
+                Assert.That(footerForm.IsLogoPresent, "Logo should be displayed");
+                Assert.That(footerForm.IsContactsPresent, "Contacts section should be displayed");
+                Assert.That(footerForm.IsSubscribePresent, "Subscribe section should be displayed");
             });
         }
 
@@ -37,7 +37,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
         public void CheckThatTheVisualElementsAreCorrect()
         {
             var compareVisualElements = footerForm.Dump.Compare();
-            Assert.LessOrEqual(compareVisualElements, ComparisonThreshold, "The footer form should contain the correct visual elements");
+            Assert.That(compareVisualElements, Is.LessThanOrEqualTo(ComparisonThreshold), "The footer form should contain the correct visual elements");
         }
     }
 }

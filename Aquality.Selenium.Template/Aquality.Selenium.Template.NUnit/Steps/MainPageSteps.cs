@@ -10,7 +10,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
 {
     public class MainPageSteps
     {
-        private readonly MainPage mainPage = new MainPage();
+        private readonly MainPage mainPage = new();
 
         [LogStep(StepType.Assertion)]
         public void MainPageIsPresent()
@@ -21,7 +21,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
         [LogStep(StepType.Assertion)]
         public void AcceptCookiesButtonIsDisplayed()
         {
-            Assert.IsTrue(mainPage.IsAcceptCookiesButtonDisplayed, "Accept cookies button should be displayed");
+            Assert.That(mainPage.IsAcceptCookiesButtonDisplayed, "Accept cookies button should be displayed");
         }
 
         [LogStep(StepType.Assertion)]

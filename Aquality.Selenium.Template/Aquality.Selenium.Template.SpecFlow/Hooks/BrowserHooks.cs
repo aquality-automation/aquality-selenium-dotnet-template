@@ -9,14 +9,9 @@ using TechTalk.SpecFlow;
 namespace Aquality.Selenium.Template.SpecFlow.Hooks
 {
     [Binding]
-    public class BrowserHooks
+    public class BrowserHooks(ScreenshotProvider screenshotProvider)
     {
-        private readonly ScreenshotProvider screenshotProvider;
-
-        public BrowserHooks(ScreenshotProvider screenshotProvider)
-        {
-            this.screenshotProvider = screenshotProvider;
-        }
+        private readonly ScreenshotProvider screenshotProvider = screenshotProvider;
 
         [AfterScenario(Order = 0)]
         public void AttachArtifacts()

@@ -6,15 +6,9 @@ using System;
 
 namespace Aquality.Selenium.Template.Logging
 {
-    public class AllureBasedLocalizedLogger : LocalizedLogger, ILocalizedLogger
+    public class AllureBasedLocalizedLogger(ILocalizationManager localizationManager, Logger logger, ILoggerConfiguration configuration) : LocalizedLogger(localizationManager, logger, configuration), ILocalizedLogger
     {
-        private readonly ILocalizationManager localizationManager;        
-
-        public AllureBasedLocalizedLogger(ILocalizationManager localizationManager, Logger logger, ILoggerConfiguration configuration) 
-            : base(localizationManager, logger, configuration)
-        {
-            this.localizationManager = localizationManager;
-        }
+        private readonly ILocalizationManager localizationManager = localizationManager;
 
         public new void InfoElementAction(string elementType, string elementName, string messageKey, params object[] args)
         {

@@ -7,7 +7,7 @@ namespace Aquality.Selenium.Template.Utilities
 {
     public class RequestHandler
     {
-        private readonly RestClient restClient = new RestClient(Configuration.ApiUrl);
+        private readonly RestClient restClient = new(Configuration.ApiUrl);
 
         public RestResponse Execute(RestRequest request)
         {

@@ -5,13 +5,8 @@ namespace Aquality.Selenium.Template.CustomAttributes
 {
     [Injection(typeof(TraceAspect))]
     [AttributeUsage(AttributeTargets.Method, Inherited = false)]
-    public class LogStepAttribute : Attribute
+    public class LogStepAttribute(StepType stepType) : Attribute
     {
-        public StepType StepType { get; }
-
-        public LogStepAttribute(StepType stepType)
-        {
-            StepType = stepType;
-        }      
+        public StepType StepType { get; } = stepType;
     }
 }
