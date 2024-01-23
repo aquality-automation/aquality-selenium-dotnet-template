@@ -1,0 +1,18 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Jan 23 17:38:15 GMT 2024","Tue Jan 23 17:38:19 GMT 2024","4166","","Demo Tests","","DemoTest","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC-0003 Check how the Contact Us form works with an incorrect email
+"
+"passed","Tue Jan 23 17:38:10 GMT 2024","Tue Jan 23 17:38:18 GMT 2024","8448","","","","","","Empty email validation is working on Contact Us page (""John Doe"")",""
+"passed","Tue Jan 23 17:38:19 GMT 2024","Tue Jan 23 17:38:24 GMT 2024","5890","","","","","","Empty email validation is working on Contact Us page (""Peter Parker"")",""
+"passed","Tue Jan 23 17:38:10 GMT 2024","Tue Jan 23 17:38:10 GMT 2024","117","","","","","","GET user info",""
+"passed","Tue Jan 23 17:38:22 GMT 2024","Tue Jan 23 17:38:24 GMT 2024","2249","","Main Page Demo Test","","MainDemoTest","TC0001_CheckTheCookieForm","TC0001_CheckTheCookieForm","TC-0001 Check the cookie form
+"
+"passed","Tue Jan 23 17:38:19 GMT 2024","Tue Jan 23 17:38:22 GMT 2024","3201","","Demo Tests","","DemoTest","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC-0004 Check the footer form is correct with visual testing
+"
+"passed","Tue Jan 23 17:38:09 GMT 2024","Tue Jan 23 17:38:10 GMT 2024","425","","","","","","GET organization info",""
+"passed","Tue Jan 23 17:38:10 GMT 2024","Tue Jan 23 17:38:10 GMT 2024","129","","CustomImageComparatorTest","","CustomImageComparatorTest","TC0006_Compare2ImagesWhenBothImagesAreTheSame","TC0006_Compare2ImagesWhenBothImagesAreTheSame","TC-0006 Compare 2 images when both images are the same
+"
+"passed","Tue Jan 23 17:38:10 GMT 2024","Tue Jan 23 17:38:15 GMT 2024","4910","","Demo Tests","","DemoTest","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC-0002 Check all navigation panel elements are present
+"
+"passed","Tue Jan 23 17:38:10 GMT 2024","Tue Jan 23 17:38:10 GMT 2024","224","","","","","","GET users info",""
+"passed","Tue Jan 23 17:38:09 GMT 2024","Tue Jan 23 17:38:10 GMT 2024","186","","CustomImageComparatorTest","","CustomImageComparatorTest","TC0005_Compare2ImagesOneOfWhichIsDifferent","TC0005_Compare2ImagesOneOfWhichIsDifferent","TC-0005 Compare 2 images one of which is different
+"
