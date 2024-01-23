@@ -1,0 +1,51 @@
+2024-01-23 16:26:23 INFO - Start scenario [TC-0004 Check the footer form is correct with visual testing]
+Connection refused (localhost:35247)
+Connection refused (localhost:35247)
+Connection refused (localhost:35247)
+Connection refused (localhost:35247)
+Connection refused (localhost:35247)
+Connection refused (localhost:35247)
+Connection refused (localhost:35247)
+2024-01-23 16:26:23 INFO - Browser 'Chrome' ready...
+2024-01-23 16:26:23 INFO - Navigate to URL - 'https://www.a1qa.com/'
+2024-01-23 16:26:25 INFO - Maximizing browser window
+2024-01-23 16:26:25 INFO - ########## Assertion ########## 
+MainPageSteps: Main page is present
+2024-01-23 16:26:25 INFO - Label 'Main page' :: Waiting for element to be displayed
+2024-01-23 16:26:25 INFO - ########## Step ########## 
+MainPageSteps: Accept cookies
+2024-01-23 16:26:25 INFO - Button 'Accept cookies' :: Clicking
+2024-01-23 16:26:25 INFO - ########## Assertion ########## 
+TopBarMenuSteps: Top bar menu is present
+2024-01-23 16:26:25 INFO - Label 'Header' :: Waiting for element to be displayed
+2024-01-23 16:26:25 INFO - ########## Step ########## 
+MainPageSteps: Scroll to the footer
+2024-01-23 16:26:25 INFO - ########## Step ########## 
+MainPageSteps: Get full page height
+2024-01-23 16:26:25 INFO - ########## Assertion ########## 
+FooterFormSteps: Footer form is present
+2024-01-23 16:26:25 INFO - Label 'Footer form' :: Waiting for element to be displayed
+2024-01-23 16:26:25 INFO - ########## Assertion ########## 
+FooterFormSteps: Check visual elements present
+2024-01-23 16:26:25 INFO - Label 'Logo' :: Waiting for element to be displayed
+2024-01-23 16:26:25 INFO - Label 'Contacts' :: Waiting for element to be displayed
+2024-01-23 16:26:25 INFO - Label 'Subscribe' :: Waiting for element to be displayed
+2024-01-23 16:26:25 INFO - ########## Assertion ########## 
+FooterFormSteps: Check that the visual elements are correct
+2024-01-23 16:26:25 INFO - Comparing elements of the form to dump [Footer form]
+2024-01-23 16:26:25 INFO - Label 'Logo' :: Getting image of element
+2024-01-23 16:26:25 INFO - Label 'Logo' :: Element's image size: [{Width=48, Height=159}]
+2024-01-23 16:26:25 INFO - Label 'Logo' :: Comparing element's image to image of size [{Width=48, Height=159}]
+2024-01-23 16:26:25 INFO - Label 'Logo' :: The difference between the current and the given images is [0.00 %]
+2024-01-23 16:26:25 INFO - Label 'Subscribe' :: Getting image of element
+2024-01-23 16:26:25 INFO - Label 'Subscribe' :: Element's image size: [{Width=468, Height=159}]
+2024-01-23 16:26:25 INFO - Label 'Subscribe' :: Comparing element's image to image of size [{Width=468, Height=159}]
+2024-01-23 16:26:25 INFO - Label 'Subscribe' :: The difference between the current and the given images is [3.52 %]
+2024-01-23 16:26:25 INFO - Label 'Contacts' :: Getting image of element
+2024-01-23 16:26:26 INFO - Label 'Contacts' :: Element's image size: [{Width=600, Height=159}]
+2024-01-23 16:26:26 INFO - Label 'Contacts' :: Comparing element's image to image of size [{Width=600, Height=159}]
+2024-01-23 16:26:26 INFO - Label 'Contacts' :: The difference between the current and the given images is [23.44 %]
+2024-01-23 16:26:26 INFO - The difference between the current form and the given dump is [8.98 %]
+2024-01-23 16:26:26 INFO - Scenario [TC-0004 Check the footer form is correct with visual testing] result is Passed!
+2024-01-23 16:26:26 INFO - ====================================================================================================
+2024-01-23 16:26:26 INFO - Closing browser

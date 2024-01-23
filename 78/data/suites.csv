@@ -1,0 +1,18 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Jan 23 16:26:13 GMT 2024","Tue Jan 23 16:26:13 GMT 2024","81","","","","","","GET user info",""
+"passed","Tue Jan 23 16:26:19 GMT 2024","Tue Jan 23 16:26:23 GMT 2024","3911","","Demo Tests","","DemoTest","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC-0003 Check how the Contact Us form works with an incorrect email
+"
+"passed","Tue Jan 23 16:26:13 GMT 2024","Tue Jan 23 16:26:13 GMT 2024","286","","CustomImageComparatorTest","","CustomImageComparatorTest","TC0006_Compare2ImagesWhenBothImagesAreTheSame","TC0006_Compare2ImagesWhenBothImagesAreTheSame","TC-0006 Compare 2 images when both images are the same
+"
+"passed","Tue Jan 23 16:26:13 GMT 2024","Tue Jan 23 16:26:13 GMT 2024","384","","","","","","GET organization info",""
+"passed","Tue Jan 23 16:26:13 GMT 2024","Tue Jan 23 16:26:13 GMT 2024","177","","","","","","GET users info",""
+"passed","Tue Jan 23 16:26:26 GMT 2024","Tue Jan 23 16:26:28 GMT 2024","2493","","Main Page Demo Test","","MainDemoTest","TC0001_CheckTheCookieForm","TC0001_CheckTheCookieForm","TC-0001 Check the cookie form
+"
+"passed","Tue Jan 23 16:26:23 GMT 2024","Tue Jan 23 16:26:26 GMT 2024","2910","","Demo Tests","","DemoTest","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC-0004 Check the footer form is correct with visual testing
+"
+"failed","Tue Jan 23 16:26:13 GMT 2024","Tue Jan 23 16:26:17 GMT 2024","4176","","","","","","Empty email validation is working on Contact Us page (""John Doe"")",""
+"failed","Tue Jan 23 16:26:18 GMT 2024","Tue Jan 23 16:26:20 GMT 2024","2171","","","","","","Empty email validation is working on Contact Us page (""Peter Parker"")",""
+"passed","Tue Jan 23 16:26:13 GMT 2024","Tue Jan 23 16:26:19 GMT 2024","5438","","Demo Tests","","DemoTest","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC-0002 Check all navigation panel elements are present
+"
+"passed","Tue Jan 23 16:26:13 GMT 2024","Tue Jan 23 16:26:13 GMT 2024","351","","CustomImageComparatorTest","","CustomImageComparatorTest","TC0005_Compare2ImagesOneOfWhichIsDifferent","TC0005_Compare2ImagesOneOfWhichIsDifferent","TC-0005 Compare 2 images one of which is different
+"

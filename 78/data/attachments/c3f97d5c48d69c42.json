@@ -1,0 +1,12 @@
+[
+  {
+    "Timestamp": "2024-01-23T16:26:19.107Z",
+    "Level": 4,
+    "Message": "https://www.a1qa.com/ 84:59 Uncaught SyntaxError: missing ) after argument list"
+  },
+  {
+    "Timestamp": "2024-01-23T16:26:19.107Z",
+    "Level": 4,
+    "Message": "https://www.a1qa.com/ 102:0 Uncaught SyntaxError: missing ) after argument list"
+  }
+]
