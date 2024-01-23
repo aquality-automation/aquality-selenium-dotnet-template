@@ -1,0 +1,7 @@
+2024-01-23 17:24:58 INFO - Start scenario [TC-0006 Compare 2 images when both images are the same]
+2024-01-23 17:24:58 INFO - ########## Step ########## 
+CustomImageComparatorSteps: Get expected image from resourse with parameters: Resources/ImagesForVisualTesting/ExpectedCorrectImage.jpg
+2024-01-23 17:24:58 INFO - ########## Assertion ########## 
+CustomImageComparatorSteps: Check that actual and expected images are the same with parameters: SkiaSharp.SKImage
+2024-01-23 17:24:58 INFO - Scenario [TC-0006 Compare 2 images when both images are the same] result is Passed!
+2024-01-23 17:24:58 INFO - ====================================================================================================

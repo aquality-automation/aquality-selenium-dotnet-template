@@ -1,0 +1,18 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Jan 23 17:24:57 GMT 2024","Tue Jan 23 17:25:08 GMT 2024","10801","","","","","","Empty email validation is working on Contact Us page (""John Doe"")",""
+"passed","Tue Jan 23 17:25:03 GMT 2024","Tue Jan 23 17:25:07 GMT 2024","4666","","Demo Tests","","DemoTest","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC-0003 Check how the Contact Us form works with an incorrect email
+"
+"passed","Tue Jan 23 17:24:58 GMT 2024","Tue Jan 23 17:24:58 GMT 2024","106","","CustomImageComparatorTest","","CustomImageComparatorTest","TC0006_Compare2ImagesWhenBothImagesAreTheSame","TC0006_Compare2ImagesWhenBothImagesAreTheSame","TC-0006 Compare 2 images when both images are the same
+"
+"passed","Tue Jan 23 17:24:58 GMT 2024","Tue Jan 23 17:24:58 GMT 2024","159","","","","","","GET user info",""
+"passed","Tue Jan 23 17:24:57 GMT 2024","Tue Jan 23 17:24:58 GMT 2024","580","","","","","","GET organization info",""
+"passed","Tue Jan 23 17:25:09 GMT 2024","Tue Jan 23 17:25:15 GMT 2024","6176","","","","","","Empty email validation is working on Contact Us page (""Peter Parker"")",""
+"passed","Tue Jan 23 17:24:58 GMT 2024","Tue Jan 23 17:24:58 GMT 2024","246","","","","","","GET users info",""
+"passed","Tue Jan 23 17:25:11 GMT 2024","Tue Jan 23 17:25:13 GMT 2024","2722","","Main Page Demo Test","","MainDemoTest","TC0001_CheckTheCookieForm","TC0001_CheckTheCookieForm","TC-0001 Check the cookie form
+"
+"passed","Tue Jan 23 17:24:57 GMT 2024","Tue Jan 23 17:24:58 GMT 2024","209","","CustomImageComparatorTest","","CustomImageComparatorTest","TC0005_Compare2ImagesOneOfWhichIsDifferent","TC0005_Compare2ImagesOneOfWhichIsDifferent","TC-0005 Compare 2 images one of which is different
+"
+"passed","Tue Jan 23 17:25:07 GMT 2024","Tue Jan 23 17:25:11 GMT 2024","3535","","Demo Tests","","DemoTest","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC-0004 Check the footer form is correct with visual testing
+"
+"passed","Tue Jan 23 17:24:58 GMT 2024","Tue Jan 23 17:25:03 GMT 2024","4758","","Demo Tests","","DemoTest","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC-0002 Check all navigation panel elements are present
+"

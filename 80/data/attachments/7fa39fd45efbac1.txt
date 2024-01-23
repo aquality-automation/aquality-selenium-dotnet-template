@@ -1,0 +1,74 @@
+2024-01-23 17:25:03 INFO - Start scenario [TC-0003 Check how the Contact Us form works with an incorrect email]
+Connection refused (localhost:39053)
+Connection refused (localhost:39053)
+Connection refused (localhost:39053)
+Connection refused (localhost:39053)
+Connection refused (localhost:39053)
+Connection refused (localhost:39053)
+2024-01-23 17:25:03 INFO - Browser 'Chrome' ready...
+2024-01-23 17:25:03 INFO - Navigate to URL - 'https://www.a1qa.com/'
+2024-01-23 17:25:05 INFO - Maximizing browser window
+2024-01-23 17:25:05 INFO - ########## Assertion ########## 
+MainPageSteps: Main page is present
+2024-01-23 17:25:05 INFO - Label 'Main page' :: Waiting for element to be displayed
+2024-01-23 17:25:05 INFO - ########## Step ########## 
+MainPageSteps: Accept cookies
+2024-01-23 17:25:05 INFO - Button 'Accept cookies' :: Clicking
+2024-01-23 17:25:05 INFO - ########## Assertion ########## 
+TopBarMenuSteps: Top bar menu is present
+2024-01-23 17:25:05 INFO - Label 'Header' :: Waiting for element to be displayed
+2024-01-23 17:25:05 INFO - ########## Step ########## 
+TopBarMenuSteps: Click contact us
+2024-01-23 17:25:05 INFO - Button 'Contact Us' :: Clicking
+2024-01-23 17:25:06 INFO - ########## Assertion ########## 
+ContactUsPageSteps: Contact us page is present
+2024-01-23 17:25:06 INFO - Label 'Contact Us' :: Waiting for element to be displayed
+2024-01-23 17:25:06 INFO - ########## Assertion ########## 
+ContactUsPageSteps: Check that the contact us form elements are displayed
+2024-01-23 17:25:06 INFO - ########## Assertion ########## 
+ContactUsPageSteps: Check than contact us title is correct
+2024-01-23 17:25:06 INFO - Label 'Title' :: Getting text from element
+2024-01-23 17:25:06 INFO - Label 'Title' :: Element's text: [We are glad to hear from you!]
+2024-01-23 17:25:06 INFO - ########## Step ########## 
+ContactUsPageSteps: Set data for the all text fields
+2024-01-23 17:25:06 INFO - ########## Step ########## 
+ContactUsPageSteps: Set value for the text field with parameters: Name-Just A User
+2024-01-23 17:25:06 INFO - Text Field 'Name' :: Clearing
+2024-01-23 17:25:06 INFO - Text Field 'Name' :: Typing 'Just A User'
+2024-01-23 17:25:06 INFO - ########## Step ########## 
+ContactUsPageSteps: Set value for the text field with parameters: Email-examlpe@example
+2024-01-23 17:25:06 INFO - Text Field 'Email' :: Clearing
+2024-01-23 17:25:06 INFO - Text Field 'Email' :: Typing 'examlpe@example'
+2024-01-23 17:25:07 INFO - ########## Step ########## 
+ContactUsPageSteps: Set value for the text field with parameters: Company-Some Company
+2024-01-23 17:25:07 INFO - Text Field 'Company' :: Clearing
+2024-01-23 17:25:07 INFO - Text Field 'Company' :: Typing 'Some Company'
+2024-01-23 17:25:07 INFO - ########## Step ########## 
+ContactUsPageSteps: Set value for the text field with parameters: ProjectDescription-Some text for Description
+2024-01-23 17:25:07 INFO - Text Field 'ProjectDescription' :: Clearing
+2024-01-23 17:25:07 INFO - Text Field 'ProjectDescription' :: Typing 'Some text for Description'
+2024-01-23 17:25:07 INFO - ########## Step ########## 
+ContactUsPageSteps: Check term check box is checked or not with parameters: False
+2024-01-23 17:25:07 INFO - CheckBox 'Terms' :: Getting state
+2024-01-23 17:25:07 INFO - CheckBox 'Terms' :: State: [False]
+2024-01-23 17:25:07 INFO - ########## Step ########## 
+ContactUsPageSteps: Check term check box
+2024-01-23 17:25:07 INFO - Label 'Terms' :: Clicking
+2024-01-23 17:25:07 INFO - ########## Step ########## 
+ContactUsPageSteps: Check term check box is checked or not with parameters: True
+2024-01-23 17:25:07 INFO - CheckBox 'Terms' :: Getting state
+2024-01-23 17:25:07 INFO - CheckBox 'Terms' :: State: [True]
+2024-01-23 17:25:07 INFO - ########## Assertion ########## 
+ContactUsPageSteps: Check that warning email messageis present or not with parameters: False
+2024-01-23 17:25:07 INFO - ########## Step ########## 
+ContactUsPageSteps: Click send a message button
+2024-01-23 17:25:07 INFO - Button 'Send a message' :: Clicking
+2024-01-23 17:25:07 INFO - ########## Assertion ########## 
+ContactUsPageSteps: Check that warning email messageis present or not with parameters: True
+2024-01-23 17:25:07 INFO - ########## Step ########## 
+ContactUsPageSteps: Check that warning email message is correct
+2024-01-23 17:25:07 INFO - Label 'Warning email message' :: Getting text from element
+2024-01-23 17:25:07 INFO - Label 'Warning email message' :: Element's text: [Email address seems invalid.]
+2024-01-23 17:25:07 INFO - Scenario [TC-0003 Check how the Contact Us form works with an incorrect email] result is Passed!
+2024-01-23 17:25:07 INFO - ====================================================================================================
+2024-01-23 17:25:07 INFO - Closing browser

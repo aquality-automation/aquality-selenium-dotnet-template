@@ -1,0 +1,353 @@
+[
+  {
+    "Name": "Server",
+    "Value": "GitHub.com",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "Date",
+    "Value": "Tue, 23 Jan 2024 17:24:58 GMT",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "Cache-Control",
+    "Value": "public, max-age=60, s-maxage=60",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "Vary",
+    "Value": "Accept",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "Vary",
+    "Value": "Accept-Encoding",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "Vary",
+    "Value": "Accept",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "Vary",
+    "Value": "X-Requested-With",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "ETag",
+    "Value": "W/\"86b3e089176ff2cef2db7408d5c780f19cc62b4f407c7c2b25f05d2d3b86d341\"",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "X-GitHub-Media-Type",
+    "Value": "github.v3",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "Link",
+    "Value": "<https://api.github.com/users?since=46>; rel=\"next\", <https://api.github.com/users{?since}>; rel=\"first\"",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "x-github-api-version-selected",
+    "Value": "2022-11-28",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "Access-Control-Expose-Headers",
+    "Value": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "Access-Control-Allow-Origin",
+    "Value": "*",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "Strict-Transport-Security",
+    "Value": "max-age=31536000; includeSubdomains; preload",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "X-Frame-Options",
+    "Value": "deny",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "X-Content-Type-Options",
+    "Value": "nosniff",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "X-XSS-Protection",
+    "Value": "0",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "Referrer-Policy",
+    "Value": "origin-when-cross-origin, strict-origin-when-cross-origin",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "Content-Security-Policy",
+    "Value": "default-src 'none'",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "X-RateLimit-Limit",
+    "Value": "60",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "X-RateLimit-Remaining",
+    "Value": "50",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "X-RateLimit-Reset",
+    "Value": "1706033718",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "X-RateLimit-Resource",
+    "Value": "core",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "X-RateLimit-Used",
+    "Value": "10",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "Accept-Ranges",
+    "Value": "bytes",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "Transfer-Encoding",
+    "Value": "chunked",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  },
+  {
+    "Name": "X-GitHub-Request-Id",
+    "Value": "DFCD:0206:21153FB:4431B39:65AFF66A",
+    "Type": 2,
+    "Encode": false,
+    "ContentType": {
+      "Value": "text/plain",
+      "AsMediaTypeHeaderValue": {
+        "Parameters": [],
+        "MediaType": "text/plain"
+      }
+    }
+  }
+]
