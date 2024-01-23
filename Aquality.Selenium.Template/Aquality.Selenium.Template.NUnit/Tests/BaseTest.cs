@@ -16,8 +16,7 @@ namespace Aquality.Selenium.Template.NUnit.Tests
 
         private static Logger Logger => Logger.Instance;
 
-        private static TestContext.ResultAdapter Result => TestContext.CurrentContext.Result;
-        private readonly ScreenshotProvider screenshotProvider =  new ScreenshotProvider();
+        protected static TestContext.ResultAdapter Result => TestContext.CurrentContext.Result;
 
         [OneTimeSetUp]
         public void OneTimeSetUp()
@@ -43,10 +42,6 @@ namespace Aquality.Selenium.Template.NUnit.Tests
             Logger.Info($"Scenario [{ScenarioName}] result is {Result.Outcome.Status}!");
             if (Result.Outcome.Status != TestStatus.Passed)
             {
-                if (AqualityServices.IsBrowserStarted)
-                {
-                    AttachmentHelper.AddAttachment(screenshotProvider.TakeScreenshot(), "Screenshot");
-                }
                 Logger.Error(Result.Message);
             }
             Logger.Info(new string('=', 100));

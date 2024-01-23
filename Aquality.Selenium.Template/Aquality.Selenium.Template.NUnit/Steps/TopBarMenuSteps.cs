@@ -7,10 +7,10 @@ namespace Aquality.Selenium.Template.NUnit.Steps
 {
     public class TopBarMenuSteps
     {
-        private readonly TopBarMenu topBarMenu = new TopBarMenu();
+        private readonly TopBarMenu topBarMenu = new();
         private const string ServicesTabItem = "Services";
-        private static string[] HeaderTabItems = { "Services", "Approach", "Portfolio", "Blog", "Company" };
-        private static string[] ServicesTitleElements = { "Full-cycle testing services", "Quality engineering", "Complete test coverage", "Systems & platforms" };
+        private static readonly string[] HeaderTabItems = { "Services", "Industries", "Approach", "Portfolio", "Blog", "Company" };
+        private static readonly string[] ServicesTitleElements = { "Full-cycle testing services", "Quality engineering", "Complete test coverage", "Systems & platforms" };
 
         [LogStep(StepType.Assertion)]
         public void TopBarMenuIsPresent()

@@ -11,7 +11,7 @@ namespace Aquality.Selenium.Template.NUnit.Tests
     public class CustomImageComparatorTest : BaseTest
     {
         private const float CustomThresholdValue = 0.1f;
-        private readonly CustomImageComparatorSteps customImageComparatorSteps = new CustomImageComparatorSteps(CustomThresholdValue, ResourceConstants.ActualTestImage);
+        private readonly CustomImageComparatorSteps customImageComparatorSteps = new(CustomThresholdValue, ResourceConstants.ActualTestImage);
 
 
         [Test(Description = "TC-0005 Compare 2 images one of which is different")]

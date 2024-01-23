@@ -1,4 +1,4 @@
-﻿using Allure.Commons;
+﻿using Allure.Net.Commons;
 using Aquality.Selenium.Browsers;
 using Aquality.Selenium.Template.Browsers;
 using AqualityTracking.Integrations.Core;
@@ -11,11 +11,8 @@ namespace Aquality.Selenium.Template.SpecFlow.Hooks
     [Binding]
     public class PluginsHooks
     {
-        private readonly ScenarioContext context;
-
-        public PluginsHooks(ScenarioContext context)
+        public PluginsHooks()
         {
-            this.context = context;
         }
 
         [BeforeFeature]
@@ -27,8 +24,7 @@ namespace Aquality.Selenium.Template.SpecFlow.Hooks
         [AfterScenario(Order = -1)]
         public void UpdateAllureTestCaseName()
         {
-            context.TryGetValue(out TestResult testresult);
-            AllureLifecycle.Instance.UpdateTestCase(testresult.uuid, testCase =>
+            AllureLifecycle.Instance.UpdateTestCase(testCase =>
             {
                 testCase.name += GetScenarioNameSuffix();
                 testCase.historyId = TestContext.CurrentContext.Test.FullName;

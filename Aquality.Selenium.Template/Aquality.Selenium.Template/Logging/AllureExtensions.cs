@@ -1,4 +1,4 @@
-﻿using Allure.Commons;
+﻿using Allure.Net.Commons;
 using System;
 using System.Runtime.CompilerServices;
 
@@ -16,11 +16,10 @@ namespace Aquality.Selenium.Template.Logging
                 stepName = callerName;
             }
 
-            var id = Guid.NewGuid().ToString();
             var stepResult = new StepResult { name = stepName };
             try
             {
-                lifecycle.StartStep(id, stepResult);
+                lifecycle.StartStep(stepResult);
                 action.Invoke();
                 lifecycle.StopStep(step => stepResult.status = Status.passed);
             }

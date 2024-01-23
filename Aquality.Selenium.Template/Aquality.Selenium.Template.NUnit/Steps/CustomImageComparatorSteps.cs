@@ -23,6 +23,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
         [LogStep(StepType.Step)]
         public static SKImage GetExpectedImageFromResourse(string expectedImageResourse)
         {
+            AttachmentHelper.AddAttachment(expectedImageResourse);
             return new FileInfo(expectedImageResourse).ReadImage();
         }
 

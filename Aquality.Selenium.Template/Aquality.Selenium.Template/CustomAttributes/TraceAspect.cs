@@ -3,8 +3,8 @@ using System;
 using System.Reflection;
 using Aquality.Selenium.Core.Logging;
 using Humanizer;
-using Allure.Commons;
-using NUnit.Allure.Core.Steps;
+using Allure.Net.Commons;
+using Allure.Net.Commons.Steps;
 
 namespace Aquality.Selenium.Template.CustomAttributes
 {
@@ -26,7 +26,7 @@ namespace Aquality.Selenium.Template.CustomAttributes
             var stepName = name.Humanize();
             if (arguments.Length > 0)
             {
-                stepName =  $"{stepName} method with parameters: {string.Join("-", arguments)}";
+                stepName =  $"{stepName} with parameters: {string.Join("-", arguments)}";
             }
             
             LogStep(stepName, classType.Name, logLevel.ToString());
@@ -39,7 +39,7 @@ namespace Aquality.Selenium.Template.CustomAttributes
             object result;
             try
             {
-                AllureLifecycle.Instance.StartStep(Guid.NewGuid().ToString(), stepResult);
+                AllureLifecycle.Instance.StartStep(stepResult);
                 result = method(arguments);
                 AllureLifecycle.Instance.StopStep(step => stepResult.status = Status.passed);
             }
