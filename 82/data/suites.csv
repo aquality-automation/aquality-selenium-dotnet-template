@@ -1,0 +1,18 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Jan 24 12:07:58 GMT 2024","Wed Jan 24 12:08:00 GMT 2024","2092","","Main Page Demo Test","","MainDemoTest","TC0001_CheckTheCookieForm","TC0001_CheckTheCookieForm","TC-0001 Check the cookie form
+"
+"passed","Wed Jan 24 12:07:43 GMT 2024","Wed Jan 24 12:07:43 GMT 2024","147","","","","","","GET users info",""
+"passed","Wed Jan 24 12:07:55 GMT 2024","Wed Jan 24 12:07:58 GMT 2024","3106","","Demo Tests","","DemoTest","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC0004_CheckTheFooterFormIsCorrectWithVisualTesting","TC-0004 Check the footer form is correct with visual testing
+"
+"passed","Wed Jan 24 12:07:43 GMT 2024","Wed Jan 24 12:07:43 GMT 2024","510","","","","","","GET organization info",""
+"passed","Wed Jan 24 12:07:43 GMT 2024","Wed Jan 24 12:07:51 GMT 2024","7297","","Demo Tests","","DemoTest","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC0002_CheckThePossibilityToChangeTheLanguageFromGermanToEnglish","TC-0002 Check all navigation panel elements are present
+"
+"passed","Wed Jan 24 12:07:51 GMT 2024","Wed Jan 24 12:07:55 GMT 2024","4537","","Demo Tests","","DemoTest","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC0003_CheckHowTheContactUsFormWorksWithAnIncorrectEmail","TC-0003 Check how the Contact Us form works with an incorrect email
+"
+"passed","Wed Jan 24 12:07:43 GMT 2024","Wed Jan 24 12:07:43 GMT 2024","74","","","","","","GET user info",""
+"passed","Wed Jan 24 12:07:43 GMT 2024","Wed Jan 24 12:07:54 GMT 2024","10932","","","","","","Empty email validation is working on Contact Us page (""John Doe"")",""
+"passed","Wed Jan 24 12:07:43 GMT 2024","Wed Jan 24 12:07:43 GMT 2024","147","","CustomImageComparatorTest","","CustomImageComparatorTest","TC0006_Compare2ImagesWhenBothImagesAreTheSame","TC0006_Compare2ImagesWhenBothImagesAreTheSame","TC-0006 Compare 2 images when both images are the same
+"
+"passed","Wed Jan 24 12:07:43 GMT 2024","Wed Jan 24 12:07:43 GMT 2024","199","","CustomImageComparatorTest","","CustomImageComparatorTest","TC0005_Compare2ImagesOneOfWhichIsDifferent","TC0005_Compare2ImagesOneOfWhichIsDifferent","TC-0005 Compare 2 images one of which is different
+"
+"passed","Wed Jan 24 12:07:54 GMT 2024","Wed Jan 24 12:08:01 GMT 2024","6389","","","","","","Empty email validation is working on Contact Us page (""Peter Parker"")",""
