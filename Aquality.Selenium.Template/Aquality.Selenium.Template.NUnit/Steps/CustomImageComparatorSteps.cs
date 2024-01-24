@@ -23,6 +23,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
         [LogStep(StepType.Step)]
         public static SKImage GetExpectedImageFromResourse(string expectedImageResourse)
         {
+            AttachmentHelper.AddAttachment(expectedImageResourse);
             return new FileInfo(expectedImageResourse).ReadImage();
         }
 
@@ -30,14 +31,14 @@ namespace Aquality.Selenium.Template.NUnit.Steps
         public void CheckThatActualAndExpectedImagesAreTheSame(SKImage expectedImage)
         {
             var differenceBetweenImages = customImageComparator.Compare(modelOfImage, expectedImage);
-            Assert.AreEqual(0, differenceBetweenImages, "The images should be the same");
+            Assert.That(differenceBetweenImages, Is.Zero, "The images should be the same");
         }
 
         [LogStep(StepType.Assertion)]
         public void CheckThatActualAndExpectedImagesAreNotTheSame(SKImage expectedImage)
         {
             var differenceBetweenImages = customImageComparator.Compare(modelOfImage, expectedImage);
-            Assert.AreNotEqual(0, differenceBetweenImages, "The images should not be the same");
+            Assert.That(differenceBetweenImages, Is.Not.Zero, "The images should not be the same");
         }
     }
 }

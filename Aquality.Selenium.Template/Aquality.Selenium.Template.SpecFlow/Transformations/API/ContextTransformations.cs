@@ -5,14 +5,9 @@ using TechTalk.SpecFlow;
 namespace Aquality.Selenium.Template.SpecFlow.Transformations.API
 {
     [Binding]
-    public class ContextTransformations
+    public class ContextTransformations(ScenarioContext scenarioContext)
     {
-        private readonly ScenarioContext scenarioContext;
-
-        public ContextTransformations(ScenarioContext scenarioContext)
-        {
-            this.scenarioContext = scenarioContext;
-        }
+        private readonly ScenarioContext scenarioContext = scenarioContext;
 
         [StepArgumentTransformation("(.*response.*)")]
         public RestResponse Response(string key)

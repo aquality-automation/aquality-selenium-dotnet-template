@@ -7,11 +7,12 @@
 
     "driverSettings": {
         "chrome": {
-            "webDriverVersion": "MatchingBrowser",
-            "capabilities": {
-                "enableVNC": true,
-                "unhandledPromptBehavior": "default"
+          "capabilities": {
+            "selenoid:options": {
+              "enableVNC": true
             },
+            "unhandledPromptBehavior": "default"
+          },
             "options": {
                 "intl.accept_languages": "en",
                 "safebrowsing.enabled": "true",
@@ -31,9 +32,7 @@
             "pageLoadStrategy": "Normal"
         },
         "firefox": {
-            "webDriverVersion": "Latest",
             "capabilities": {
-                "enableVNC": true,
                 "unhandledPromptBehavior": "default"
             },
             "options": {
@@ -54,8 +53,6 @@
             "startArguments": []
         },
         "iexplorer": {
-            "webDriverVersion": "Latest",
-            "systemArchitecture": "X32",
             "capabilities": {
                 "ignoreProtectedModeSettings": true,
                 "unhandledPromptBehavior": "default"
@@ -65,9 +62,7 @@
             "startArguments": []
         },
         "edge": {
-            "webDriverVersion": "Latest",
             "capabilities": {
-                "enableVNC": true
             },
             "options": {
                 "intl.accept_languages": "en",
@@ -85,23 +80,23 @@
             },
             "startArguments": []
         },
-        "opera": {
-            "webDriverVersion": "Latest",
-            "capabilities": {
-                "enableVNC": true,
-                "unhandledPromptBehavior": "ignore"
-            },
-            "options": {
-                "intl.accept_languages": "en",
-                "safebrowsing.enabled": "true",
-                "profile.default_content_settings.popups": "0",
-                "disable-popup-blocking": "true",
-                "download.prompt_for_download": "false"
-            },
-            "startArguments": []
+      "opera": {
+        "webDriverVersion": "Latest",
+        "binaryLocation": "%USERPROFILE%\\AppData\\Local\\Programs\\Opera\\launcher.exe",
+        "capabilities": {
+          "unhandledPromptBehavior": "ignore"
         },
+        "options": {
+          "intl.accept_languages": "en",
+          "safebrowsing.enabled": "true",
+          "profile.default_content_settings.popups": "0",
+          "disable-popup-blocking": "true",
+          "download.prompt_for_download": "false"
+        },
+        "excludedArguments": [ "enable-automation" ],
+        "startArguments": [ "--remote-debugging-port=9222", "--no-sandbox", "--disable-dev-shm-usage" ]
+      },
         "yandex": {
-            "webDriverVersion": "94.0.4606.41",
             "binaryLocation": "%USERPROFILE%\\AppData\\Local\\Yandex\\YandexBrowser\\Application\\browser.exe",
             "capabilities": {
                 "enableVNC": true,
@@ -122,7 +117,7 @@
         "timeoutImplicit": 0,
         "timeoutCondition": 30,
         "timeoutScript": 10,
-        "timeoutPageLoad": 15,
+        "timeoutPageLoad": 20,
         "timeoutPollingInterval": 300,
         "timeoutCommand": 60,
         "timeoutElementAppear": 15

@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Schema;
 using NUnit.Framework;
+using NUnit.Framework.Legacy;
 using RestSharp;
 using System;
 using System.Collections.Generic;
@@ -12,14 +13,9 @@ using TechTalk.SpecFlow;
 namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions.API.Common
 {
     [Binding]
-    public class ResponseSteps
+    public class ResponseSteps(ScenarioContext scenarioContext)
     {
-        private readonly ScenarioContext scenarioContext;
-
-        public ResponseSteps(ScenarioContext scenarioContext)
-        {
-            this.scenarioContext = scenarioContext;
-        }
+        private readonly ScenarioContext scenarioContext = scenarioContext;
 
         [Then(@"the status code of the '(.*response.*)' is '(\d*)'")]
         public static void StatusCodeOfResponseIs(RestResponse response, int statusCode)
@@ -45,17 +41,15 @@ namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions.API.Common
         public static void AssertResponseSchemaIsValid(RestResponse response, string schemaName)
         {
             var schemaPath = Path.Combine(AppContext.BaseDirectory, "Resources", "JsonSchemas", $"{schemaName}.json");
-            using (StreamReader file = File.OpenText(schemaPath))
-            using (JsonTextReader reader = new JsonTextReader(file))
+            using StreamReader file = File.OpenText(schemaPath);
+            using JsonTextReader reader = new(file);
+            JSchema schema = JSchema.Load(reader, new JSchemaReaderSettings
             {
-                JSchema schema = JSchema.Load(reader, new JSchemaReaderSettings
-                {
-                    Resolver = new JSchemaUrlResolver(),
-                    BaseUri = new Uri(schemaPath)
-                });
-                AttachmentHelper.AddAttachmentAsJson("json schema", schema);
-                Assert.That(response.GetBodyAsJson().IsValid(schema), "Json schema should match to expected");
-            }
+                Resolver = new JSchemaUrlResolver(),
+                BaseUri = new Uri(schemaPath)
+            });
+            AttachmentHelper.AddAttachmentAsJson("json schema", schema);
+            Assert.That(response.GetBodyAsJson().IsValid(schema), "Json schema should match to expected");
         }
 
 

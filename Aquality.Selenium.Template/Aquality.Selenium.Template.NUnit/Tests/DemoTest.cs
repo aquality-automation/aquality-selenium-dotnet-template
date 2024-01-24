@@ -9,10 +9,10 @@ namespace Aquality.Selenium.Template.NUnit.Tests
     [AllureSuite("Demo Tests")]
     public class DemoTest : BaseWebTest
     {
-        private readonly TopBarMenuSteps topBarMenuSteps = new TopBarMenuSteps();
-        private readonly MainPageSteps mainPageSteps = new MainPageSteps();
-        private readonly ContactUsPageSteps contactUsFormSteps = new ContactUsPageSteps();
-        private readonly FooterFormSteps footerFormSteps = new FooterFormSteps();
+        private readonly TopBarMenuSteps topBarMenuSteps = new();
+        private readonly MainPageSteps mainPageSteps = new();
+        private readonly ContactUsPageSteps contactUsFormSteps = new();
+        private readonly FooterFormSteps footerFormSteps = new();
 
         [SetUp]
         public new void Setup()

@@ -9,7 +9,7 @@ namespace Aquality.Selenium.Template.NUnit.Tests
     [AllureSuite("Main Page Demo Test")]
     public class MainDemoTest : BaseWebTest
     {
-        private readonly MainPageSteps mainPageSteps = new MainPageSteps();
+        private readonly MainPageSteps mainPageSteps = new();
 
         [SetUp]
         public new void Setup()

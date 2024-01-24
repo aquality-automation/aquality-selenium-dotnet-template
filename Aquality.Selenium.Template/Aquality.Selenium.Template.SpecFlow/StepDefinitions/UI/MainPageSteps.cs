@@ -7,16 +7,10 @@ using TechTalk.SpecFlow;
 namespace Aquality.Selenium.Template.SpecFlow.StepDefinitions.UI
 {
     [Binding]
-    public class MainPageSteps
+    public class MainPageSteps(MainPage mainPage, TopBarMenu topBarMenu)
     {
-        private readonly MainPage mainPage;
-        private readonly TopBarMenu topBarMenu;
-
-        public MainPageSteps(MainPage mainPage, TopBarMenu topBarMenu)
-        {
-            this.mainPage = mainPage;
-            this.topBarMenu = topBarMenu;
-        }
+        private readonly MainPage mainPage = mainPage;
+        private readonly TopBarMenu topBarMenu = topBarMenu;
 
         [Given(@"Main page is opened")]
         public static void MainPageIsOpened()

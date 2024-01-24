@@ -17,7 +17,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
 {
     public class ContactUsPageSteps
     {
-        private readonly ContactUsPage contactUsPage = new ContactUsPage();
+        private readonly ContactUsPage contactUsPage = new();
         private readonly ContactUsInfo contactUsInfo = JsonConvert.DeserializeObject<ContactUsInfo>(FileReader.GetTextFromEmbeddedResource(ResourceConstants.PathToContactUserWithInvalidEmail, Assembly.GetCallingAssembly()));
 
         [LogStep(StepType.Assertion)]
@@ -33,19 +33,19 @@ namespace Aquality.Selenium.Template.NUnit.Steps
             {
                 foreach(ContactUsTextFields name in Enum.GetValues(typeof(ContactUsTextFields)))
                 {
-                    Assert.IsTrue(contactUsPage.IsContactUsTextBoxPresent(name), $"Text field {name} should be displayed");
+                    Assert.That(contactUsPage.IsContactUsTextBoxPresent(name), $"Text field {name} should be displayed");
                 }
-                Assert.IsTrue(contactUsPage.IsTermsCheckBoxExist, "Terms checkBox should be exist");
-                Assert.IsTrue(contactUsPage.IsTermsLabelPresent, "Terms label should be displayed");
-                Assert.IsTrue(contactUsPage.IsSendAMessageButtonPresent, "Send a message button should be displayed");
-                Assert.IsTrue(contactUsPage.IsTitleLabelPresent, "Title should be displayed");
+                Assert.That(contactUsPage.IsTermsCheckBoxExist, "Terms checkBox should be exist");
+                Assert.That(contactUsPage.IsTermsLabelPresent, "Terms label should be displayed");
+                Assert.That(contactUsPage.IsSendAMessageButtonPresent, "Send a message button should be displayed");
+                Assert.That(contactUsPage.IsTitleLabelPresent, "Title should be displayed");
             });
         }
 
         [LogStep(StepType.Assertion)]
         public void CheckThanContactUsTitleIsCorrect()
         {
-            Assert.AreEqual(contactUsPage.TitleLabelTextValue, TitleConstants.TitleLabelText, "Title text should be same.");
+            Assert.That(contactUsPage.TitleLabelTextValue, Is.EqualTo(TitleConstants.TitleLabelText), "Title text should be same.");
         }
 
         [LogStep(StepType.Step)]
@@ -64,7 +64,7 @@ namespace Aquality.Selenium.Template.NUnit.Steps
         public void CheckTermCheckBoxIsCheckedOrNot(bool isChecked = false)
         {
             var expectedStatus = isChecked ? "checked" : "not checked";
-            Assert.AreEqual(contactUsPage.IsTermsCheckBoxChecked, isChecked, $"Term CheckBox should be {expectedStatus}");
+            Assert.That(contactUsPage.IsTermsCheckBoxChecked, Is.EqualTo(isChecked), $"Term CheckBox should be {expectedStatus}");
         }
 
         [LogStep(StepType.Step)]
@@ -94,7 +94,8 @@ namespace Aquality.Selenium.Template.NUnit.Steps
         [LogStep(StepType.Step)]
         public void CheckThatWarningEmailMessageIsCorrect()
         {
-            Assert.AreEqual(contactUsPage.WarningEmailMessageTextValue, ContactUsTextFields.Email.GetEnumDescription(), "Warning email message should be correct.");
+            Assert.That(contactUsPage.WarningEmailMessageTextValue, Is.EqualTo(ContactUsTextFields.Email.GetEnumDescription()), 
+                "Warning email message should be correct.");
         }
     }
 }

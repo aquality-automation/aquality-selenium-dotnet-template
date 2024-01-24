@@ -4,12 +4,8 @@ using OpenQA.Selenium;
 
 namespace Aquality.Selenium.Template.Elements
 {
-    public class CustomTextBox : TextBox
+    public class CustomTextBox(By locator, string name, ElementState state) : TextBox(locator, name, state)
     {
-        public CustomTextBox(By locator, string name, ElementState state) : base(locator, name, state)
-        {
-        }
-
         public new string Text => Value;
     }
 }
